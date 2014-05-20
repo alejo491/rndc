@@ -6,6 +6,8 @@ namespace Rndc.Servicios
     public static  class ServicioWebRndc
     {
 
+
+
         //Creacion de los tipos de vehiculos
         public static string CreacionVehiculoRigido(string usuario,
                                                 string password,
@@ -119,12 +121,45 @@ namespace Rndc.Servicios
         //Creacion de los terceros
 
         public static string CreacionPersona(
+            string usuario,
+            string password,
+            string nit,
+            string tipoId,
+            string idPersona,
+            string nomPersona,
+            string primerApellido,
+            string segundoApellido,
+            string telPersona,
+            string direccion,
+            string municipio
+            
 
 
             )
         {
             ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
-            string peticion = "";
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root> " +
+                              "<acceso> " +
+                              "<username> "+usuario+"</username> " +
+                              "<password>"+password+"</password> " +
+                              "</acceso> " +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>11</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>"+nit+"</NUMNITEMPRESATRANSPORTE> " +
+                              "<CODTIPOIDTERCERO>"+tipoId+"</CODTIPOIDTERCERO> " +
+                              "<NUMIDTERCERO>"+idPersona+"</NUMIDTERCERO> " +
+                              "<NOMIDTERCERO>"+nomPersona+"</NOMIDTERCERO> " +
+                              "<PRIMERAPELLIDOIDTERCERO>"+primerApellido+"</PRIMERAPELLIDOIDTERCERO> " +
+                              "<SEGUNDOAPELLIDOIDTERCERO>"+segundoApellido+"</SEGUNDOAPELLIDOIDTERCERO> " +
+                              "<NUMTELEFONOCONTACTO>"+telPersona+"</NUMTELEFONOCONTACTO>" +
+                              " <NOMENCLATURADIRECCION>"+direccion+"</NOMENCLATURADIRECCION " +
+                              "<CODMUNICIPIORNDC>"+municipio+"</CODMUNICIPIORNDC> " +
+                              "</variables> " +
+                              "</root>";
 
             
 
@@ -138,6 +173,8 @@ namespace Rndc.Servicios
         
         
         }
+
+        
 
         public static string CreacionPersonaJuridica(string usuario,
                                                 string password,
