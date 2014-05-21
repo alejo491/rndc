@@ -429,10 +429,8 @@ namespace Rndc.Servicios
             string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
                               "<root>" +
                               "<acceso> " +
-                              "<username>"++
-            "</username> " +
-            "<password>"++
-            "</password> " +
+                              "<username></username> " +
+            "<password></password> " +
             "</acceso> <solicitud> " +
             "<tipo>1</tipo> " +
             "<procesoid>2</procesoid> " +
