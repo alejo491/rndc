@@ -102,8 +102,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Carga\AnulacionInfoCarga.aspx" />
+    <Content Include="Carga\AnulacionManiCarga.aspx" />
+    <Content Include="Carga\RegistrarInfoCarga.aspx" />
+    <Content Include="Manifiesto\CumplirManCarga.aspx" />
+    <Content Include="Manifiesto\ExpedirManTerCarga.aspx" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Remesa\AnulacionRemTerCarga.aspx" />
+    <Content Include="Remesa\CumplirRemTerCarga.aspx" />
+    <Content Include="Remesa\ExpedirRemTerCarga.aspx" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
@@ -117,32 +125,122 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
+    <Content Include="Tercero\CreacionTerceroPerJuridica.aspx" />
+    <Content Include="Tercero\CreacionTerceroPerNatural.aspx" />
+    <Content Include="Vehiculo\CreacionVehiculoArticulado.aspx" />
+    <Content Include="Vehiculo\CreacionVehiculoRigido.aspx" />
+    <Content Include="Viaje\RegistrarInfoViaje.aspx" />
     <Content Include="Web.config" />
     <Content Include="Service References\ServiceReferenceRNDC\IBPMServicesservice.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Carga\AnulacionInfoCarga.aspx.cs">
+      <DependentUpon>AnulacionInfoCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carga\AnulacionInfoCarga.aspx.designer.cs">
+      <DependentUpon>AnulacionInfoCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carga\AnulacionManiCarga.aspx.cs">
+      <DependentUpon>AnulacionManiCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carga\AnulacionManiCarga.aspx.designer.cs">
+      <DependentUpon>AnulacionManiCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carga\RegistrarInfoCarga.aspx.cs">
+      <DependentUpon>RegistrarInfoCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carga\RegistrarInfoCarga.aspx.designer.cs">
+      <DependentUpon>RegistrarInfoCarga.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Manifiesto\CumplirManCarga.aspx.cs">
+      <DependentUpon>CumplirManCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manifiesto\CumplirManCarga.aspx.designer.cs">
+      <DependentUpon>CumplirManCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manifiesto\ExpedirManTerCarga.aspx.cs">
+      <DependentUpon>ExpedirManTerCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manifiesto\ExpedirManTerCarga.aspx.designer.cs">
+      <DependentUpon>ExpedirManTerCarga.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remesa\AnulacionRemTerCarga.aspx.cs">
+      <DependentUpon>AnulacionRemTerCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remesa\AnulacionRemTerCarga.aspx.designer.cs">
+      <DependentUpon>AnulacionRemTerCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remesa\CumplirRemTerCarga.aspx.cs">
+      <DependentUpon>CumplirRemTerCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remesa\CumplirRemTerCarga.aspx.designer.cs">
+      <DependentUpon>CumplirRemTerCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remesa\ExpedirRemTerCarga.aspx.cs">
+      <DependentUpon>ExpedirRemTerCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remesa\ExpedirRemTerCarga.aspx.designer.cs">
+      <DependentUpon>ExpedirRemTerCarga.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Service References\ServiceReferenceRNDC\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Servicios\ServicioWebRndc.cs" />
+    <Compile Include="Tercero\CreacionTerceroPerJuridica.aspx.cs">
+      <DependentUpon>CreacionTerceroPerJuridica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tercero\CreacionTerceroPerJuridica.aspx.designer.cs">
+      <DependentUpon>CreacionTerceroPerJuridica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tercero\CreacionTerceroPerNatural.aspx.cs">
+      <DependentUpon>CreacionTerceroPerNatural.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tercero\CreacionTerceroPerNatural.aspx.designer.cs">
+      <DependentUpon>CreacionTerceroPerNatural.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo\CreacionVehiculoArticulado.aspx.cs">
+      <DependentUpon>CreacionVehiculoArticulado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vehiculo\CreacionVehiculoArticulado.aspx.designer.cs">
+      <DependentUpon>CreacionVehiculoArticulado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo\CreacionVehiculoRigido.aspx.cs">
+      <DependentUpon>CreacionVehiculoRigido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vehiculo\CreacionVehiculoRigido.aspx.designer.cs">
+      <DependentUpon>CreacionVehiculoRigido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Viaje\RegistrarInfoViaje.aspx.cs">
+      <DependentUpon>RegistrarInfoViaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viaje\RegistrarInfoViaje.aspx.designer.cs">
+      <DependentUpon>RegistrarInfoViaje.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Account\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Carga\" />
     <Folder Include="Content\" />
-    <Folder Include="Manifiesto\" />
-    <Folder Include="Remesa\" />
-    <Folder Include="Tercero\" />
-    <Folder Include="Vehiculo\" />
-    <Folder Include="Viaje\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
