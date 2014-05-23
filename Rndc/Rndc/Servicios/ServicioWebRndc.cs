@@ -8,10 +8,9 @@ namespace Rndc.Servicios
     public static class ServicioWebRndc
     {
 
-
-
         //Creacion de los tipos de vehiculos
-        public static string CreacionVehiculoRigido(string usuario,
+        public static string CreacionVehiculoRigido(
+            string usuario,
             string password,
             string tipoSolicitud,
             string idProceso,
@@ -74,17 +73,22 @@ namespace Rndc.Servicios
 
         }
 
-        public static string CreacionVehiculoArticulado(string usuario, //por hacer
+        public static string CreacionVehiculoArticulado(
+            string usuario, 
             string password,
             string nit,
-            string tipoId,
-            string numId,
-            string nombre,
-            string sede,
-            string nomSede,
-            string telefono,
-            string direccion,
-            string municipio
+            string numPlaca,
+            string codConfiguracionCarga,
+            string codMarcaVehiculo,
+            string anoFabricacion,
+            string pesoVacio,
+            string capUnidadCarga,
+            string codColor,
+            string codTipoCarroceria,
+            string codTipoIdPropietario,
+            string numIdPropietario,
+            string codTipoIdTenedor,
+            string numIdtenedor
 
             )
         {
@@ -97,18 +101,22 @@ namespace Rndc.Servicios
                               "</acceso> " +
                               "<solicitud> " +
                               "<tipo>1</tipo> " +
-                              "<procesoid>11</procesoid> " +
+                              "<procesoid>12</procesoid> " +
                               "</solicitud> " +
                               "<variables> " +
                               "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
-                              "<CODTIPOIDTERCERO>" + tipoId + "</CODTIPOIDTERCERO> " +
-                              "<NUMIDTERCERO >" + numId + "</NUMIDTERCERO> " +
-                              "<NOMIDTERCERO>" + nombre + "</NOMIDTERCERO> " +
-                              "<CODSEDETERCERO>" + sede + "</CODSEDETERCERO> " +
-                              "<NOMSEDETERCERO>" + nomSede + "</NOMSEDETERCERO> " +
-                              "<NUMTELEFONOCONTACTO>" + telefono + "</NUMTELEFONOCONTACTO> " +
-                              "<NOMENCLATURADIRECCION>" + direccion + "</NOMENCLATURADIRECCION> " +
-                              "<CODMUNICIPIORNDC>" + municipio + "</CODMUNICIPIORNDC> " +
+                              "<NUMPLACA>" + numPlaca + "</NUMPLACA> " +
+                              "<CODCONFIGURACIONUNIDADCARGA>" + codConfiguracionCarga + "</CODCONFIGURACIONUNIDADCARGA> " +
+                              "<CODMARCAVEHICULOCARGA>" + codMarcaVehiculo + "</CODMARCAVEHICULOCARGA> " +
+                              "<ANOFABRICACIONVEHICULOCARGA>" + anoFabricacion + "</ANOFABRICACIONVEHICULOCARGA> " +
+                              "<PESOVEHICULOVACIO>" + pesoVacio + "</PESOVEHICULOVACIO> " +
+                              "<CAPACIDADUNIDADCARGA>" + capUnidadCarga + "</CAPACIDADUNIDADCARGA> " +
+                              "<CODCOLORVEHICULOCARGA>" + codColor + "</CODCOLORVEHICULOCARGA> " +
+                              "<CODTIPOCARROCERIA>" + codTipoCarroceria + "</CODTIPOCARROCERIA> " +
+                              "<CODTIPOIDPROPIETARIO>" + codTipoIdPropietario + "</CODTIPOIDPROPIETARIO> " +
+                              "<NUMIDPROPIETARIO>" + numIdPropietario + "</NUMIDPROPIETARIO> " +
+                              "<CODTIPOIDTENEDOR>" + codTipoIdTenedor + "</CODTIPOIDTENEDOR> " +
+                              "<NUMIDTENEDOR>" + numIdtenedor + "</NUMIDTENEDOR> " +
                               "</variables> " +
                               "</root>";
 
@@ -177,7 +185,8 @@ namespace Rndc.Servicios
         }
 
 
-        public static string CreacionConductor(string usuario,
+        public static string CreacionConductor(
+            string usuario,
             string password,
             string nit,
             string tipoId,
@@ -231,7 +240,8 @@ namespace Rndc.Servicios
 
         }
 
-        public static string CreacionDestinatario(string usuario,
+        public static string CreacionDestinatario(
+            string usuario,
             string password,
             string nit,
             string tipoId,
@@ -280,7 +290,8 @@ namespace Rndc.Servicios
 
 
 
-        public static string CreacionPersonaJuridica(string usuario,
+        public static string CreacionPersonaJuridica(
+            string usuario,
             string password,
             string nit,
             string tipoId,
@@ -327,6 +338,7 @@ namespace Rndc.Servicios
         }
 
 
+        //informacion de la carga
         public static string CreacionInformacionCarga(
             string usuario,
             string password,
@@ -391,8 +403,12 @@ namespace Rndc.Servicios
             return peticion;
         }
 
-        public static string AnulacionInformacionCarga(string usuario, string password, string nit, string consecutivo,
-            string motivo)
+        public static string AnulacionInformacionCarga(string usuario, 
+            string password, 
+            string nit, 
+            string consecutivo,
+            string motivo
+            )
         {
             ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
 
@@ -420,8 +436,18 @@ namespace Rndc.Servicios
         }
 
 
-
+        //Informacion de los viajes
         public static string CreacionInformacionViaje(
+            string usuario,
+            string password,
+            string nit,
+            string consecutivo,
+            string codIdConductor,
+            string numIdConductor,
+            string numPlaca,
+            string numPlacaremolque,
+            string codMunicipioOrigen,
+            string codMunicipioDestino
             )
         {
             ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
@@ -429,38 +455,184 @@ namespace Rndc.Servicios
             string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
                               "<root>" +
                               "<acceso> " +
-                              "<username></username> " +
-            "<password></password> " +
-            "</acceso> <solicitud> " +
-            "<tipo>1</tipo> " +
-            "<procesoid>2</procesoid> " +
-            "</solicitud> " +
-            "<variables> " +
-            "<NUMNITEMPRESATRANSPORTE>900301001</NUMNITEMPRESATRANSPORTE> " +
-            "<CONSECUTIVOINFORMACIONVIAJE>0001</CONSECUTIVOINFORMACIONVIAJE> " +
-            "<CODIDCONDUCTOR>C</CODIDCONDUCTOR> " +
-            "<NUMIDCONDUCTOR>79616565</NUMIDCONDUCTOR> " +
-            "<NUMPLACA>WZH111</NUMPLACA> " +
-            "<NUMPLACAREMOLQUE>R55555</NUMPLACAREMOLQUE> " +
-            "<CODMUNICIPIOORIGENINFOVIAJE>76001000</CODMUNICIPIOORIGENINFOVIAJE> " +
-            "<CODMUNICIPIODESTINOINFOVIAJE>11001000</CODMUNICIPIODESTINOINFOVIAJE> " +
-            "<PREREMESAS procesoid=\"44\"> " +
-            "<MANPREREMESA> " +
-            "<CONSECUTIVOINFORMACIONCARGA>0001</CONSECUTIVOINFORMACIONCARGA> " +
-            "</MANPREREMESA> " +
-            "<MANPREREMESA> " +
-            "< CONSECUTIVOINFORMACIONCARGA >0020</ CONSECUTIVOINFORMACIONCARGA> " +
-            "</MANPREREMESA> " +
-            "<MANPREREMESA> " +
-            "< CONSECUTIVOINFORMACIONCARGA >0035</ CONSECUTIVOINFORMACIONCARGA> " +
-            "</MANPREREMESA> " +
-            "</PREREMESAS> " +
-            "<VALORFLETEPACTADOVIAJE>3200000</VALORFLETEPACTADOVIAJE> " +
-            "</variables> " +
-            "</root>";
+                              "<username>" + usuario + "</username> " +
+                              "<password>"+ password +"</password> " +
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>2</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>"+ nit +"</NUMNITEMPRESATRANSPORTE> " +
+                              "<CONSECUTIVOINFORMACIONVIAJE>"+ consecutivo +"</CONSECUTIVOINFORMACIONVIAJE> " +
+                              "<CODIDCONDUCTOR>"+ codIdConductor +"</CODIDCONDUCTOR> " +
+                              "<NUMIDCONDUCTOR>"+ numIdConductor +"</NUMIDCONDUCTOR> " +
+                              "<NUMPLACA>"+ numPlaca +"</NUMPLACA> " +
+                              "<NUMPLACAREMOLQUE>"+ numPlacaremolque +"</NUMPLACAREMOLQUE> " +
+                              "<CODMUNICIPIOORIGENINFOVIAJE>"+ codMunicipioOrigen +"</CODMUNICIPIOORIGENINFOVIAJE> " +
+                              "<CODMUNICIPIODESTINOINFOVIAJE>"+ codMunicipioDestino +"</CODMUNICIPIODESTINOINFOVIAJE> " +
+                              "<PREREMESAS procesoid=\"44\"> " +
+                              "<MANPREREMESA> " +
+                              "<CONSECUTIVOINFORMACIONCARGA>0001</CONSECUTIVOINFORMACIONCARGA> " +      //Arraylist con los datos de los consecutivos
+                              "</MANPREREMESA> " +                             
+                              "</PREREMESAS> " +
+                              "<VALORFLETEPACTADOVIAJE>3200000</VALORFLETEPACTADOVIAJE> " +
+                              "</variables> " +
+                              "</root>";
             /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
-         * return respuesta;
-         */
+            * return respuesta;
+            */
+            return peticion;
+
+
+        }
+
+
+        //Informacion de los Manifiestos
+        public static string CreacionManifiestoCarga(       
+            string usuario,
+            string password,
+            string nit,
+            string numManifiestoCarga,
+            string consecutivo,
+            string codOperacionTransporte,
+            string fecExpedicionManifiesto,
+            string codMunicipioOrigenManifiesto,
+            string codMunicipioDestinoManfiesto,
+            string codtitularManifiesto,
+            string numIdTitularmanifiesto,
+            string retencionIcaManifiesto,
+            string valorAnticipoManifiesto,
+            string codmunicipioPagoSaldo,
+            string fechaPagoSaldoManifiesto,
+            string codResponsablePagoCargue,
+            string codResponsablePagoDesCargue,
+            string observaciones
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +
+                              "<ambiente>R</ambiente> " +                       //preguntar
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>4</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<NUMMANIFIESTOCARGA>" + numManifiestoCarga + "</NUMMANIFIESTOCARGA> " +
+                              "<CONSECUTIVOINFORMACIONVIAJE>" + consecutivo + "</CONSECUTIVOINFORMACIONVIAJE> " +
+                              "<CODOPERACIONTRANSPORTE>" + codOperacionTransporte + "</CODIDCONDUCTOR> " +
+                              "<FECHAEXPEDICIONMANIFIESTO>" + fecExpedicionManifiesto + "</FECHAEXPEDICIONMANIFIESTO> " +
+                              "<CODMUNICIPIOORIGENMANIFIESTO>" + codMunicipioOrigenManifiesto + "</CODMUNICIPIOORIGENMANIFIESTO> " +
+                              "<CODMUNICIPIODESTINOMANIFIESTO>" + codMunicipioDestinoManfiesto + "</CODMUNICIPIODESTINOMANIFIESTO> " +
+                              "<CODIDTITULARMANIFIESTO>" + codtitularManifiesto + "</CODIDTITULARMANIFIESTO> " +
+                              "<NUMIDTITULARMANIFIESTO>" + numIdTitularmanifiesto + "</NUMIDTITULARMANIFIESTO> " +
+                              "<RETENCIONICAMANIFIESTOCARGA>" + retencionIcaManifiesto + "</RETENCIONICAMANIFIESTOCARGA> " +
+                              "<VALORANTICIPOMANIFIESTO>" + valorAnticipoManifiesto + "</VALORANTICIPOMANIFIESTO> " +
+                              "<CODMUNICIPIOPAGOSALDO>" + codmunicipioPagoSaldo + "</CODMUNICIPIOPAGOSALDO> " +
+                              "<FECHAPAGOSALDOMANIFIESTO>" + fechaPagoSaldoManifiesto + "</FECHAPAGOSALDOMANIFIESTO> " +
+                              "<CODRESPONSABLEPAGOCARGUE>" + codResponsablePagoCargue + "</CODRESPONSABLEPAGOCARGUE> " +
+                              "<CODRESPONSABLEPAGODESCARGUE>" + codResponsablePagoDesCargue + "</CODRESPONSABLEPAGODESCARGUE> " +
+                              "<OBSERVACIONES> Se recomienda que en caso de accidente el conductor debe comunicarse al número celular 3102569871</CODMUNICIPIODESTINOINFOVIAJE> " +
+                              
+                              "<REMESASMAN procesoid=\"43\"> " +
+                              "<REMESA>" +
+                              "<CONSECUTIVOREMESA>"+"XXX"+"</CONSECUTIVOINFORMACIONCARGA> " +      //Arraylist con los datos de los consecutivos
+                              "</REMESA> " +
+                              "<REMESASMAN>" +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
+            return peticion;
+
+        }
+
+        public static string CreacionCumplirManifiestoCarga(       
+            string usuario,
+            string password,
+            string nit,
+            string numManifiestoCarga,
+            string tipoCumplidoManifiesto,
+            string FechaEntregaDocumentos,
+            string valorAdicionalHorasCarga,
+            string valorDescuentoFlete,
+            string motivoValorDescuentoManifiesto,
+            string ValorSobreAnticipo
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +                      
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>6</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<NUMMANIFIESTOCARGA>" + numManifiestoCarga + "</NUMMANIFIESTOCARGA> " +
+                              "<TIPOCUMPLIDOMANIFIESTO>" + tipoCumplidoManifiesto + "</TIPOCUMPLIDOMANIFIESTO> " +
+                              "<FECHAENTREGADOCUMENTOS>" + FechaEntregaDocumentos + "</FECHAENTREGADOCUMENTOS> " +
+                              "<VALORADICIONALHORASCARGA>" + valorAdicionalHorasCarga + "</FECHAEXPEDICIONMANIFIESTO> " +
+                              "<VALORDESCUENTOFLETE>" + valorDescuentoFlete + "</VALORDESCUENTOFLETE> " +
+                              "<MOTIVOVALORDESCUENTOMANIFIESTO>" + motivoValorDescuentoManifiesto + "</MOTIVOVALORDESCUENTOMANIFIESTO> " +
+                              "<VALORSOBREANTICIPO>" + ValorSobreAnticipo + "</VALORSOBREANTICIPO> " +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
+            return peticion;
+
+        }
+
+        public static string AnulacionCumplirManifiestoCarga(       
+            string usuario,
+            string password,
+            string nit,
+            string numManifiestoCarga,
+            string motivoAnulacionManifiesto
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>32</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<NUMMANIFIESTOCARGA>" + numManifiestoCarga + "</NUMMANIFIESTOCARGA> " +
+                              "<MOTIVOANULACIONMANIFIESTO>" + motivoAnulacionManifiesto + "</MOTIVOANULACIONMANIFIESTO> " +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
             return peticion;
 
         }
