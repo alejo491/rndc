@@ -1,555 +1,546 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExpedirManTerCarga.aspx.cs" Inherits="Rndc.Manifiesto.ExpedirManTerCarga" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ExpedirManTerCarga.aspx.cs" Inherits="Rndc.Manifiesto.ExpedirManTerCarga" %>
 
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <title></title>
-</head>
-<body>
-   <form>
+﻿<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
        <div>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>EMPRESA:</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_empresa" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>NIT:</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_nit" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>USUARIO:</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_usuario" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>CONSECUTIVO:</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_consecutivo" type="text" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Informacion Preliminar</h3>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Viaje</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_viaje">
                            <option></option>
                            <!-- aqui se llena con los viajes-->
                        </select>
-                   </td>
-               </tr>
-           </table>
-           <table>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Solo en case de dividir en varias remesas la informacion de carga, escriba el consecutivo de <b>carga</b></label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_consecutivo_cargas" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Caracteristicas generales</h3>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Tipo Manifiesto</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_manifiesto">
                            <option></option>
                            <!--se llena con los tipos de manifiesto-->
                        </select>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Fecha Expedicion</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_fec_expedicion" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Origen</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_origen" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Destino</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_destino" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Titular Manifiesto</h3>
-           <table>
-               <tr>
-                   <td>
-                       <label>Tipo Identificación</label>
-                   </td>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Tipo identificación</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_identi_titular">
                            <option></option>
                            <!--llenar los tipos de documento que hay-->
                        </select>
-                   </td>
-                   <td>
-                       <label>Número Identificación</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Número identificación</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_num_identi_titular" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Nombre</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_nombre_titular" type="text" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Dirección</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_direccion_titular" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Telefono</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="tel" name="txt_tel_titular" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Municipio</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_municipio_titular" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Vehiculo</h3>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Placa Vehiculo</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_placa1" type="text" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Marca</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_marca1" type="text" />
 
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Modelo</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_modelo" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Configuracion</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_coniguracion" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Peso Vacio</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_peso_vacio" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Tenedor Vehiculo</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_tenedor_vehiculo" type="text" />
-                   </td>
-                   <td>
-                       <label>Número Identificación</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Número identificación</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_num_identi_tenedor" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Dirección</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_direccion_tenedor" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Municipio</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_municipio_tenedor" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Poliza soat</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_poliza_soat" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Vencimiento</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_vencimiento_soat" type="date" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Aseguradora</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_aseguradora" type="text" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Placa Remolque/Semiremolque</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_placa_remolque" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Marca</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_marca1" type="text" />
 
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Modelo</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_modelo" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Configuracion</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_coniguracion" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Peso Vacio</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_peso_vacio" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Configuracion resultante</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_configuracion_result" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Conductor</h3>
-           <table>
-               <tr>
-                   <td>
-                       <label>Tipo Identificación</label>
-                   </td>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Tipo identificación</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_identy_cond">
                            <option></option>
                        </select>
 
-                   </td>
-                   <td>
-                       <label>Número Identificación</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Número identificación</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_num_identi_cond" type="text" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Nombre</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input name="txt_nombre_cond" type="text" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Dirección</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_direccion_cond" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Telefono</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="tel" name="txt_tel_cond" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Municipio</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_municipio_cond" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Categoria licencia conducción</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_cate_licencia_cond" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Fecha Vencimiento</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="date" name="txt_fec_venc_cond" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Número Licencia</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_num_licencia_cond" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Valor del Viaje</h3>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Valor a pagar por el viaje</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_valor_viaje" />
-                   </td>
-                   <td></td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Pago del Saldo</label>
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Retencion en la fuente</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_retencion" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Lugar</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_lugar" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Retencion ICA(%*mil)</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_retencion_ica" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Fecha</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="date" name="txt_fecha" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Neto a Pagar</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_neto_a_pagar" />
-                   </td>
-                   <td></td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Responsable del pago</label>
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Valor anticipo</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_valor_anticipo" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Cargue</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_cargue">
                            <option></option>
                            <!--se colocan los cargues-->
                        </select>
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Saldo por Pagar</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_saldo_por_pagar">
                            <option></option>
                            <!--se colocan los cargues-->
                        </select>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Descargue</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_descargue">
                            <option></option>
                            <!--se colocan los descargues-->
                        </select>
-                   </td>
-               </tr>
-               <tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Recomendaciones</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <textarea id="textarea_recomendaciones" cols="20" rows="2"></textarea>
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
            <h3>Remesas</h3>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <select id="slt_remesas">
                            <option></option>
                            <!--se colocan las remesas-->
                        </select>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="button" name="btn_adicionar_remesa" value="Adicionar" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="button" name="btn_eliminar_remesa" value="Eliminar" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <div>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <h3>aqui un grid view!!!</h3>
                        valores: remesa, codigo, producto, cantidad, unidad, naturalez, empaque, remitente, destinatario
-                   </td>
-               </tr>
-           </table>
-           <table>
-               <tr>
-                   <td></td>
-                   <td></td>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Horas</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Minutos</label>
-                   </td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>
                            Tiempo total cargue pactado(incluye espera+ Cargue)
                        </label>
-                   </td>           
-                   <td>
+                   </asp:TableCell>           
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_horas_cargue" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_minutos_cargue" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Cantidad de Remesas</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_cantidad_remesas" />
-                   </td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>
                            Tiempo total descargue pactado(incluye espera+ Descargue)
                        </label>
-                   </td>           
-                   <td>
+                   </asp:TableCell>           
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_horas_descargue" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_minutos_descargue" />
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Kilogramos Remesas</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_kilogramos_remesas" />
-                   </td>
-               </tr>
-               <tr>
-                   <td></td>
-                   <td></td>           
-                   <td> </td>
-                   <td></td>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>           
+                   <asp:TableCell runat="server"> </asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Galones Remesas</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <input type="text" name="txt_galones_remesas" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <input type="button" name="btn_guardar_manifiesto" value="Guardar Manifiesto"/>
-   </form>
-</body>
-</html>
+</asp:Content>
