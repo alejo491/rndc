@@ -1,174 +1,165 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreacionVehiculoRigido.aspx.cs" Inherits="Rndc.Viaje.CreacionVehiculoRigido" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CreacionVehiculoRigido.aspx.cs" Inherits="Rndc.Viaje.CreacionVehiculoRigido" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <title>Vehiculo Rigido</title>
-</head>
 
-<body>
-   <form>
-
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
        <div>
-           <table>
-               <tr>
-                   <td>
-                       <label>EMPRESA:</label>
-                   </td>
-                   <td>
-                       <input name="txt_empresa" type="text" />
-                   </td>
-                   <td>
-                       <label>NIT:</label>
-                   </td>
-                   <td>
-                       <input name="txt_nit" type="text" />
-                   </td>
-                   <td>
-                       <label>USUARIO:</label>
-                   </td>
-                   <td>
-                       <input name="txt_usuario" type="text" />
-                   </td>
-               </tr>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="lblCodigo" runat="server" Text="EMPRESA:"></asp:Label>
+                       <label></label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label1" runat="server" Text="NIT:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label2" runat="server" Text="USUARIO:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+               </asp:TableRow>
 
-           </table>
+           </asp:Table>
        </div>
 
        <h3>Caracteristicas Generales del vehiculo</h3>
        <div>
-           <table>
-               <tr>
-                   <td>
-                       <label>Placa</label>
-                   </td>
-                   <td>
-                       <input name="txt_placa" type="text" />
-                   </td>
-                   <td></td>
-                   <td>
-                       <label>Configuracion</label>
-                   </td>
-                   <td>
+           <asp:Table id="Table2" class="tabla2" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label3" runat="server" Text="Placa"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_placa" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label4" runat="server" Text="Configuracion"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_remolques">
                            <option></option>
                            <!--llenar con la lista de los remolques-->
                        </select>
-                   </td>
-                   <td>
-                       <label>Tipo Carroceria</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label5" runat="server" Text="Tipo Carroceria"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_carroceria">
                            <option></option>
                            <!--llenar con la lista de los tipos de carroceria-->
                        </select>
-                   </td>
-               </tr>
+                   </asp:TableCell>
+               </asp:TableRow>
 
-               <tr>
-                   <td>
-                       <label>Marca</label>
-                   </td>
-                   <td>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label6" runat="server" Text="Marca"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
                        <input type="text" name="txt_marca" />
-                   </td>
-                   <td></td>
-                   <td>
-                       <label>Capacidad Unidad Carga</label>
-                   </td>
-                   <td>
-                       <input type="text" name="txt_capacidad_uni_carga" />
-                   </td>
-                   <td>
-                       <label>Color</label>
-                   </td>
-                   <td>
-                       <input type="text" name="txt_color" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>Modelo</label>
-                   </td>
-                   <td>
-                       <input type="text" name="txt_modelo" />
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <label>Peso Vacio</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label7" runat="server" Text="Capacidad Unidad Carga"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_capacidad_uni_carga" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label17" runat="server" Text="Color"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_color" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label8" runat="server" Text="Modelo"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_modelo" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label9" runat="server" Text="Peso Vacio"></asp:Label>
                        <!--validacion peso maximo-->
-                   </td>
-                   <td>
-                       <input type="text" name="txt_peso" />
-                   </td>
-                   <td>
-                       <label>Kilogramos</label>
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_peso" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label10" runat="server" Text="txt_Kilogramos"></asp:Label>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <h3>PROPIETARIO</h3>
        <div>
-           <table>
-               <tr>
-                   <td>
-                       <label>Tipo de Identificación</label>
-                   </td>
-                   <td>
+           <asp:Table id="Table3" class="tabla3" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label11" runat="server" Text="Tipo de Identificación"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_doc_propietario">
                            <option></option>
                            <!--llenar los datos del tipo de docuementos-->
                        </select>
-                   </td>
-                   <td>
-                       <label>Número de Identificación</label>
-                   </td>
-                   <td>
-                       <input type="text" name="txt_num_ident_propi" />
-                   </td>
-                   <td>
-                       <label>Nombre</label>
-                   </td>
-                   <td>
-                       <input type="text" id="txt_nombre_propi" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label12" runat="server" Text="Número de Identificación"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_num_ident_propi" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label13" runat="server" Text="Nombre"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_nombre_propi" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
        <h3>TENEDOR</h3>
        <div>
-           <table>
-               <tr>
-                   <td>
-                       <label>Tipo de Identificación</label>
-                   </td>
-                   <td>
+           <asp:Table id="Table4" class="tabla4" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label14" runat="server" Text="Tipo de Identificación"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_doc_tenedor">
                            <option></option>
                            <!--llenar los datos del tipo de los papeles-->
                        </select>
-                   </td>
-                   <td>
-                       <label>Número de Identificación</label>
-                   </td>
-                   <td>
-                       <input type="text" name="txt_num_ident_tenedor" />
-                   </td>
-                   <td>
-                       <label>Nombre</label>
-                   </td>
-                   <td>
-                       <input type="text" id="txt_nombre_tenedor" />
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label15" runat="server" Text="Número de Identificación"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_num_ident_tenedor" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label16" runat="server" Text="Nombre"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_nombre_tenedor" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
-   </form>
-
-</body>
-</html>
+</asp:Content>
