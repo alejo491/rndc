@@ -1,140 +1,133 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AnulacionRemTerCarga.aspx.cs" Inherits="Rndc.Remesa.AnulacionRemTerCarga" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AnulacionRemTerCarga.aspx.cs" Inherits="Rndc.Remesa.AnulacionRemTerCarga" %>
 
-<!DOCTYPE html>
-<html>
-   <head>
+
        <title>Anular Remesa terrestre de Carga</title>
-       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   </head>
-   <body>
-       <form>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
            <div>
-               <table>
-                   <tr>
-                       <td>
+               <asp:Table id="Table1" class="tabla1" runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>EMPRESA:</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_empresa" type="text" />
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <label>NIT:</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_nit" type="text" />
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <label>USUARIO:</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_usuario" type="text" />
-                       </td>
-                   </tr>
+                       </asp:TableCell>
+                   </asp:TableRow>
 
-               </table>
+               </asp:Table>
            </div>
            <h3>Operacion a Realizar</h3> 
            <div>
-               <table>
-                   <tr>
-                       <td>
+               <asp:Table id="Table1" class="tabla1" runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Tipo Reversa/ Ajuste</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <select id="slt_tipo_reversa">
                                <option></option>
                                <!-- faltan las opciones-->
                            </select>
-                       </td> 
+                       </asp:TableCell> 
 
-                   </tr>
-                   <tr>
-                       <td>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Motivo Anulacion</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <select id="slt_motivo_anulacion">
                                <option></option>
                                <!-- faltan las opciones-->
                            </select>
-                       </td>
+                       </asp:TableCell>
 
-                   </tr>
-               </table>
+                   </asp:TableRow>
+               </asp:Table>
 
            </div>
            <h3>Datos de la remesa</h3>
            <div>
-               <table>
-                   <tr>
-                       <td>
+               <asp:Table id="Table1" class="tabla1" runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Remesa Terrestre de Carga</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <select id="slt_remesa_de_carga">
                                <option></option>
                                <!-- faltan las opciones-->
                            </select>
-                       </td>                    
-                   </tr>
-                   <tr>
-                       <td>
+                       </asp:TableCell>                    
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Remitente</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_remitente" type="text" />
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <label>Fecha de Registro</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_fecha_registro" type="text" />
-                       </td>                   
-                   </tr>
-                   <tr>
-                       <td>
+                       </asp:TableCell>                   
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Origen</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_origen" type="text" />
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <label>Descripcion Producto</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_descripcion_producto" type="text" />
-                       </td>
-                   </tr>
-                   <tr>
-                       <td>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Consecutivo Manifiesto</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_consecutivo_manifiesto" type="text" />
-                       </td>
-                   </tr>
-                   <tr>
-                       <td>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <label>Observaciones</label>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input name="txt_observaciones" type="text" />
-                       </td>
-                   </tr>
-               </table>         
+                       </asp:TableCell>
+                   </asp:TableRow>
+               </asp:Table>         
            </div>
            <div>
-               <table>
-                   <tr>
-                       <td>
+               <asp:Table id="Table1" class="tabla1" runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
                            <input type ="button" name ="btn_guardar_reversa" value ="Guardar Reversa/Ajuste Remesa"/>
-                       </td>
-                       <td>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
                            <input type ="button" name ="btn_reversar_otra_remesa" value ="Reversar Otra Remesa"/>
-                       </td>
-                   </tr>
-               </table>
+                       </asp:TableCell>
+                   </asp:TableRow>
+               </asp:Table>
            </div>
-       </form>
-   </body>
-</html>
+</asp:Content>
