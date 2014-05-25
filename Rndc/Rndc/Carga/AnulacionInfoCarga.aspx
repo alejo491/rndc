@@ -28,7 +28,7 @@
            </div>
 
            <div>
-               <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:Table id="Table2" class="tabla2" runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
                            <label>Informacion de Carga </label>
@@ -91,7 +91,7 @@
                </asp:Table>
            </div>
            <div>
-               <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:Table id="Table3" class="tabla3" runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
                            <input type ="button" name ="btn_guardar_anulacion" value ="Guardar Anulacion Informacion de Carga"/>
