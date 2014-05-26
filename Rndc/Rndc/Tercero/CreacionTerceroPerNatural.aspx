@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <body>
-   <form>
+    <form id="form1" runat="server">
 
        <div>
            <table>
@@ -19,13 +19,13 @@
                        <label>NIT:</label>
                    </td>
                    <td>
-                       <input name="txt_nit" type="text" />
+                       <asp:TextBox ID="IdNit" runat="server"></asp:TextBox>
                    </td>
                    <td>
                        <label>USUARIO:</label>
                    </td>
                    <td>
-                       <input name="txt_usuario" type="text" />
+                       <asp:TextBox ID="IdUsuario" runat="server"></asp:TextBox>
                    </td>
                </tr>
 
@@ -50,7 +50,7 @@
                        <label>Número de Identificación</label>
                    </td>
                    <td>
-                       <input type="text" name="numId" />
+                       <asp:TextBox ID="IdNumIde" runat="server"></asp:TextBox>
                    </td>
 </tr>
 </table>
@@ -60,7 +60,7 @@
                        <label>Nombre</label>
                    </td>
                    <td>
-                       <input type="text" id="nombre" />
+                       <asp:TextBox ID="IdNombre" runat="server"></asp:TextBox>
                    </td>
                </tr>
            </table>
@@ -70,13 +70,13 @@
                        <label>Primer Apellido</label>
                    </td>
                    <td>
-                       <input type="text" id="primerApellido" />
+                       <asp:TextBox ID="IdPriApe" runat="server"></asp:TextBox>
                    </td>
 <td>
                        <label>Segundo Apellido</label>
                    </td>
                    <td>
-                       <input type="text" id="segundoApellido" />
+                       <asp:TextBox ID="IdSegApe" runat="server"></asp:TextBox>
                    </td>
                </tr>
            </table>
@@ -93,13 +93,13 @@
                        <label>Telefono</label>
                    </td>
                    <td>
-                       <input type="text" name="telefono" />
+                       <asp:TextBox ID="IdTel" runat="server"></asp:TextBox>
                    </td>
                    <td>
                        <label>Celular</label>
                    </td>
                    <td>
-                       <input type="text" name="celular" />
+                       <asp:TextBox ID="IdCel" runat="server"></asp:TextBox>
                    </td>
 </tr>
            </table>
@@ -109,7 +109,7 @@
                        <label>Direccion</label>
                    </td>
                    <td>
-                       <input type="text" name="direccion" />
+                       <asp:TextBox ID="IdDir" runat="server"></asp:TextBox>
                    </td>
                </tr>
            </table>
@@ -119,7 +119,7 @@
                        <label>Municipio</label>
                    </td>
                    <td>
-                       <input type="text" name="municipio" />
+                       <asp:TextBox ID="IdMpio" runat="server"></asp:TextBox>
                    </td>
                </tr>
            </table>
@@ -141,14 +141,14 @@
                        <label>Licencia</label>
                    </td>
                    <td>
-                       <input type="text" name="licencia" />
+                       <asp:TextBox ID="IdLice" runat="server"></asp:TextBox>
                    </td>
 
                    <td>
                        <label>Fecha Vencimiento</label>
                    </td>
                    <td>
-                       <input type="date" name="fechaVencimiento" />
+                       <asp:TextBox ID="IdFecVen" runat="server"></asp:TextBox>
                    </td>
                </tr>
            </table>
@@ -157,6 +157,9 @@
        
 
        
-   </form>
+        <p>
+            <asp:Button ID="BtnAnulCarga" runat="server" OnClick="Button1_Click" Text="Guardar" />
+        </p>
+    </form>
 </body>
 </html>
