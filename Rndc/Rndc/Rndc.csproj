@@ -44,7 +44,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
@@ -108,6 +110,23 @@
     <Content Include="Manifiesto\CumplirManCarga.aspx" />
     <Content Include="Manifiesto\ExpedirManTerCarga.aspx" />
     <Content Include="packages.config" />
+    <EntityDeploy Include="Modelo\RndcModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RndcModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Modelo\RndcModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RndcModel.edmx</DependentUpon>
+      <LastGenOutput>RndcModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Modelo\RndcModel.edmx.diagram">
+      <DependentUpon>RndcModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Modelo\RndcModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RndcModel.edmx</DependentUpon>
+      <LastGenOutput>RndcModel.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Remesa\AnulacionRemTerCarga.aspx" />
     <Content Include="Remesa\CumplirRemTerCarga.aspx" />
@@ -172,6 +191,135 @@
     </Compile>
     <Compile Include="Manifiesto\ExpedirManTerCarga.aspx.designer.cs">
       <DependentUpon>ExpedirManTerCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\BaseDeCliente.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\BaseDeRemolque.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\BaseDeVehiculo.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleDeRuta.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleDeRutasSeguimiento.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\DetalleOrdenDeCargueTemporal.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElDestino.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElEmpaque.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElFactorDeCarga.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElManifiestoDeCarga.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElOrigen.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElTipoDeEmpresa.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ElTipoDeVehiculo.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaCategoriaPorPeso.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaMarca.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaNaturalezaDeLaMercancia.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaRemesaTerrestreDeCarga.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaRotacionRemolque.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LasAseguradora.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaSolicitudParaSeguimiento.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LasRutasNueva.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LasRutasParaSeguimiento.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LasZonasDeRuta.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaUbicacionDelCliente.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LaUnidadDeMedidaCarga.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosConductore.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosConductoresTercerizado.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosEstadosDeSolicitudSeguimiento.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosMotivosParaSeguimiento.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosMotore.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosTiposDeActividade.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosTiposDeDiferenciale.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosTiposDeEje.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosTiposDeSuspension.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosTiposDeTransmision.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\LosVehiculosTercerizado.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ProductoCliente.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\ProgramacionParaSeguimiento.cs">
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RndcModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RndcModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RndcModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RndcModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\RndcModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RndcModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Remesa\AnulacionRemTerCarga.aspx.cs">
@@ -255,6 +403,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReferenceRNDC\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
