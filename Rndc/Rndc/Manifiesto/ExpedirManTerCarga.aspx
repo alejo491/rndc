@@ -5,25 +5,25 @@
            <asp:Table id="Table1" class="tabla1" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
-                       <label>EMPRESA:</label>
+                       <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <input name="txt_empresa" type="text" />
+                       <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <label>NIT:</label>
+                       <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <input name="txt_nit" type="text" />
+                       <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <label>USUARIO:</label>
+                       <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <input name="txt_usuario" type="text" />
+                       <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <label>CONSECUTIVO:</label>
+                       <asp:Label ID="Label8" runat="server" Text="CONSECUTIVO:"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <input name="txt_consecutivo" type="text" />
@@ -61,7 +61,7 @@
 
        <div>
            <h3>Caracteristicas generales</h3>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table2" class="tabla2" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <label>Tipo Manifiesto</label>
@@ -98,7 +98,7 @@
 
        <div>
            <h3>Titular Manifiesto</h3>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table3" class="tabla3" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <label>Tipo identificación</label>
@@ -147,7 +147,7 @@
 
        <div>
            <h3>Vehiculo</h3>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table4" class="tabla4" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <label>Placa Vehiculo</label>
@@ -277,7 +277,7 @@
 
        <div>
            <h3>Conductor</h3>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table5" class="tabla5" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <label>Tipo identificación</label>
@@ -346,7 +346,7 @@
 
        <div>
            <h3>Valor del Viaje</h3>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table6" class="tabla6" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <label>Valor a pagar por el viaje</label>
@@ -449,7 +449,7 @@
 
        <div>
            <h3>Remesas</h3>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table7" class="tabla7" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <select id="slt_remesas">
@@ -468,7 +468,7 @@
        </div>
 
        <div>
-           <asp:Table id="Table1" class="tabla1" runat="server">
+           <asp:Table id="Table8" class="tabla8" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <h3>aqui un grid view!!!</h3>

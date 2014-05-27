@@ -7,22 +7,22 @@
                <asp:Table id="Table1" class="tabla1" runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>EMPRESA:</label>
+                           <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_empresa" type="text" />
+                           <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <label>NIT:</label>
+                           <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_nit" type="text" />
+                           <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <label>USUARIO:</label>
+                           <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_usuario" type="text" />
+                           <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
                        </asp:TableCell>
                    </asp:TableRow>
 
