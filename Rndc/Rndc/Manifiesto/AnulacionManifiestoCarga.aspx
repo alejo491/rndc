@@ -5,22 +5,22 @@
        <asp:Table id="Table1" class="tabla1" runat="server">
            <asp:TableRow runat="server">
                <asp:TableCell runat="server">
-                   <label>EMPRESA:</label>
+                   <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <input name="txt_empresa" type="text" />
+                   <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <label>NIT:</label>
+                   <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <input name="txt_nit" type="text" />
+                   <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <label>USUARIO:</label>
+                   <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <input name="txt_usuario" type="text" />
+                   <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
                </asp:TableCell>
            </asp:TableRow>
 
@@ -28,10 +28,10 @@
    </div>
    <h3> Operacion a realizar</h3>
    <div>
-       <asp:Table id="Table2" class="tabla1" runat="server">
+       <asp:Table id="Table2" class="tabla2" runat="server">
            <asp:TableRow runat="server">
                <asp:TableCell runat="server">
-                   <label>Manifiesto de Carga</label>
+                   <asp:Label ID="Label1" runat="server" Text="Manifiesto de Carga"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
                    <select id="slt_manifiesto_de_carga">
@@ -42,28 +42,28 @@
            </asp:TableRow>
            <asp:TableRow runat="server">
                <asp:TableCell runat="server">
-                   <label>Nombre Conductor</label>
+                   <asp:Label ID="Label2" runat="server" Text="Nombre Conductor"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <input name="txt_nombre_conductor" type="text" />
+                   <asp:TextBox ID="txt_nombre_conductor" runat="server"></asp:TextBox>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <label>Placa</label>
+                   <asp:Label ID="Label3" runat="server" Text="Placa"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <input name="txt_placa" type="text" />
+                   <asp:TextBox ID="txt_placa" runat="server"></asp:TextBox>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <label>Fecha Registro</label>
+                   <asp:Label ID="Label4" runat="server" Text="Fecha Registro"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
-                   <input name="txt_usuario" type="date" />
+                   <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
                </asp:TableCell>
 
            </asp:TableRow>
            <asp:TableRow runat="server">
                <asp:TableCell runat="server">
-                   <label>Motivo Anulacion</label>
+                   <asp:Label ID="Label5" runat="server" Text="Motivo Anulacion"></asp:Label>
                </asp:TableCell>
                <asp:TableCell runat="server">
                    <select id="slt_motivo_anulacion">
@@ -75,22 +75,22 @@
            </asp:TableRow>
            <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Observaciones</label>
+                           <asp:Label ID="Label6" runat="server" Text="Observaciones"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_observaciones" type="text" />
+                           <asp:TextBox ID="txt_observaciones" runat="server"></asp:TextBox>
                        </asp:TableCell>
             </asp:TableRow>
        </asp:Table>
    </div>
    <div>
-               <asp:Table id="Table3" class="tabla1" runat="server">
+               <asp:Table id="Table3" class="tabla3" runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <input type ="button" name ="btn_guardar_anulacion_manifiesto" value ="Guardar Anulacion Manifiesto"/>
+                           <asp:Button ID="btn_guardar_anulacion_manifiesto" runat="server" Text="Guardar Anulacion Manifiesto" OnClick="btn_guardar_anulacion_manifiesto_Click" />
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input type ="button" name ="btn_anular_otro_manifiesto" value ="Anular Otro Manifiesto"/>
+                           <asp:Button ID="btn_anular_otro_manifiesto" runat="server" Text="Anular Otro Manifiesto" OnClick="btn_anular_otro_manifiesto_Click" />                    
                        </asp:TableCell>
                    </asp:TableRow>
                </asp:Table>
