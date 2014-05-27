@@ -52,7 +52,8 @@
         </asp:Table>
     </div>
     <div>
-        <h3>Producto</h3>
+        <h3>
+            <asp:Label ID="Label40" runat="server" Text="Producto"></asp:Label></h3>
         <asp:Table ID="Table3" class="tabla3" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -127,7 +128,8 @@
     <div>
         <div>
             <div id="remitenteIzquierdo">
-                <h3>Remitente: Sitio de Cargue</h3>
+                <h3>
+                    <asp:Label ID="Label41" runat="server" Text="Remitente: Sitio de Cargue"></asp:Label></h3>
                 <asp:Table ID="Table4" class="tabla4" runat="server">
                     <asp:TableRow runat="server">
                         <asp:TableCell runat="server">
@@ -231,7 +233,8 @@
             </div>
 
             <div id="destinatarioDerecho">
-                <h3>Destinatario: Sitio de Descargue</h3>
+                <h3>
+                    <asp:Label ID="Label42" runat="server" Text="Destinatario: Sitio de Descargue"></asp:Label></h3>
                 <asp:Table ID="Table5" class="tabla5" runat="server">
                     <asp:TableRow runat="server">
                         <asp:TableCell runat="server">
@@ -322,7 +325,7 @@
                             <asp:Label ID="Label37" runat="server" Text="Fecha Cita"></asp:Label>
                         </asp:TableCell>
                         <asp:TableCell runat="server">
-                               <input type="date" name="txt_fec_cita2" />
+                            <asp:TextBox ID="txt_fec_cita2" runat="server"></asp:TextBox>
                         </asp:TableCell>
                         <asp:TableCell runat="server">
                             <asp:Label ID="Label38" runat="server" Text="Hora"></asp:Label>

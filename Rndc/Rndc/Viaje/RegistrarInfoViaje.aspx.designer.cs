@@ -94,6 +94,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.TextBox txt_consecutivo;
         
         /// <summary>
+        /// Control Label6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
         /// Control Table2.
         /// </summary>
         /// <remarks>
@@ -256,6 +265,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.TextBox txt_num_licencia_cond;
         
         /// <summary>
+        /// Control Label33.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label33;
+        
+        /// <summary>
         /// Control Table3.
         /// </summary>
         /// <remarks>
@@ -310,13 +328,13 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label15;
         
         /// <summary>
-        /// Control TextBox14.
+        /// Control txt_modelo1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox14;
+        protected global::System.Web.UI.WebControls.TextBox txt_modelo1;
         
         /// <summary>
         /// Control Label16.
@@ -463,6 +481,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.TextBox txt_config_result;
         
         /// <summary>
+        /// Control Label34.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label34;
+        
+        /// <summary>
         /// Control Table4.
         /// </summary>
         /// <remarks>
@@ -506,6 +533,15 @@ namespace Rndc.Viaje {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_destino;
+        
+        /// <summary>
+        /// Control Label35.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label35;
         
         /// <summary>
         /// Control Table5.
