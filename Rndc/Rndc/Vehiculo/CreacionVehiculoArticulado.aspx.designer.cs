@@ -85,6 +85,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.TextBox txt_usuario;
         
         /// <summary>
+        /// Control Label11.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label11;
+        
+        /// <summary>
         /// Control Table2.
         /// </summary>
         /// <remarks>
@@ -256,6 +265,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label13;
         
         /// <summary>
+        /// Control Label23.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label23;
+        
+        /// <summary>
         /// Control Table3.
         /// </summary>
         /// <remarks>
@@ -310,6 +328,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label16;
         
         /// <summary>
+        /// Control Label24.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label24;
+        
+        /// <summary>
         /// Control Table4.
         /// </summary>
         /// <remarks>
@@ -362,6 +389,15 @@ namespace Rndc.Viaje {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_nombre_propi;
+        
+        /// <summary>
+        /// Control Label25.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label25;
         
         /// <summary>
         /// Control Table5.
