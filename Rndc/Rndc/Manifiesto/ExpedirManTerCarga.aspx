@@ -297,7 +297,7 @@
                        </select>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:Label ID="Número identificación" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label101" runat="server" Text="Número identificación"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:TextBox ID="txt_num_identi_cond" runat="server"></asp:TextBox>

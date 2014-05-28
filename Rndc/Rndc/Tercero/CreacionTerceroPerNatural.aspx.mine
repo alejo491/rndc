@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreacionTerceroPerJuridica.aspx.cs" Inherits="Rndc.Tercero.CreacionTerceroPerJuridica" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreacionTerceroPerNatural.aspx.cs" Inherits="Rndc.Tercero.CreacionTerceroPerNatural" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -41,8 +41,8 @@
                        <label>Tipo de Identificación</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="tipoDoc" readonly>
-                           <option>Nit</option>
+                       <select id="tipoDoc">
+                           <option></option>
                            <!--llenar los datos del tipo de los documentos-->
                        </select>
                    </asp:TableCell>
@@ -64,7 +64,22 @@
                    </asp:TableCell>
                </asp:TableRow>
            </asp:Table>
-
+<asp:Table id="Table1" class="tabla1" runat="server">
+<asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Primer Apellido</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" id="primerApellido" />
+                   </asp:TableCell>
+<asp:TableCell runat="server">
+                       <label>Segundo Apellido</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" id="segundoApellido" />
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
 
@@ -72,22 +87,6 @@
 
        <h3>DATOS OBLIGATORIOS DE UBICACION</h3>
        <div>
-<asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <label>Sede</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="sede" />
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <label>Nombre Sede</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="nombreSede" />
-                   </asp:TableCell>
-</asp:TableRow>
-           </asp:Table>
            <asp:Table id="Table1" class="tabla1" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
@@ -125,7 +124,36 @@
                </asp:TableRow>
            </asp:Table>
        </div>
+<h3>DATOS OBLIGATORIOS PARA CONDUCTOR</h3>
+       <div>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Categoria</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <select id="categoria">
+                           <option></option>
+                           <!--llenar los datos del tipo de los documentos-->
+                       </select>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Licencia</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="licencia" />
+                   </asp:TableCell>
 
+                   <asp:TableCell runat="server">
+                       <label>Fecha Vencimiento</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="date" name="fechaVencimiento" />
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+
+       </div>
        
 
        

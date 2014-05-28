@@ -105,8 +105,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Carga\AnulacionInfoCarga.aspx" />
-    <Content Include="Carga\AnulacionManiCarga.aspx" />
     <Content Include="Carga\RegistrarInfoCarga.aspx" />
+    <Content Include="Manifiesto\AnulacionManifiestoCarga.aspx" />
     <Content Include="Manifiesto\CumplirManCarga.aspx" />
     <Content Include="Manifiesto\ExpedirManTerCarga.aspx" />
     <Content Include="packages.config" />
@@ -148,25 +148,19 @@
     <Content Include="Tercero\CreacionTerceroPerNatural.aspx" />
     <Content Include="Vehiculo\CreacionVehiculoArticulado.aspx" />
     <Content Include="Vehiculo\CreacionVehiculoRigido.aspx" />
+    <Content Include="Viaje\AnulacionInfoViaje.aspx" />
     <Content Include="Viaje\RegistrarInfoViaje.aspx" />
     <Content Include="Web.config" />
     <Content Include="Service References\ServiceReferenceRNDC\IBPMServicesservice.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Manifiesto\App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="Carga\AnulacionInfoCarga.aspx.cs">
       <DependentUpon>AnulacionInfoCarga.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Carga\AnulacionInfoCarga.aspx.designer.cs">
       <DependentUpon>AnulacionInfoCarga.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Carga\AnulacionManiCarga.aspx.cs">
-      <DependentUpon>AnulacionManiCarga.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Carga\AnulacionManiCarga.aspx.designer.cs">
-      <DependentUpon>AnulacionManiCarga.aspx</DependentUpon>
     </Compile>
     <Compile Include="Carga\RegistrarInfoCarga.aspx.cs">
       <DependentUpon>RegistrarInfoCarga.aspx</DependentUpon>
@@ -177,6 +171,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Manifiesto\AnulacionManifiestoCarga.aspx.cs">
+      <DependentUpon>AnulacionManifiestoCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manifiesto\AnulacionManifiestoCarga.aspx.designer.cs">
+      <DependentUpon>AnulacionManifiestoCarga.aspx</DependentUpon>
     </Compile>
     <Compile Include="Manifiesto\CumplirManCarga.aspx.cs">
       <DependentUpon>CumplirManCarga.aspx</DependentUpon>
@@ -377,6 +378,13 @@
     <Compile Include="Vehiculo\CreacionVehiculoRigido.aspx.designer.cs">
       <DependentUpon>CreacionVehiculoRigido.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Viaje\AnulacionInfoViaje.aspx.cs">
+      <DependentUpon>AnulacionInfoViaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Viaje\AnulacionInfoViaje.aspx.designer.cs">
+      <DependentUpon>AnulacionInfoViaje.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Viaje\RegistrarInfoViaje.aspx.cs">
       <DependentUpon>RegistrarInfoViaje.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -391,6 +399,8 @@
     <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Tercero\CreacionTerceroPerNatural.aspx.mine" />
+    <Content Include="Tercero\CreacionTerceroPerNatural.aspx.r7" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
