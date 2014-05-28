@@ -715,13 +715,13 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.Label Label33;
         
         /// <summary>
-        /// Control Número identificación.
+        /// Control Label101.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Número identificación;
+        protected global::System.Web.UI.WebControls.Label Label101;
         
         /// <summary>
         /// Control txt_num_identi_cond.

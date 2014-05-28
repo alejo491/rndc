@@ -7,13 +7,29 @@
     <form id="form1" runat="server">
 
        <div>
-           <table>
-               <tr>
-                   <td>
-                       <label>EMPRESA:</label>
-                   </td>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select 
+<<<<<<< .mine
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+               </asp:TableRow>
+=======
                    </td>
                    <td>
                        <label>NIT:</label>
@@ -28,58 +44,59 @@
                        <asp:TextBox ID="IdUsuario" runat="server"></asp:TextBox>
                    </td>
                </tr>
+>>>>>>> .r17
 
-           </table>
+           </asp:Table>
        </div>
 
 
 <h3>DATOS GENERALES</h3>
        <div>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Tipo de Identificación</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="tipoDoc">
                            <option></option>
                            <!--llenar los datos del tipo de los documentos-->
                        </select>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Número de Identificación</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdNumIde" runat="server"></asp:TextBox>
-                   </td>
-</tr>
-</table>
-<table>
-<tr>
-                   <td>
+                   </asp:TableCell>
+</asp:TableRow>
+</asp:Table>
+<asp:Table id="Table1" class="tabla1" runat="server">
+<asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Nombre</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdNombre" runat="server"></asp:TextBox>
-                   </td>
-               </tr>
-           </table>
-<table>
-<tr>
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+<asp:Table id="Table1" class="tabla1" runat="server">
+<asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Primer Apellido</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdPriApe" runat="server"></asp:TextBox>
-                   </td>
-<td>
+                   </asp:TableCell>
+<asp:TableCell runat="server">
                        <label>Segundo Apellido</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdSegApe" runat="server"></asp:TextBox>
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 
 
@@ -87,71 +104,71 @@
 
        <h3>DATOS OBLIGATORIOS DE UBICACION</h3>
        <div>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Telefono</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdTel" runat="server"></asp:TextBox>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Celular</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdCel" runat="server"></asp:TextBox>
-                   </td>
-</tr>
-           </table>
-<table>
-               <tr>	
-                   <td>
+                   </asp:TableCell>
+</asp:TableRow>
+           </asp:Table>
+<asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">	
+                   <asp:TableCell runat="server">
                        <label>Direccion</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdDir" runat="server"></asp:TextBox>
-                   </td>
-               </tr>
-           </table>
-<table>
-               <tr>	
-                   <td>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+<asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">	
+                   <asp:TableCell runat="server">
                        <label>Municipio</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdMpio" runat="server"></asp:TextBox>
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
        </div>
 <h3>DATOS OBLIGATORIOS PARA CONDUCTOR</h3>
        <div>
-           <table>
-               <tr>
-                   <td>
+           <asp:Table id="Table1" class="tabla1" runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
                        <label>Categoria</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="categoria">
                            <option></option>
                            <!--llenar los datos del tipo de los documentos-->
                        </select>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <label>Licencia</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdLice" runat="server"></asp:TextBox>
-                   </td>
+                   </asp:TableCell>
 
-                   <td>
+                   <asp:TableCell runat="server">
                        <label>Fecha Vencimiento</label>
-                   </td>
-                   <td>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <asp:TextBox ID="IdFecVen" runat="server"></asp:TextBox>
-                   </td>
-               </tr>
-           </table>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
 
        </div>
        
