@@ -349,6 +349,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Servicios\ServicioDBRndc.cs" />
     <Compile Include="Servicios\ServicioWebRndc.cs" />
     <Compile Include="Tercero\CreacionTerceroPerJuridica.aspx.cs">
       <DependentUpon>CreacionTerceroPerJuridica.aspx</DependentUpon>
@@ -399,8 +400,6 @@
     <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Tercero\CreacionTerceroPerNatural.aspx.mine" />
-    <Content Include="Tercero\CreacionTerceroPerNatural.aspx.r7" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

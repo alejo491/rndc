@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Data;
 using System.Security;
 using Rndc.ServiceReferenceRNDC;
@@ -7,6 +8,7 @@ namespace Rndc.Servicios
 {
     public static class ServicioWebRndc
     {
+        
 
         //Creacion de los tipos de vehiculos
         public static string CreacionVehiculoRigido(
