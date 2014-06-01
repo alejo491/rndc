@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AnulacionInfoCarga.aspx.cs" Inherits="Rndc.Carga.AnulacionInfoCarga" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="AnulacionInfoCarga.aspx.cs" Inherits="Rndc.Carga.AnulacionInfoCarga" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div>
@@ -72,10 +72,7 @@
                     <asp:Label ID="Label2" runat="server" Text="Motivo Anulacion"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                           <select id="slt_motivo_anulacion">
-                               <option></option>
-                               <!-- faltan las opciones-->
-                           </select>
+                    <asp:DropDownList ID="slt_motivo" runat="server"></asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">

@@ -31,13 +31,13 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// Control txt_empresa.
+        /// Control NomEmpresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_empresa;
+        protected global::System.Web.UI.WebControls.TextBox NomEmpresa;
         
         /// <summary>
         /// Control Label9.
@@ -49,13 +49,13 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// Control txt_nit.
+        /// Control IdNit.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_nit;
+        protected global::System.Web.UI.WebControls.TextBox IdNit;
         
         /// <summary>
         /// Control Label8.
@@ -67,13 +67,13 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control txt_usuario.
+        /// Control IdUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_usuario;
+        protected global::System.Web.UI.WebControls.TextBox IdUsuario;
         
         /// <summary>
         /// Control Table2.
@@ -101,15 +101,6 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// Control Label40.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label40;
         
         /// <summary>
         /// Control Table3.
@@ -218,15 +209,6 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_peso_cont_vacio;
-        
-        /// <summary>
-        /// Control Label41.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label41;
         
         /// <summary>
         /// Control Table4.
@@ -436,15 +418,6 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.TextBox txt_hora1;
         
         /// <summary>
-        /// Control Label42.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label42;
-        
-        /// <summary>
         /// Control Table5.
         /// </summary>
         /// <remarks>
@@ -623,15 +596,6 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label37;
-        
-        /// <summary>
-        /// Control txt_fec_cita2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_fec_cita2;
         
         /// <summary>
         /// Control Label38.

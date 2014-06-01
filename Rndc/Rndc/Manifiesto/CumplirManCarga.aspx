@@ -33,10 +33,7 @@
                        <label>Manifiesto de Carga</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_manifiesto_carga">
-                           <option></option>
-                           <!--se ponen los manifiesto de carga-->
-                       </select>
+                       <asp:DropDownList ID="NumMan" runat="server"></asp:DropDownList>
                    </asp:TableCell>
                </asp:TableRow>
                <asp:TableRow runat="server">
@@ -106,10 +103,7 @@
                        <label>Tipo Cumplido/Cierre</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_tipo_cumplido">
-                           <option></option>
-                           <!--se llena con los tipode cumplido-->
-                       </select>
+                       <asp:DropDownList ID="TipoCumplido" runat="server"></asp:DropDownList>
                    </asp:TableCell>
                </asp:TableRow>
            </asp:Table>
@@ -133,8 +127,8 @@
                            <label>Valor adicional Tiempo Cargue</label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
-                           <input type="text" name="txt_valor_adicional_cargue" />
+                           <asp:TextBox ID="txt_valor_adicional_cargue" runat="server"></asp:TextBox>
+                           
                        </asp:TableCell>
                    </asp:TableRow>
                    <asp:TableRow runat="server">
@@ -315,8 +309,8 @@
                            <label>Fecha Entrega Documentos</label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <asp:TextBox ID="TextBox28" runat="server"></asp:TextBox>
-                           <input type="date" name="txt_fec_entrega_doc" />
+                           <asp:TextBox ID="TxtFecEntrega" runat="server"></asp:TextBox>
+                        
                        </asp:TableCell>
                    </asp:TableRow>
                    <asp:TableRow runat="server">
@@ -361,7 +355,6 @@
                </asp:TableRow>
            </asp:Table>
        </div>
-
-       <input type="button" value="Guardar Cumplido Manifiesto" />
+    <asp:Button ID="BtnGuaradar" runat="server" Text="Guardar Cumplido Manifiesto" OnClick="BtnGuaradar_Click"/>
 
 </asp:Content>
