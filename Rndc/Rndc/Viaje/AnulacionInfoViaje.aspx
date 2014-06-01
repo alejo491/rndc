@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AnulacionInfoViaje.aspx.cs" Inherits="Rndc.Viaje.AnulacionInfoViaje" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="AnulacionInfoViaje.aspx.cs" Inherits="Rndc.Viaje.AnulacionInfoViaje" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div>
@@ -36,9 +36,9 @@
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <select id="slt_info_viaje">
-                        <option></option>
-                        <!--llenar la informacion del viaje-->
-                    </select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--llenar la informacion del viaje-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -69,9 +69,9 @@
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <select id="slt_mot_anu">
-                        <option></option>
-                        <!--llenar motivo anulacion-->
-                    </select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--llenar motivo anulacion-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -85,7 +85,7 @@
             <asp:TableRow runat="server"></asp:TableRow>
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
-                    <asp:Button ID="Button1" runat="server" Text="Guardar anulacion viaje" />
+                    <asp:Button ID="BtnAnularViaje" runat="server" Text="Guardar anulacion viaje" OnClick="BtnAnularViaje_Click" />
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Button ID="Button2" runat="server" Text="Anular otro viaje" />

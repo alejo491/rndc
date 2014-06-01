@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Rndc.Servicios;
 
 namespace Rndc.Viaje
 {
@@ -12,6 +13,16 @@ namespace Rndc.Viaje
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnAnularViaje_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

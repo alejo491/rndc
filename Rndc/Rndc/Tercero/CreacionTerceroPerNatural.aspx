@@ -44,18 +44,19 @@
                        <label>Tipo de Identificación</label>
                    </td>
                    <td>
-                       <select id="tipoDoc">
-                           <option></option>
-                           <!--llenar los datos del tipo de los documentos-->
-                       </select>
+                       <asp:DropDownList ID="TipoId" runat="server"></asp:DropDownList>
                    </td>
                    <td>
                        <label>Número de Identificación</label>
                    </td>
                    <td>
+<<<<<<< .mine
+                       <asp:TextBox ID="NumIde" runat="server"></asp:TextBox>
+=======
 
 
                        <asp:TextBox ID="IdNumIde" runat="server"></asp:TextBox>
+>>>>>>> .r22
 
                    </td>
 </tr>

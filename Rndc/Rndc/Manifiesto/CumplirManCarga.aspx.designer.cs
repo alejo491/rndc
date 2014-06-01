@@ -67,6 +67,15 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.TextBox txt_usuario;
         
         /// <summary>
+        /// Control NumMan.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList NumMan;
+        
+        /// <summary>
         /// Control TextBox4.
         /// </summary>
         /// <remarks>
@@ -130,6 +139,15 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.TextBox TextBox7;
         
         /// <summary>
+        /// Control TipoCumplido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList TipoCumplido;
+        
+        /// <summary>
         /// Control TextBox8.
         /// </summary>
         /// <remarks>
@@ -139,13 +157,13 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.TextBox TextBox8;
         
         /// <summary>
-        /// Control TextBox9.
+        /// Control txt_valor_adicional_cargue.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+        protected global::System.Web.UI.WebControls.TextBox txt_valor_adicional_cargue;
         
         /// <summary>
         /// Control TextBox10.
@@ -310,13 +328,13 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.TextBox TextBox27;
         
         /// <summary>
-        /// Control TextBox28.
+        /// Control TxtFecEntrega.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox28;
+        protected global::System.Web.UI.WebControls.TextBox TxtFecEntrega;
         
         /// <summary>
         /// Control TextBox29.
@@ -344,5 +362,14 @@ namespace Rndc.Manifiesto {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox31;
+        
+        /// <summary>
+        /// Control BtnGuaradar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnGuaradar;
     }
 }

@@ -1,4 +1,8 @@
+<<<<<<< .mine
+﻿<%@ Page Language="C#"AutoEventWireup="true" CodeBehind="CreacionVehiculoArticulado.aspx.cs" Inherits="Rndc.Viaje.CreacionVehiculoArticulado" %>
+=======
 ﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="CreacionVehiculoArticulado.aspx.cs" Inherits="Rndc.Viaje.CreacionVehiculoArticulado" %>
+>>>>>>> .r22
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistrarInfoCarga.aspx.cs" Inherits="Rndc.Carga.RegistrarInfoCarga" %>
+﻿<%@ Page Language="C#"  AutoEventWireup="true" CodeBehind="RegistrarInfoCarga.aspx.cs" Inherits="Rndc.Carga.RegistrarInfoCarga" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
     <div>
         <asp:Table ID="Table1" class="tabla1" runat="server">
             <asp:TableRow runat="server">
@@ -8,19 +8,19 @@
                     <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="NomEmpresa" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="IdNit" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="IdUsuario" runat="server"></asp:TextBox>
                 </asp:TableCell>
             </asp:TableRow>
 
@@ -52,8 +52,7 @@
         </asp:Table>
     </div>
     <div>
-        <h3>
-            <asp:Label ID="Label40" runat="server" Text="Producto"></asp:Label></h3>
+        <h3>Producto</h3>
         <asp:Table ID="Table3" class="tabla3" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -128,8 +127,7 @@
     <div>
         <div>
             <div id="remitenteIzquierdo">
-                <h3>
-                    <asp:Label ID="Label41" runat="server" Text="Remitente: Sitio de Cargue"></asp:Label></h3>
+                <h3>Remitente: Sitio de Cargue</h3>
                 <asp:Table ID="Table4" class="tabla4" runat="server">
                     <asp:TableRow runat="server">
                         <asp:TableCell runat="server">
@@ -233,8 +231,7 @@
             </div>
 
             <div id="destinatarioDerecho">
-                <h3>
-                    <asp:Label ID="Label42" runat="server" Text="Destinatario: Sitio de Descargue"></asp:Label></h3>
+                <h3>Destinatario: Sitio de Descargue</h3>
                 <asp:Table ID="Table5" class="tabla5" runat="server">
                     <asp:TableRow runat="server">
                         <asp:TableCell runat="server">
@@ -325,7 +322,7 @@
                             <asp:Label ID="Label37" runat="server" Text="Fecha Cita"></asp:Label>
                         </asp:TableCell>
                         <asp:TableCell runat="server">
-                            <asp:TextBox ID="txt_fec_cita2" runat="server"></asp:TextBox>
+                               <input type="date" name="txt_fec_cita2" />
                         </asp:TableCell>
                         <asp:TableCell runat="server">
                             <asp:Label ID="Label38" runat="server" Text="Hora"></asp:Label>
@@ -351,4 +348,4 @@
         </asp:Table>
     </div>
     <asp:Button ID="btn_guardar_informacion" runat="server" Text="Guardar Información de la Carga" OnClick="btn_guardar_informacion_Click" />
-</asp:Content>
+
