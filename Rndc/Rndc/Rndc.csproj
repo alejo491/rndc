@@ -106,7 +106,7 @@
   <ItemGroup>
     <Content Include="Carga\AnulacionInfoCarga.aspx" />
     <Content Include="Carga\RegistrarInfoCarga.aspx" />
-    <Content Include="Manifiesto\AnulacionManifiestoCarga.aspx" />
+    <Content Include="Content\WinterCSS.css" />
     <Content Include="Manifiesto\CumplirManCarga.aspx" />
     <Content Include="Manifiesto\ExpedirManTerCarga.aspx" />
     <Content Include="packages.config" />
@@ -127,12 +127,17 @@
       <DependentUpon>RndcModel.edmx</DependentUpon>
       <LastGenOutput>RndcModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Global.Master">
+      <BrowseToURL>~/Global.Master</BrowseToURL>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Remesa\AnulacionRemTerCarga.aspx" />
     <Content Include="Remesa\CumplirRemTerCarga.aspx" />
     <Content Include="Remesa\ExpedirRemTerCarga.aspx" />
+    <Content Include="Scripts\BlueBootStrap.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
@@ -154,6 +159,13 @@
     <Content Include="Service References\ServiceReferenceRNDC\IBPMServicesservice.wsdl" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.Master.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.Master.designer.cs">
+      <DependentUpon>Global.Master</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="Carga\AnulacionInfoCarga.aspx.cs">
       <DependentUpon>AnulacionInfoCarga.aspx</DependentUpon>
@@ -349,7 +361,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Servicios\ServicioDBRndc.cs" />
+    <Compile Include="Servicios\ServicioDbRndc.cs" />
     <Compile Include="Servicios\ServicioWebRndc.cs" />
     <Compile Include="Tercero\CreacionTerceroPerJuridica.aspx.cs">
       <DependentUpon>CreacionTerceroPerJuridica.aspx</DependentUpon>
@@ -397,7 +409,6 @@
   <ItemGroup>
     <Folder Include="Account\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Content\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

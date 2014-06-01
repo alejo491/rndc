@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CreacionVehiculoArticulado.aspx.cs" Inherits="Rndc.Viaje.CreacionVehiculoArticulado" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="CreacionVehiculoArticulado.aspx.cs" Inherits="Rndc.Viaje.CreacionVehiculoArticulado" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
@@ -29,10 +29,8 @@
         </asp:Table>
     </div>
 
+    <h3>Caracteristicas Generales del vehiculo</h3>
     <div>
-        <h3>
-            <asp:Label ID="Label11" runat="server" Text="Caracteristicas Generales del vehiculo"></asp:Label></h3>
-
         <asp:Table ID="Table2" class="tabla2" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -65,6 +63,7 @@
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label6" runat="server" Text="Marca"></asp:Label>
+                    <label>Marca</label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:TextBox ID="txt_marca" runat="server"></asp:TextBox>
@@ -96,6 +95,7 @@
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label10" runat="server" Text="Peso Vacio:"></asp:Label>
+                    <label>Peso Vacio:</label>
                     <!--validacion peso maximo-->
                 </asp:TableCell>
                 <asp:TableCell runat="server">
@@ -126,10 +126,8 @@
         </asp:Table>
     </div>
 
+    <h3>SOAT</h3>
     <div>
-        <h3>
-            <asp:Label ID="Label23" runat="server" Text="SOAT"></asp:Label></h3>
-
         <asp:Table ID="Table3" class="tabla3" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -157,10 +155,8 @@
         </asp:Table>
     </div>
 
+    <h3>PROPIETARIO</h3>
     <div>
-        <h3>
-            <asp:Label ID="Label24" runat="server" Text="PROPIETARIO"></asp:Label></h3>
-
         <asp:Table ID="Table4" class="tabla4" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -188,10 +184,8 @@
         </asp:Table>
     </div>
 
+    <h3>TENEDOR</h3>
     <div>
-        <h3>
-            <asp:Label ID="Label25" runat="server" Text="TENEDOR"></asp:Label></h3>
-
         <asp:Table ID="Table5" class="tabla5" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistrarInfoViaje.aspx.cs" Inherits="Rndc.Viaje.RegistrarInfoViaje" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="RegistrarInfoViaje.aspx.cs" Inherits="Rndc.Viaje.RegistrarInfoViaje" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -32,11 +32,8 @@
             </asp:TableRow>
         </asp:Table>
     </div>
-
+    <h3>Conductor</h3>
     <div>
-        <h3>
-            <asp:Label ID="Label6" runat="server" Text="Conductor"></asp:Label></h3>
-
         <asp:Table ID="Table2" class="tabla2" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -104,10 +101,8 @@
         </asp:Table>
     </div>
 
+    <h3>Vehiculo</h3>
     <div>
-        <h3>
-            <asp:Label ID="Label33" runat="server" Text="Vehiculo"></asp:Label></h3>
-
         <asp:Table ID="Table3" class="tabla3" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -126,7 +121,8 @@
                     <asp:Label ID="Label15" runat="server" Text="Modelo:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_modelo1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                    <input name="txt_modelo1" type="text" />
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label16" runat="server" Text="Configuracion:"></asp:Label>
@@ -199,9 +195,7 @@
     </div>
 
     <div>
-        <h3>
-            <asp:Label ID="Label34" runat="server" Text="Ruta"></asp:Label></h3>
-
+        <h3>Ruta</h3>
         <asp:Table ID="Table4" class="tabla4" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -221,8 +215,7 @@
     </div>
 
     <div>
-        <h3>
-            <asp:Label ID="Label35" runat="server" Text="LabeInformación preliminar de cargal"></asp:Label></h3>
+        <h3>Información preliminar de carga</h3>
         <asp:Table ID="Table5" class="tabla5" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -236,6 +229,7 @@
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" OnClick="Eliminar_Click" />
+                    <input type="button" name="btn_eliminar" value="Eliminar" />
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
@@ -310,6 +304,6 @@
         </div>
     </div>
 
-    <asp:Button ID="btn_guardar_viaje" runat="server" Text="Guardar Viaje" OnClick="guardar_viaje_Click" />
+    
 
 </asp:Content>
