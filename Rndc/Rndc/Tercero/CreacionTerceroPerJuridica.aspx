@@ -1,134 +1,127 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreacionTerceroPerJuridica.aspx.cs" Inherits="Rndc.Tercero.CreacionTerceroPerJuridica" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="CreacionTerceroPerJuridica.aspx.cs" Inherits="Rndc.Tercero.CreacionTerceroPerJuridica" %>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 
-<body>
-   <form>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<div>
+    <table>
+        <tr>
+            <td>
+                <label>EMPRESA:</label>
+            </td>
+            <td>
+                <select />
+            </td>
+            <td>
+                <label>NIT:</label>
+            </td>
+            <td>
+                <input name="txt_nit" type="text" />
+            </td>
+            <td>
+                <label>USUARIO:</label>
+            </td>
+            <td>
+                <input name="txt_usuario" type="text" />
+            </td>
+        </tr>
 
-       <div>
-           <asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <select 
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
-                   </asp:TableCell>
-               </asp:TableRow>
-
-           </asp:Table>
-       </div>
+    </table>
+</div>
 
 
 <h3>DATOS GENERALES</h3>
-       <div>
-           <asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <label>Tipo de Identificación</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <select id="tipoDoc" readonly>
-                           <option>Nit</option>
-                           <!--llenar los datos del tipo de los documentos-->
-                       </select>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <label>Número de Identificación</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="numId" />
-                   </asp:TableCell>
-</asp:TableRow>
-</asp:Table>
-<asp:Table id="Table1" class="tabla1" runat="server">
-<asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <label>Nombre</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" id="nombre" />
-                   </asp:TableCell>
-               </asp:TableRow>
-           </asp:Table>
+<div>
+    <table>
+        <tr>
+            <td>
+                <label>Tipo de Identificación</label>
+            </td>
+            <td>
+                <select id="tipoDoc" readonly>
+                    <option>Nit</option>
+                    <!--llenar los datos del tipo de los documentos-->
+                </select>
+            </td>
+            <td>
+                <label>Número de Identificación</label>
+            </td>
+            <td>
+                <input type="text" name="numId" />
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label>Nombre</label>
+            </td>
+            <td>
+                <asp:textbox id="IdNombre" runat="server"></asp:textbox>
+            </td>
+        </tr>
+    </table>
 
-       </div>
+</div>
 
 
-       
 
-       <h3>DATOS OBLIGATORIOS DE UBICACION</h3>
-       <div>
-<asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <label>Sede</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="sede" />
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <label>Nombre Sede</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="nombreSede" />
-                   </asp:TableCell>
-</asp:TableRow>
-           </asp:Table>
-           <asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <label>Telefono</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="telefono" />
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <label>Celular</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="celular" />
-                   </asp:TableCell>
-</asp:TableRow>
-           </asp:Table>
-<asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">	
-                   <asp:TableCell runat="server">
-                       <label>Direccion</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="direccion" />
-                   </asp:TableCell>
-               </asp:TableRow>
-           </asp:Table>
-<asp:Table id="Table1" class="tabla1" runat="server">
-               <asp:TableRow runat="server">	
-                   <asp:TableCell runat="server">
-                       <label>Municipio</label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <input type="text" name="municipio" />
-                   </asp:TableCell>
-               </asp:TableRow>
-           </asp:Table>
-       </div>
 
-       
+<h3>DATOS OBLIGATORIOS DE UBICACION</h3>
+<div>
+    <table>
+        <tr>
+            <td>
+                <label>Sede</label>
+            </td>
+            <td>
+                <asp:textbox id="IdSede" runat="server"></asp:textbox>
+            </td>
+            <td>
+                <label>Nombre Sede</label>
+            </td>
+            <td>
+                <asp:textbox id="IdNombreSede" runat="server"></asp:textbox>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label>Telefono</label>
+            </td>
+            <td>
+                <asp:textbox id="IdTel" runat="server"></asp:textbox>
+            </td>
+            <td>
+                <label>Celular</label>
+            </td>
+            <td>
+                <asp:textbox id="IdCel" runat="server"></asp:textbox>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label>Direccion</label>
+            </td>
+            <td>
+                <asp:textbox id="IdDir" runat="server"></asp:textbox>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <label>Municipio</label>
+            </td>
+            <td>
+                <asp:textbox id="IdMun" runat="server"></asp:textbox>
+            </td>
+        </tr>
+    </table>
+</div>
 
-       
-   </form>
-</body>
-</html>
+</asp:Content>
+
+

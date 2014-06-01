@@ -1,489 +1,480 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CumplirRemTerCarga.aspx.cs" Inherits="Rndc.Remesa.CumplirRemTerCarga" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="CumplirRemTerCarga.aspx.cs" Inherits="Rndc.Remesa.CumplirRemTerCarga" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div>
-        <asp:Table ID="Table1" class="tabla1" runat="server">
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Labe8" runat="server" Text="USUARIO:"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Labe9" runat="server" Text="CONSECUTIVO::"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_consecutivo" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-        </asp:Table>
-    </div>
+       <div>
+           <asp:Table runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label10" runat="server" Text="EMPRESA:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_empresa" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label9" runat="server" Text="NIT:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_nit" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="Label8" runat="server" Text="USUARIO:"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <asp:Label ID="LblConsecutivo" runat="server" Text="CONSECUTIVO::"></asp:Label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input name="txt_consecutivo" type="text" />
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+       </div>
 
-    <div>
-        <asp:Table ID="Table2" class="tabla2" runat="server">
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label1" runat="server" Text="viaje"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_viaje" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server"></asp:TableCell>
-                <asp:TableCell runat="server"></asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label2" runat="server" Text="Informacion de Carga Dividida"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_carga_dividida" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label3" runat="server" Text="Nombre Conductor"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_nombre_conductor" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label4" runat="server" Text="Manifiesto"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_manifiesto" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label5" runat="server" Text="Fecha Expedicion"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_fec_vencimiento" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label6" runat="server" Text="Tipo Operacion"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_tipo_operacion" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label7" runat="server" Text="Tipo Empaque"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_tipo_empaque" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label8" runat="server" Text="Naturaleza Carga"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_naturaleza_cargar" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label11" runat="server" Text="Descripcion Corta Producto"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_desc_producto" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label12" runat="server" Text="Codigo Producto"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_codigo_producto" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-        </asp:Table>
-    </div>
+       <div>
+           <asp:Table  runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>viaje</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_viaje" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server"></asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Informacion de Carga Dividida</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_carga_dividida" />
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Nombre Conductor</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_nombre_conductor" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Manifiesto</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_manifiesto" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Fecha Expedicion</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="date" name="txt_fec_vencimiento" />
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Tipo Operacion</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_tipo_operacion" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Tipo Empaque</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_tipo_empaque" />
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Naturaleza Carga</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_naturaleza_cargar" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Descripcion Corta Producto</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_desc_producto" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Codigo Producto</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_codigo_producto" />
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+       </div>
 
-    <div>
-        <h3>
-            <asp:Label ID="Label28" runat="server" Text="Tipo Cumplido y Cantidades"></asp:Label></h3>
-
-        <asp:Table ID="Table3" class="tabla3" runat="server">
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label13" runat="server" Text="Tipo Cumplido"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
+       <div>
+           <h3>Tipo Cumplido y Cantidades</h3>
+           <asp:Table  runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Tipo Cumplido</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_tipo_cumplido">
                            <option></option>
                            <!--se llena con los tipos cumplidos-->
                        </select>
-                </asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label14" runat="server" Text="Cantidad Estimada"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_cantidad_estimada" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label15" runat="server" Text="Cantidad Cargada"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_cantidad_cargada" runat="server"></asp:TextBox>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Cantidad Estimada</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_cantidad_estimada" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Cantidad Cargada</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_cantidad_cargada" />
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
                        <select id="slt_medida">
                            <option></option>
                            <!--se llena con los tipos de medidas de las cargas-->
                        </select>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label16" runat="server" Text="Cantidad Entregada"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_cantidad_entregada" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label17" runat="server" Text="Valor Factura"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_valor_factura" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-        </asp:Table>
-    </div>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <label>Cantidad Entregada</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_cantidad_entregada" />
+                   </asp:TableCell>
+               </asp:TableRow>
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Valor Factura</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <input type="text" name="txt_valor_factura" />
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+       </div>
 
-    <div>
-        <div id="remitenteIzquierdo">
-            <h3>
-                <asp:Label ID="Label49" runat="server" Text="Remitente: Sito de Cargue"></asp:Label></h3>
+       <div>
+           <div id="remitenteIzquierdo">
+               <h3>Remitente: Sito de Cargue</h3>
+               <asp:Table  runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Tipo identificacion</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_tipo_identificacion_remitente" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Numero</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_numero_remitente" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Sede</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_sede_remitente" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Nombre</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_nombre_remitente" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Direccion</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_tipo_direccion_remitente" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Municipio</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_municipio_remitente" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+               </asp:Table>
+           </div>
+           <div id="destinatarioDerecho">
+               <h3>Destinatario: Sito de Descargue</h3>
+               <asp:Table  runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Tipo identificacion</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_tipo_identificacion_destinatario" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Numero</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_numero_destinatario" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Sede</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_sede_destinatario" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Nombre</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_nombre_destinatario" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Direccion</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_tipo_direccion_destinatario" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Municipio</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_municipio_destinatario" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+               </asp:Table>
+           </div>
+       </div>
 
-            <asp:Table ID="Table4" class="tabla4" runat="server">
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label18" runat="server" Text="Tipo identificacion"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_tipo_identificacion_remitente" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label19" runat="server" Text="Numero"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_numero_remitente" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label20" runat="server" Text="Sede"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_sede_remitente" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label21" runat="server" Text="Nombre"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_nombre_remitente" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label22" runat="server" Text="Direccion"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_tipo_direccion_remitente" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label23" runat="server" Text="Municipio"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_municipio_remitente" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-        </div>
-        <div id="destinatarioDerecho">
-            <h3>
-                <asp:Label ID="Label50" runat="server" Text="Destinatario: Sito de Descargue"></asp:Label></h3>
+       <div>
+           <div id="tiemposOrigen">
+               <h3>Tiempos Logisticos en Origen (Cargue)</h3>
+               <asp:Table  runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server"></asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Fecha</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>hora:minutos</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Diferencia</label>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Cita</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_cita_origen" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_origen" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>llegada</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_llegada_origen" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_origen" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Entrada</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_entrada_origen" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_origen" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_diferencia_salida_origen" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Salida</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_salida_origen" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_origen" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_diferencia_salida_origen" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Tiempos Reales (horas y minutos)</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server"></asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <asp:Table runat="server">
+                               <asp:TableRow runat="server">
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_real_origen" />
+                                   </asp:TableCell>
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_real_origen" />
+                                   </asp:TableCell>
+                               </asp:TableRow>
+                           </asp:Table>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Tiempos Pactados (horas y minutos)</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server"></asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <asp:Table  runat="server">
+                               <asp:TableRow runat="server">
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_pactado_origen" />
+                                   </asp:TableCell>
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_pactado_origen" />
+                                   </asp:TableCell>
+                               </asp:TableRow>
+                           </asp:Table>
+                       </asp:TableCell>
+                   </asp:TableRow>
+               </asp:Table>
+           </div>
+           <div id="destinatarioDerecha">
+               <h3>Tiempos Logisticos en Destino (Descargue)</h3>
+               <asp:Table  runat="server">
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server"></asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Fecha</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>hora:minutos</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <label>Diferencia</label>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Cita</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_cita_destino" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_destino" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>llegada</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_llegada_destino" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_destino" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Entrada</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_entrada_destino" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_destino" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_diferencia_salida_destino" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Salida</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="date" name="txt_fecha_salida_destino" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_hora_salida_destino" />
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <input type="text" name="txt_diferencia_destino" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Tiempos Reales (horas y minutos)</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server"></asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <asp:Table  runat="server">
+                               <asp:TableRow runat="server">
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_real_destino" />
+                                   </asp:TableCell>
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_real_destino" />
+                                   </asp:TableCell>
+                               </asp:TableRow>
+                           </asp:Table>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <label>Tiempos Pactados (horas y minutos)</label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server"></asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <asp:Table  runat="server">
+                               <asp:TableRow runat="server">
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_pactado_destino" />
+                                   </asp:TableCell>
+                                   <asp:TableCell runat="server">
+                                       <input type="text" name="txt_tiempo_pactado_destino" />
+                                   </asp:TableCell>
+                               </asp:TableRow>
+                           </asp:Table>
+                       </asp:TableCell>
+                   </asp:TableRow>
+               </asp:Table>
+           </div>
+       </div>
+       <div>
+           <asp:Table  runat="server">
+               <asp:TableRow runat="server">
+                   <asp:TableCell runat="server">
+                       <label>Observaciones</label>
+                   </asp:TableCell>
+                   <asp:TableCell runat="server">
+                       <textarea id="txtarea_observaciones" cols="20" rows="2"></textarea>
+                   </asp:TableCell>
+               </asp:TableRow>
+           </asp:Table>
+       </div>
 
-            <asp:Table ID="Table5" class="tabla5" runat="server">
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label24" runat="server" Text="Tipo identificacion"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_tipo_identificacion_destinatario" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label25" runat="server" Text="Numero"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_numero_destinatario" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label26" runat="server" Text="Sede"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_sede_destinatario" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label27" runat="server" Text="Nombre"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_nombre_destinatario" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Direccion" runat="server" Text="Label"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_tipo_direccion_destinatario" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label29" runat="server" Text="Municipio"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_municipio_destinatario" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-        </div>
-    </div>
-
-    <div>
-        <div id="tiemposOrigen">
-            <h3>
-                <asp:Label ID="Label51" runat="server" Text="Tiempos Logisticos en Origen (Cargue)"></asp:Label></h3>
-
-            <asp:Table ID="Table6" class="tabla6" runat="server">
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label30" runat="server" Text="Fecha"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label31" runat="server" Text="hora:minutos"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label32" runat="server" Text="Diferencia"></asp:Label>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label33" runat="server" Text="Cita"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_cita_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_cita_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label34" runat="server" Text="llegada"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_llegada_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_llegada_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label35" runat="server" Text="Entrada"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_entrada_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_entrada_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_diferencia_entrada_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label36" runat="server" Text="Salida"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_salida_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_diferencia_salida_origen" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label37" runat="server" Text="Tiempos Reales (horas y minutos)"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Table ID="Table7" class="tabla7" runat="server">
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_real_origen_h" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_real_origen_m" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label38" runat="server" Text="Tiempos Pactados (horas y minutos)"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Table ID="Table8" class="tabla8" runat="server">
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_pactado_origen_h" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_pactado_origen_m" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-        </div>
-        <div id="destinatarioDerecha">
-            <h3>
-                <asp:Label ID="Label52" runat="server" Text="Tiempos Logisticos en Destino (Descargue)"></asp:Label></h3>
-
-            <asp:Table ID="Table9" class="tabla10" runat="server">
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label39" runat="server" Text="Fecha"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label40" runat="server" Text="hora:minutos"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label41" runat="server" Text="Diferencia"></asp:Label>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label42" runat="server" Text="Cita"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_cita_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_cita_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label43" runat="server" Text="llegada"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_llegada_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_llegada_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label44" runat="server" Text="Entrada"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_entrada_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_entrada_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_diferencia_entrada_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label45" runat="server" Text="Salida"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_fecha_salida_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_diferencia_salida_destino" runat="server"></asp:TextBox>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label46" runat="server" Text="Tiempos Reales (horas y minutos)"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Table ID="Table11" class="tabla11" runat="server">
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_real_destino_h" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_real_destino_m" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">
-                        <asp:Label ID="Label47" runat="server" Text="Tiempos Pactados (horas y minutos)"></asp:Label>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">
-                        <asp:Table ID="Table12" class="tabla12" runat="server">
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_pactado_destino_h" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                                <asp:TableCell runat="server">
-                                    <asp:TextBox ID="txt_tiempo_pactado_destino_m" runat="server"></asp:TextBox>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-        </div>
-    </div>
-    <div>
-        <asp:Table ID="Table13" class="tabla13" runat="server">
-            <asp:TableRow runat="server">
-                <asp:TableCell runat="server">
-                    <asp:Label ID="Label48" runat="server" Text="Observaciones"></asp:Label>
-                </asp:TableCell>
-                <asp:TableCell runat="server">
-                    <asp:TextBox ID="txtarea_observaciones" runat="server"></asp:TextBox>
-                </asp:TableCell>
-            </asp:TableRow>
-        </asp:Table>
-    </div>
-    <asp:Button ID="btn_guardar_cumplido_remesa" runat="server" Text="Guardar Cumplido Remesa" />
+       <input type="button" id="btn_guardar_cumplido_remesa" value="Guardar Cumplido Remesa"/>
 </asp:Content>

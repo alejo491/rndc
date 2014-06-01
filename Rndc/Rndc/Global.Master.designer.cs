@@ -7,126 +7,135 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Rndc.Tercero {
+namespace Rndc{
     
     
-    public partial class CreacionTerceroPerNatural {
+    public partial class Global1 {
         
         /// <summary>
-        /// Control IdNit.
+        /// Control Form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdNit;
+        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
-        /// Control IdUsuario.
+        /// Control ScriptManager1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdUsuario;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// Control IdNumIde.
+        /// Control Logo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdNumIde;
+        protected global::System.Web.UI.WebControls.Image Logo;
         
         /// <summary>
-        /// Control IdNombre.
+        /// Control Cabecera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdNombre;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Cabecera;
         
         /// <summary>
-        /// Control IdPriApe.
+        /// Control HeadContent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdPriApe;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
         
         /// <summary>
-        /// Control IdSegApe.
+        /// Control BarraIzquierda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdSegApe;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder BarraIzquierda;
         
         /// <summary>
-        /// Control IdTel.
+        /// Control DashBoard.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdTel;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder DashBoard;
         
         /// <summary>
-        /// Control IdCel.
+        /// Control FeaturedContent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdCel;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder FeaturedContent;
         
         /// <summary>
-        /// Control IdDir.
+        /// Control MainContent.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdDir;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
         
         /// <summary>
-        /// Control IdMpio.
+        /// Control Notificacion1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdMpio;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Notificacion1;
         
         /// <summary>
-        /// Control IdLice.
+        /// Control Notificacion2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdLice;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Notificacion2;
         
         /// <summary>
-        /// Control IdFecVen.
+        /// Control Notificacion3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdFecVen;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Notificacion3;
         
         /// <summary>
-        /// Control BtnGuardar.
+        /// Control Notificacion4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnGuardar;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Notificacion4;
+        
+        /// <summary>
+        /// Control lnkHome0.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkHome0;
     }
 }
