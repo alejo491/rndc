@@ -607,6 +607,51 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.DropDownList slt_nombre;
         
         /// <summary>
+        /// Control TableRow34.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableRow TableRow34;
+        
+        /// <summary>
+        /// Control TableCell128.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableCell TableCell128;
+        
+        /// <summary>
+        /// Control Label56.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label56;
+        
+        /// <summary>
+        /// Control TableCell129.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableCell TableCell129;
+        
+        /// <summary>
+        /// Control TextBox1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
         /// Control TableRow8.
         /// </summary>
         /// <remarks>
@@ -643,13 +688,13 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TableCell TableCell31;
         
         /// <summary>
-        /// Control txt_codigo_producto.
+        /// Control txt_cantidad_esperada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_codigo_producto;
+        protected global::System.Web.UI.WebControls.TextBox txt_cantidad_esperada;
         
         /// <summary>
         /// Control TableCell32.
@@ -983,6 +1028,15 @@ namespace Rndc.Remesa {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TableCell TableCell49;
+        
+        /// <summary>
+        /// Control Label57.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label57;
         
         /// <summary>
         /// Control TableCell50.

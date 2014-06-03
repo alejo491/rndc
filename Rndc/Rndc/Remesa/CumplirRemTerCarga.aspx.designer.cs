@@ -82,7 +82,7 @@ namespace Rndc.Remesa {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_consecutivo;
+        protected global::System.Web.UI.WebControls.DropDownList txt_consecutivo;
         
         /// <summary>
         /// Control Label1.
@@ -625,13 +625,13 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_fecha_cita_origen;
         
         /// <summary>
-        /// Control txt_hora_salida_origen.
+        /// Control txt_hora_cita_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hora_salida_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_hora_cita_origen;
         
         /// <summary>
         /// Control Label35.
@@ -652,13 +652,13 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_fecha_llegada_origen;
         
         /// <summary>
-        /// Control txt_hora_salida_origen.
+        /// Control txt_hora_llegada_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hora_salida_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_hora_llegada_origen;
         
         /// <summary>
         /// Control Label36.
@@ -679,22 +679,22 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_fecha_entrada_origen;
         
         /// <summary>
-        /// Control txt_hora_salida_origen.
+        /// Control txt_hora_entrada_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hora_salida_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_hora_entrada_origen;
         
         /// <summary>
-        /// Control txt_diferencia_salida_origen.
+        /// Control txt_diferencia_entrada_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_diferencia_salida_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_diferencia_entrada_origen;
         
         /// <summary>
         /// Control Label37.
@@ -742,22 +742,22 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.Label Label38;
         
         /// <summary>
-        /// Control txt_tiempo_real_origen.
+        /// Control txt_tiempo_real_hora_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_hora_origen;
         
         /// <summary>
-        /// Control txt_tiempo_real_origen.
+        /// Control txt_tiempo_real_minutos_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_minutos_origen;
         
         /// <summary>
         /// Control Label39.
@@ -769,22 +769,22 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.Label Label39;
         
         /// <summary>
-        /// Control txt_tiempo_pactado_origen.
+        /// Control txt_tiempo_pactado_hora_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_hora_origen;
         
         /// <summary>
-        /// Control txt_tiempo_pactado_origen.
+        /// Control txt_tiempo_pactado_minutos_origen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_origen;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_minutos_origen;
         
         /// <summary>
         /// Control Label40.
@@ -832,13 +832,13 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_fecha_cita_destino;
         
         /// <summary>
-        /// Control txt_hora_salida_destino.
+        /// Control txt_hora_cita_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hora_salida_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_hora_cita_destino;
         
         /// <summary>
         /// Control Label44.
@@ -859,13 +859,13 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_fecha_llegada_destino;
         
         /// <summary>
-        /// Control txt_hora_salida_destino.
+        /// Control txt_hora_llegada_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hora_salida_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_hora_llegada_destino;
         
         /// <summary>
         /// Control Label45.
@@ -886,13 +886,13 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_fecha_entrada_destino;
         
         /// <summary>
-        /// Control txt_hora_salida_destino.
+        /// Control txt_hora_entrada_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_hora_salida_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_hora_entrada_destino;
         
         /// <summary>
         /// Control txt_diferencia_salida_destino.
@@ -949,22 +949,22 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.Label Label47;
         
         /// <summary>
-        /// Control txt_tiempo_real_destino.
+        /// Control txt_tiempo_real_hora_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_hora_destino;
         
         /// <summary>
-        /// Control txt_tiempo_real_destino.
+        /// Control txt_tiempo_real_minutos_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_real_minutos_destino;
         
         /// <summary>
         /// Control Label48.
@@ -976,22 +976,22 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.Label Label48;
         
         /// <summary>
-        /// Control txt_tiempo_pactado_destino.
+        /// Control txt_tiempo_pactado_hora_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_hora_destino;
         
         /// <summary>
-        /// Control txt_tiempo_pactado_destino.
+        /// Control txt_tiempo_pactado_minutos_destino.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_destino;
+        protected global::System.Web.UI.WebControls.TextBox txt_tiempo_pactado_minutos_destino;
         
         /// <summary>
         /// Control Label49.

@@ -23,10 +23,10 @@
                     <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:Label ID="LblConsecutivo" runat="server" Text="CONSECUTIVO::"></asp:Label>
+                    <asp:Label ID="LblConsecutivo" runat="server" Text="Remesa"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_consecutivo" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="txt_consecutivo" runat="server"></asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
@@ -275,7 +275,7 @@
                         <asp:TextBox ID="txt_fecha_cita_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_origen" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_hora_cita_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
@@ -286,7 +286,7 @@
                         <asp:TextBox ID="txt_fecha_llegada_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_origen" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_hora_llegada_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
@@ -297,10 +297,10 @@
                         <asp:TextBox ID="txt_fecha_entrada_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_origen" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_hora_entrada_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_diferencia_salida_origen" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_diferencia_entrada_origen" runat="server"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
@@ -326,10 +326,10 @@
                            <asp:Table runat="server">
                                <asp:TableRow runat="server">
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_real_origen" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_real_hora_origen" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_real_origen" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_real_minutos_origen" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                </asp:TableRow>
                            </asp:Table>
@@ -344,10 +344,10 @@
                            <asp:Table  runat="server">
                                <asp:TableRow runat="server">
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_pactado_origen" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_pactado_hora_origen" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_pactado_origen" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_pactado_minutos_origen" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                </asp:TableRow>
                            </asp:Table>
@@ -378,7 +378,7 @@
                         <asp:TextBox ID="txt_fecha_cita_destino" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_destino" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_hora_cita_destino" runat="server"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
@@ -389,7 +389,7 @@
                         <asp:TextBox ID="txt_fecha_llegada_destino" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_destino" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_hora_llegada_destino" runat="server"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
@@ -400,7 +400,7 @@
                         <asp:TextBox ID="txt_fecha_entrada_destino" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:TextBox ID="txt_hora_salida_destino" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_hora_entrada_destino" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
                         <asp:TextBox ID="txt_diferencia_salida_destino" runat="server"></asp:TextBox>
@@ -429,10 +429,10 @@
                            <asp:Table  runat="server">
                                <asp:TableRow runat="server">
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_real_destino" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_real_hora_destino" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_real_destino" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_real_minutos_destino" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                </asp:TableRow>
                            </asp:Table>
@@ -447,10 +447,10 @@
                            <asp:Table  runat="server">
                                <asp:TableRow runat="server">
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_pactado_destino" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_pactado_hora_destino" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                    <asp:TableCell runat="server">
-                                       <asp:TextBox ID="txt_tiempo_pactado_destino" runat="server"></asp:TextBox>
+                                       <asp:TextBox ID="txt_tiempo_pactado_minutos_destino" runat="server"></asp:TextBox>
                                    </asp:TableCell>
                                </asp:TableRow>
                            </asp:Table>
