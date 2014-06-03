@@ -194,7 +194,7 @@
                             <asp:Label ID="Label22" runat="server" Text="Si/No"></asp:Label>
                         </asp:TableCell>
                         <asp:TableCell runat="server">
-                            <asp:Label ID="Label23" runat="server" Text="Tiempo Total Cargu"></asp:Label>
+                            <asp:Label ID="Label23" runat="server" Text="Tiempo Total Carga"></asp:Label>
                         </asp:TableCell>
                         <asp:TableCell runat="server">
                             <asp:TextBox ID="txt_horas1" runat="server"></asp:TextBox>
