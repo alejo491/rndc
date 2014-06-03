@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AnulacionManifiestoCarga.aspx.cs" Inherits="Rndc.Manifiesto.AnulacionManifiestoCarga1" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="AnulacionManifiestoCarga.aspx.cs" Inherits="Rndc.Manifiesto.AnulacionManifiestoCarga1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div>

@@ -85,15 +85,6 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.DropDownList slt_manifiesto_carga;
         
         /// <summary>
-        /// Control NumMan.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList NumMan;
-        
-        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -236,15 +227,6 @@ namespace Rndc.Manifiesto {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList slt_tipo_cumplido;
-        
-        /// <summary>
-        /// Control TipoCumplido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TipoCumplido;
         
         /// <summary>
         /// Control Label13.
