@@ -184,7 +184,6 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-<<<<<<< .mine
         /// Control slt_motivo_anulacion.
         /// </summary>
         /// <remarks>
@@ -194,17 +193,6 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.DropDownList slt_motivo_anulacion;
         
         /// <summary>
-=======
-        /// Control slt_motivo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList slt_motivo;
-        
-        /// <summary>
->>>>>>> .r24
         /// Control Label1.
         /// </summary>
         /// <remarks>
