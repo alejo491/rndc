@@ -35,10 +35,8 @@
                     <asp:Label ID="Label1" runat="server" Text="Manifiesto de Carga"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                   <select id="slt_manifiesto_de_carga">
-                       <option></option>
+                    <asp:DropDownList ID="slt_manifiesto_de_carga" runat="server"></asp:DropDownList>
                        <!-- faltan las opciones-->
-                   </select>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -67,10 +65,8 @@
                     <asp:Label ID="Label5" runat="server" Text="Motivo Anulacion"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                   <select id="slt_motivo_anulacion">
-                       <option></option>
+                       <asp:DropDownList ID="slt_motivo_anulacion" runat="server"></asp:DropDownList>
                        <!-- faltan las opciones-->
-                   </select>
                 </asp:TableCell>
 
             </asp:TableRow>
