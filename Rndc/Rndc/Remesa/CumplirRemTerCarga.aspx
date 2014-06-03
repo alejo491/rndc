@@ -471,5 +471,5 @@
             </asp:TableRow>
         </asp:Table>
     </div>
-    <asp:Button ID="btn_guardar_cumplido_remesa" runat="server" Text="Guardar Cumplido Remesa" />
+    <asp:Button ID="btn_guardar_cumplido_remesa" runat="server" Text="Guardar Cumplido Remesa" OnClick="btn_guardar_cumplido_remesa_Click" />
 </asp:Content>
