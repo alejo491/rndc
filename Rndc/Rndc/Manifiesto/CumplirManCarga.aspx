@@ -35,8 +35,6 @@
                    <asp:TableCell runat="server">
                            <asp:DropDownList ID="slt_manifiesto_carga" runat="server"></asp:DropDownList>
                            <!--se ponen los manifiesto de carga-->
-                       <asp:DropDownList ID="NumMan" runat="server"></asp:DropDownList>
-
                    </asp:TableCell>
                </asp:TableRow>
                <asp:TableRow runat="server">
@@ -100,9 +98,7 @@
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                            <asp:DropDownList ID="slt_tipo_cumplido" runat="server"></asp:DropDownList>
-                           <!--se llena con los tipode cumplido-->
-                       <asp:DropDownList ID="TipoCumplido" runat="server"></asp:DropDownList>
-
+                           <!--se llena con los tipo de cumplido-->
                    </asp:TableCell>
                </asp:TableRow>
            </asp:Table>
