@@ -322,160 +322,244 @@
             </asp:TableRow>
             <asp:TableRow ID="TableRow23" runat="server">
                 <asp:TableCell ID="TableCell77" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label35" runat="server" Text="Poliza número"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label35" runat="server" Text="Poliza número"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell78" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_num_poliza" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_num_poliza" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow24" runat="server">
                 <asp:TableCell ID="TableCell79" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label36" runat="server" Text="Fecha Vencimiento"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label36" runat="server" Text="Fecha Vencimiento"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell80" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_fec_venc" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_fec_venc" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow25" runat="server">
                 <asp:TableCell ID="TableCell81" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label37" runat="server" Text="Aseguradora"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label37" runat="server" Text="Aseguradora"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell82" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select id="slt_aseguradora">
-                    &nbsp;</select>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+                    <asp:DropDownList ID="slt_aseguradora" runat="server"></asp:DropDownList>
+
+                </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
     </div>
 
     <div>
-        <h3>Tiempos logisticos en el origen</h3><asp:Table ID="Table10" class="tabla10" runat="server">
+        <h3>Tiempos logisticos en el origen</h3>
+        <asp:Table ID="Table10" class="tabla10" runat="server">
             <asp:TableRow ID="TableRow26" runat="server">
                 <asp:TableCell ID="TableCell83" runat="server"></asp:TableCell><asp:TableCell ID="TableCell84" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label38" runat="server" Text="Fecha"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label38" runat="server" Text="Fecha"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell85" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label39" runat="server" Text="Hora"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label39" runat="server" Text="Hora"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell86" runat="server"></asp:TableCell><asp:TableCell ID="TableCell87" runat="server"></asp:TableCell><asp:TableCell ID="TableCell88" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label40" runat="server" Text="Tiempos pactados"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label40" runat="server" Text="Tiempos pactados"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell89" runat="server"></asp:TableCell><asp:TableCell ID="TableCell90" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label41" runat="server" Text="Tiempos ejecutados"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label41" runat="server" Text="Tiempos ejecutados"></asp:Label>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow27" runat="server">
                 <asp:TableCell ID="TableCell91" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label42" runat="server" Text="Cita para el cargue"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label42" runat="server" Text="Cita para el cargue"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell92" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_fecha_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_fecha_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell93" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_hora_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_hora_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell94" runat="server"></asp:TableCell><asp:TableCell ID="TableCell95" runat="server"></asp:TableCell><asp:TableCell ID="TableCell96" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label43" runat="server" Text="Horas"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label43" runat="server" Text="Horas"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell97" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label44" runat="server" Text="Minutos"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label44" runat="server" Text="Minutos"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell98" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label45" runat="server" Text="Horas"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label45" runat="server" Text="Horas"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell99" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label46" runat="server" Text="Minutos"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label46" runat="server" Text="Minutos"></asp:Label>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow28" runat="server">
                 <asp:TableCell ID="TableCell100" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label47" runat="server" Text="Llegada al cargue"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label47" runat="server" Text="Llegada al cargue"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell101" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_fecha_llegada_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_fecha_llegada_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell102" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_hora_llegada_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_hora_llegada_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell103" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label48" runat="server" Text="Diferencia en minutos"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label48" runat="server" Text="Diferencia en minutos"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell104" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label49" runat="server" Text="Tiempo total cargue (incluye Espera+cargue)"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label49" runat="server" Text="Tiempo total cargue (incluye Espera+cargue)"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell105" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_horas1" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_horas1" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell106" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_minutos1" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_minutos1" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell107" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_horas2" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_horas2" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell108" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_minutos2" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_minutos2" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow29" runat="server">
                 <asp:TableCell ID="TableCell109" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label50" runat="server" Text="Entrada al cargue"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label50" runat="server" Text="Entrada al cargue"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell110" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_fecha_entrada_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_fecha_entrada_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell111" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_hora_entrada_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_hora_entrada_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell112" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_diferencia_minutos_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_diferencia_minutos_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell113" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label51" runat="server" Text="Tiempo total de descargue (Incluye espera + descargue)"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label51" runat="server" Text="Tiempo total de descargue (Incluye espera + descargue)"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell114" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_horas_descargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_horas_descargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell115" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_minutos_descargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_minutos_descargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow30" runat="server">
                 <asp:TableCell ID="TableCell116" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label52" runat="server" Text="salida del cargue"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label52" runat="server" Text="salida del cargue"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell117" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_fecha_salida_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_fecha_salida_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell118" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_hora_salida_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_hora_salida_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell119" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_diferencia_cargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_diferencia_cargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
     </div>
 
     <div>
-        <h3>Tiempos logisticos en destino</h3><asp:Table ID="Table11" class="tabla11" runat="server">
+        <h3>Tiempos logisticos en destino</h3>
+        <asp:Table ID="Table11" class="tabla11" runat="server">
             <asp:TableRow ID="TableRow31" runat="server">
                 <asp:TableCell ID="TableCell120" runat="server"></asp:TableCell><asp:TableCell ID="TableCell121" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label53" runat="server" Text="Fecha"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label53" runat="server" Text="Fecha"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell122" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label21" runat="server" Text="Hora"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label21" runat="server" Text="Hora"></asp:Label>
+
+                </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow ID="TableRow32" runat="server">
                 <asp:TableCell ID="TableCell123" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label54" runat="server" Text="Cita para el descargue"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label54" runat="server" Text="Cita para el descargue"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell124" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_fecha_descargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_fecha_descargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell125" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txt_hora_descargue" runat="server"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:TextBox ID="txt_hora_descargue" runat="server"></asp:TextBox>
+
+                </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
     </div>
@@ -483,11 +567,13 @@
         <asp:Table ID="Table12" class="tabla12" runat="server">
             <asp:TableRow ID="TableRow33" runat="server">
                 <asp:TableCell ID="TableCell126" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="Label55" runat="server" Text="Recomendaciones"></asp:Label>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+
+                    <asp:Label ID="Label55" runat="server" Text="Recomendaciones"></asp:Label>
+
+                </asp:TableCell>
                 <asp:TableCell ID="TableCell127" runat="server">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <textarea id="textarea_recomendaciones" cols="20" rows="2"></textarea>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </asp:TableCell>
+                <textarea id="textarea_recomendaciones" cols="20" rows="2"></textarea>
+                </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
     </div>
