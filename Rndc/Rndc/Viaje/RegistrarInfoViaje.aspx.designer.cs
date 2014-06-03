@@ -319,13 +319,13 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label15;
         
         /// <summary>
-        /// Control TextBox14.
+        /// Control txt_modelo1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox14;
+        protected global::System.Web.UI.WebControls.TextBox txt_modelo1;
         
         /// <summary>
         /// Control Label16.

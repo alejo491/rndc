@@ -202,21 +202,21 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.TextBox txt_observaciones;
         
         /// <summary>
-        /// Control BtnAnularViaje.
+        /// Control btn_anular_viaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAnularViaje;
+        protected global::System.Web.UI.WebControls.Button btn_anular_viaje;
         
         /// <summary>
-        /// Control Button2.
+        /// Control btn_anular_otro_viaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btn_anular_otro_viaje;
     }
 }

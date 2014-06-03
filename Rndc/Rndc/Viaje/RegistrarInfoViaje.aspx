@@ -119,8 +119,7 @@
                     <asp:Label ID="Label15" runat="server" Text="Modelo:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
-                    <input name="txt_modelo1" type="text" />
+                    <asp:TextBox ID="txt_modelo1" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label16" runat="server" Text="Configuracion:"></asp:Label>
@@ -221,7 +220,6 @@
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" OnClick="Eliminar_Click" />
-                    <input type="button" name="btn_eliminar" value="Eliminar" />
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
