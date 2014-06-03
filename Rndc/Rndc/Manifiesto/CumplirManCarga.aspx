@@ -33,7 +33,12 @@
                        <label>Manifiesto de Carga</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
+<<<<<<< .mine
+                           <asp:DropDownList ID="slt_manifiesto_carga" runat="server"></asp:DropDownList>
+                           <!--se ponen los manifiesto de carga-->
+=======
                        <asp:DropDownList ID="NumMan" runat="server"></asp:DropDownList>
+>>>>>>> .r24
                    </asp:TableCell>
                </asp:TableRow>
                <asp:TableRow runat="server">
@@ -103,7 +108,12 @@
                        <label>Tipo Cumplido/Cierre</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
+<<<<<<< .mine
+                           <asp:DropDownList ID="slt_tipo_cumplido" runat="server"></asp:DropDownList>
+                           <!--se llena con los tipode cumplido-->
+=======
                        <asp:DropDownList ID="TipoCumplido" runat="server"></asp:DropDownList>
+>>>>>>> .r24
                    </asp:TableCell>
                </asp:TableRow>
            </asp:Table>

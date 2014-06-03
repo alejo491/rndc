@@ -115,10 +115,8 @@
                        <label>Tipo Cumplido</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_tipo_cumplido">
-                           <option></option>
+                           <asp:DropDownList ID="slt_tipo_cumplido" runat="server"></asp:DropDownList>
                            <!--se llena con los tipos cumplidos-->
-                       </select>
                    </asp:TableCell>
                </asp:TableRow>
                <asp:TableRow runat="server">
@@ -135,10 +133,8 @@
                        <input type="text" name="txt_cantidad_cargada" />
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_medida">
-                           <option></option>
+                           <asp:DropDownList ID="slt_medida" runat="server"></asp:DropDownList>
                            <!--se llena con los tipos de medidas de las cargas-->
-                       </select>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <label>Cantidad Entregada</label>

@@ -31,13 +31,13 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// Control NomEmpresa.
+        /// Control txt_empresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NomEmpresa;
+        protected global::System.Web.UI.WebControls.TextBox txt_empresa;
         
         /// <summary>
         /// Control Label9.
@@ -49,13 +49,13 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
-        /// Control IdNit.
+        /// Control txt_nit.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdNit;
+        protected global::System.Web.UI.WebControls.TextBox txt_nit;
         
         /// <summary>
         /// Control Label8.
@@ -67,13 +67,40 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control IdUsuario.
+        /// Control txt_usuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdUsuario;
+        protected global::System.Web.UI.WebControls.TextBox txt_usuario;
+        
+        /// <summary>
+        /// Control Label43.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label43;
+        
+        /// <summary>
+        /// Control TableCell2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableCell TableCell2;
+        
+        /// <summary>
+        /// Control txt_consecutivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_consecutivo;
         
         /// <summary>
         /// Control Table2.
@@ -94,6 +121,15 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// Control slt_operacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_operacion;
+        
+        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -101,6 +137,24 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// Control slt_empaque.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_empaque;
+        
+        /// <summary>
+        /// Control Label40.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label40;
         
         /// <summary>
         /// Control Table3.
@@ -119,6 +173,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// Control slt_naturaleza.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_naturaleza;
         
         /// <summary>
         /// Control Label4.
@@ -148,6 +211,15 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
+        /// Control slt_clasificacion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_clasificacion;
+        
+        /// <summary>
         /// Control Label6.
         /// </summary>
         /// <remarks>
@@ -155,6 +227,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
+        /// Control slt_nombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_nombre;
         
         /// <summary>
         /// Control Label7.
@@ -193,6 +274,15 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.TextBox txt_cantidad_carga;
         
         /// <summary>
+        /// Control slt_medida_carga.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_medida_carga;
+        
+        /// <summary>
         /// Control Label12.
         /// </summary>
         /// <remarks>
@@ -211,6 +301,15 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.TextBox txt_peso_cont_vacio;
         
         /// <summary>
+        /// Control Label41.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label41;
+        
+        /// <summary>
         /// Control Table4.
         /// </summary>
         /// <remarks>
@@ -227,6 +326,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label13;
+        
+        /// <summary>
+        /// Control slt_tipo_documento1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_documento1;
         
         /// <summary>
         /// Control Label14.
@@ -254,6 +362,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label15;
+        
+        /// <summary>
+        /// Control slt_sede.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_sede;
         
         /// <summary>
         /// Control Label16.
@@ -418,6 +535,15 @@ namespace Rndc.Carga {
         protected global::System.Web.UI.WebControls.TextBox txt_hora1;
         
         /// <summary>
+        /// Control Label42.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label42;
+        
+        /// <summary>
         /// Control Table5.
         /// </summary>
         /// <remarks>
@@ -434,6 +560,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label26;
+        
+        /// <summary>
+        /// Control slt_tipo_documento2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_documento2;
         
         /// <summary>
         /// Control Label27.
@@ -461,6 +596,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label28;
+        
+        /// <summary>
+        /// Control slt_sede2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_sede2;
         
         /// <summary>
         /// Control Label29.
@@ -596,6 +740,15 @@ namespace Rndc.Carga {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label37;
+        
+        /// <summary>
+        /// Control txt_fec_cita2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_fec_cita2;
         
         /// <summary>
         /// Control Label38.

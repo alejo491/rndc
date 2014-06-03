@@ -36,10 +36,8 @@
                            <label>Tipo Reversa/ Ajuste</label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <select id="slt_tipo_reversa">
-                               <option></option>
+                               <asp:DropDownList ID="slt_tipo_reversa" runat="server"></asp:DropDownList>
                                <!-- faltan las opciones-->
-                           </select>
                        </asp:TableCell> 
 
                    </asp:TableRow>
@@ -48,10 +46,8 @@
                            <label>Motivo Anulacion</label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <select id="slt_motivo_anulacion">
-                               <option></option>
+                               <asp:DropDownList ID="slt_motivo_anulacion" runat="server"></asp:DropDownList>
                                <!-- faltan las opciones-->
-                           </select>
                        </asp:TableCell>
 
                    </asp:TableRow>
@@ -66,10 +62,8 @@
                            <label>Remesa Terrestre de Carga</label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <select id="slt_remesa_de_carga">
-                               <option></option>
+                               <asp:DropDownList ID="slt_remesa_de_carga" runat="server"></asp:DropDownList>
                                <!-- faltan las opciones-->
-                           </select>
                        </asp:TableCell>                    
                    </asp:TableRow>
                    <asp:TableRow runat="server">

@@ -112,6 +112,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
+        /// Control slt_tipo_identi_cond.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_identi_cond;
+        
+        /// <summary>
         /// Control Label5.
         /// </summary>
         /// <remarks>
@@ -328,6 +337,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label16;
         
         /// <summary>
+        /// Control slt_vehiculos1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_vehiculos1;
+        
+        /// <summary>
         /// Control Label17.
         /// </summary>
         /// <remarks>
@@ -445,6 +463,15 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label23;
         
         /// <summary>
+        /// Control slt_remolques2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_remolques2;
+        
+        /// <summary>
         /// Control Label24.
         /// </summary>
         /// <remarks>
@@ -515,6 +542,15 @@ namespace Rndc.Viaje {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table Table5;
+        
+        /// <summary>
+        /// Control slt_infor_carga.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_infor_carga;
         
         /// <summary>
         /// Control btn_Adicionar.

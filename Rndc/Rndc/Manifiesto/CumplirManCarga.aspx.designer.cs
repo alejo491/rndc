@@ -67,6 +67,17 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.TextBox txt_usuario;
         
         /// <summary>
+<<<<<<< .mine
+        /// Control slt_manifiesto_carga.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_manifiesto_carga;
+        
+        /// <summary>
+=======
         /// Control NumMan.
         /// </summary>
         /// <remarks>
@@ -76,6 +87,7 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.DropDownList NumMan;
         
         /// <summary>
+>>>>>>> .r24
         /// Control TextBox4.
         /// </summary>
         /// <remarks>
@@ -139,6 +151,17 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.TextBox TextBox7;
         
         /// <summary>
+<<<<<<< .mine
+        /// Control slt_tipo_cumplido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_cumplido;
+        
+        /// <summary>
+=======
         /// Control TipoCumplido.
         /// </summary>
         /// <remarks>
@@ -148,6 +171,7 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.DropDownList TipoCumplido;
         
         /// <summary>
+>>>>>>> .r24
         /// Control TextBox8.
         /// </summary>
         /// <remarks>

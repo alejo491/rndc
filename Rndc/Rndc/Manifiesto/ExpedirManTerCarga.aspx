@@ -39,11 +39,9 @@
                    <asp:TableCell runat="server">
                        <label>Viaje</label>
                    </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <select id="slt_viaje">
-                           <option></option>
-                           <!-- aqui se llena con los viajes-->
-                       </select>
+                   <asp:TableCell runat="server">                     
+                       <asp:DropDownList ID="slt_viaje" runat="server"></asp:DropDownList>
+                       <!--llenar con los datos de los viajes-->
                    </asp:TableCell>
                </asp:TableRow>
            </asp:Table>
@@ -67,10 +65,8 @@
                        <label>Tipo Manifiesto</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_tipo_manifiesto">
-                           <option></option>
+                           <asp:DropDownList ID="slt_tipo_manifiesto" runat="server"></asp:DropDownList>
                            <!--se llena con los tipos de manifiesto-->
-                       </select>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <label>Fecha Expedicion</label>
@@ -104,10 +100,8 @@
                        <label>Tipo identificación</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_tipo_identi_titular">
-                           <option></option>
+                           <asp:DropDownList ID="slt_tipo_identi_titular" runat="server"></asp:DropDownList>
                            <!--llenar los tipos de documento que hay-->
-                       </select>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <label>Número identificación</label>
@@ -410,10 +404,8 @@
                        <label>Cargue</label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_cargue">
-                           <option></option>
+                           <asp:DropDownList ID="slt_cargue" runat="server"></asp:DropDownList>
                            <!--se colocan los cargues-->
-                       </select>
                    </asp:TableCell>
                </asp:TableRow>
                <asp:TableRow runat="server">
@@ -452,10 +444,8 @@
            <asp:Table id="Table7" class="tabla7" runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
-                       <select id="slt_remesas">
-                           <option></option>
+                           <asp:DropDownList ID="slt_remesas" runat="server"></asp:DropDownList>
                            <!--se colocan las remesas-->
-                       </select>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <input type="button" name="btn_adicionar_remesa" value="Adicionar" />

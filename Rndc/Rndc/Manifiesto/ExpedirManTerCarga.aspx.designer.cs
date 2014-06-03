@@ -76,6 +76,33 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.Label lblConsecutivo;
         
         /// <summary>
+        /// Control slt_viaje.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_viaje;
+        
+        /// <summary>
+        /// Control slt_tipo_manifiesto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_manifiesto;
+        
+        /// <summary>
+        /// Control slt_tipo_identi_titular.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_identi_titular;
+        
+        /// <summary>
         /// Control Table4.
         /// </summary>
         /// <remarks>
@@ -103,6 +130,15 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.Table Table6;
         
         /// <summary>
+        /// Control slt_cargue.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_cargue;
+        
+        /// <summary>
         /// Control Table7.
         /// </summary>
         /// <remarks>
@@ -110,5 +146,14 @@ namespace Rndc.Manifiesto {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table Table7;
+        
+        /// <summary>
+        /// Control slt_remesas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_remesas;
     }
 }
