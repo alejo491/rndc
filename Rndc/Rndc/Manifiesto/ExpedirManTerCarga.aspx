@@ -156,7 +156,6 @@
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <asp:TextBox ID="txt_marca1" runat="server"></asp:TextBox>
-
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <asp:Label ID="Label18" runat="server" Text="Modelo"></asp:Label>
@@ -277,10 +276,8 @@
                        <asp:Label ID="Label34" runat="server" Text="Tipo identificación"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_tipo_identy_cond">
-                           <option></option>
-                       </select>
-
+                       <asp:DropDownList ID="slt_tipo_identy_cond" runat="server"></asp:DropDownList>
+                       <!--se llena-->
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <asp:Label ID="Label35" runat="server" Text="Número identificación"></asp:Label>
@@ -413,19 +410,15 @@
                        <asp:Label ID="Label53" runat="server" Text="Saldo por Pagar"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_saldo_por_pagar">
-                           <option></option>
+                       <asp:DropDownList ID="slt_saldo_por_pagar" runat="server"></asp:DropDownList>
                            <!--se colocan los cargues-->
-                       </select>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <asp:Label ID="Label54" runat="server" Text="Descargue"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <select id="slt_descargue">
-                           <option></option>
+                       <asp:DropDownList ID="slt_descargue" runat="server"></asp:DropDownList>
                            <!--se colocan los descargues-->
-                       </select>
                    </asp:TableCell>
                </asp:TableRow>
                <asp:TableRow runat="server">

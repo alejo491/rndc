@@ -652,6 +652,15 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.Label Label34;
         
         /// <summary>
+        /// Control slt_tipo_identy_cond.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_identy_cond;
+        
+        /// <summary>
         /// Control Label35.
         /// </summary>
         /// <remarks>
@@ -976,6 +985,15 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.Label Label53;
         
         /// <summary>
+        /// Control slt_saldo_por_pagar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_saldo_por_pagar;
+        
+        /// <summary>
         /// Control Label54.
         /// </summary>
         /// <remarks>
@@ -983,6 +1001,15 @@ namespace Rndc.Manifiesto {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label54;
+        
+        /// <summary>
+        /// Control slt_descargue.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_descargue;
         
         /// <summary>
         /// Control Label55.
