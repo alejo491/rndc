@@ -1723,6 +1723,15 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TableCell TableCell82;
         
         /// <summary>
+        /// Control slt_aseguradora.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_aseguradora;
+        
+        /// <summary>
         /// Control Table10.
         /// </summary>
         /// <remarks>

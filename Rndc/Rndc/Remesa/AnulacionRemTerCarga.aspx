@@ -33,7 +33,7 @@
                <asp:Table  runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Tipo Reversa/ Ajuste</label>
+                           <asp:Label ID="Label1" runat="server" Text="Tipo Reversa/ Ajuste"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
                                <asp:DropDownList ID="slt_tipo_reversa" runat="server"></asp:DropDownList>
@@ -43,7 +43,7 @@
                    </asp:TableRow>
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Motivo Anulacion</label>
+                           <asp:Label ID="Label2" runat="server" Text="Motivo Anulacion"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
                                <asp:DropDownList ID="slt_motivo_anulacion" runat="server"></asp:DropDownList>
@@ -59,7 +59,7 @@
                <asp:Table runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Remesa Terrestre de Carga</label>
+                           <asp:Label ID="Label3" runat="server" Text="Remesa Terrestre de Carga"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
                                <asp:DropDownList ID="slt_remesa_de_carga" runat="server"></asp:DropDownList>
@@ -68,46 +68,46 @@
                    </asp:TableRow>
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Remitente</label>
+                           <asp:Label ID="Label4" runat="server" Text="Remitente"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_remitente" type="text" />
+                           <asp:TextBox ID="txt_remitente" runat="server"></asp:TextBox>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <label>Fecha de Registro</label>
+                           <asp:Label ID="Label5" runat="server" Text="Fecha de Registro"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_fecha_registro" type="text" />
+                           <asp:TextBox ID="txt_fecha_registro" runat="server"></asp:TextBox>
                        </asp:TableCell>                   
                    </asp:TableRow>
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Origen</label>
+                           <asp:Label ID="Label6" runat="server" Text="Origen"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_origen" type="text" />
+                           <asp:TextBox ID="txt_origen" runat="server"></asp:TextBox>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <label>Descripcion Producto</label>
+                           <asp:Label ID="Label7" runat="server" Text="Descripcion Producto"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_descripcion_producto" type="text" />
-                       </asp:TableCell>
-                   </asp:TableRow>
-                   <asp:TableRow runat="server">
-                       <asp:TableCell runat="server">
-                           <label>Consecutivo Manifiesto</label>
-                       </asp:TableCell>
-                       <asp:TableCell runat="server">
-                           <input name="txt_consecutivo_manifiesto" type="text" />
+                           <asp:TextBox ID="txt_descripcion_producto" runat="server"></asp:TextBox>
                        </asp:TableCell>
                    </asp:TableRow>
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <label>Observaciones</label>
+                           <asp:Label ID="Label11" runat="server" Text="Consecutivo Manifiesto"></asp:Label>
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input name="txt_observaciones" type="text" />
+                           <asp:TextBox ID="txt_consecutivo_manifiesto" runat="server"></asp:TextBox>
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow runat="server">
+                       <asp:TableCell runat="server">
+                           <asp:Label ID="Label12" runat="server" Text="Observaciones"></asp:Label>
+                       </asp:TableCell>
+                       <asp:TableCell runat="server">
+                           <asp:TextBox ID="txt_observaciones" runat="server"></asp:TextBox>
                        </asp:TableCell>
                    </asp:TableRow>
                </asp:Table>         
@@ -116,10 +116,10 @@
                <asp:Table  runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <input type ="button" name ="btn_guardar_reversa" value ="Guardar Reversa/Ajuste Remesa"/>
+                           <asp:Button ID="btn_guardar_reversa" runat="server" Text="Guardar Reversa/Ajuste Remesa" />
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <input type ="button" name ="btn_reversar_otra_remesa" value ="Reversar Otra Remesa"/>
+                           <asp:Button ID="btn_reversar_otra_remesa" runat="server" Text="Reversar Otra Remesa" />
                        </asp:TableCell>
                    </asp:TableRow>
                </asp:Table>
