@@ -107,6 +107,7 @@
     <Content Include="Carga\AnulacionInfoCarga.aspx" />
     <Content Include="Carga\RegistrarInfoCarga.aspx" />
     <Content Include="Content\WinterCSS.css" />
+    <Content Include="Manifiesto\AnulacionManifiestoCarga.aspx" />
     <Content Include="Manifiesto\CumplirManCarga.aspx" />
     <Content Include="Manifiesto\ExpedirManTerCarga.aspx" />
     <Content Include="packages.config" />
