@@ -48,7 +48,7 @@
            <asp:Table runat="server">
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
-                       <asp:Label ID="Label2" runat="server" Text="olo en case de dividir en varias remesas la informacion de carga, escriba el consecutivo de "></asp:Label><b>carga</b>
+                       <asp:Label ID="Label2" runat="server" Text="Solo en case de dividir en varias remesas la informacion de carga, escriba el consecutivo de "></asp:Label><b>carga</b>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <asp:TextBox ID="txt_consecutivo_cargas" runat="server"></asp:TextBox>
@@ -230,33 +230,7 @@
                        <asp:TextBox ID="txt_placa_remolque" runat="server"></asp:TextBox>
                    </asp:TableCell>
                </asp:TableRow>
-               <asp:TableRow runat="server">
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label29" runat="server" Text="Marca"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:TextBox ID="txt_marca1" runat="server"></asp:TextBox>
-
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label30" runat="server" Text="Modelo"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:TextBox ID="txt_modelo" runat="server"></asp:TextBox>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label31" runat="server" Text="Configuracion"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:TextBox ID="txt_configuracion" runat="server"></asp:TextBox>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:Label ID="Label32" runat="server" Text="Peso Vacio"></asp:Label>
-                   </asp:TableCell>
-                   <asp:TableCell runat="server">
-                       <asp:TextBox ID="txt_peso_vacio" runat="server"></asp:TextBox>
-                   </asp:TableCell>
-               </asp:TableRow>
+               
                <asp:TableRow runat="server">
                    <asp:TableCell runat="server">
                        <asp:Label ID="Label33" runat="server" Text="Configuracion resultante"></asp:Label>
