@@ -15,9 +15,9 @@ namespace Rndc.Viaje
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void BtnAnularViaje_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void BtnAnularViaje_Click(object sender, EventArgs e)
