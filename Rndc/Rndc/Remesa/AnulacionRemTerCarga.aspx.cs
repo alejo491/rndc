@@ -17,8 +17,7 @@ namespace Rndc.Remesa
 
         protected void btn_guardar_remesa_Click(object sender, EventArgs e)
         {
-            //ServicioWebRndc.AnulacionInformacionCarga(this.txt_usuario.Text, "", this.txt_nit.Text, this.txt_informacion_carga.Text, this.slt_motivo_anulacion.SelectedValue);
-            //ServicioWebRndc.AnulacionRemesaTerrestreCarga();
+            ServicioWebRndc.AnularRemesa((this.txt_usuario.Text).ToString(), "", (this.txt_nit.Text).ToString(), "", (this.slt_remesa_de_carga.SelectedValue).ToString(), (this.slt_motivo_anulacion).ToString());//el campo cuatro no aparece, lo puse como vacio
         }
     }
 }

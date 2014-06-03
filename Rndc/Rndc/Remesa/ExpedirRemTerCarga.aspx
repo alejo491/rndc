@@ -587,5 +587,5 @@
             </asp:TableRow>
         </asp:Table>
     </div>
-    <asp:Button ID="btn_ExpedirRemesa" runat="server" Text="Guardar Remesa" />
+    <asp:Button ID="btn_ExpedirRemesa" runat="server" Text="Guardar Remesa" OnClick="btn_ExpedirRemesa_Click" />
 </asp:Content>
