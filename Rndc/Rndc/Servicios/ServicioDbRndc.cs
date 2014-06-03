@@ -130,13 +130,13 @@ namespace Rndc.Servicios
         }
 
         //Insercion de la informacion del viaje
-        public static void AnulacionInfoViaje()            //revisar
+        public static void RegistrarInfoViaje()            //revisar
         {
             //falta
 
         }
 
-        public static void RegistrarInfoViaje()            //revisar
+        public static void AnulacionInfoViaje()            //revisar
         {
             //falta
 
