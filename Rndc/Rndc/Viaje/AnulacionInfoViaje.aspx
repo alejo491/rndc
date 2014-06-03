@@ -35,15 +35,8 @@
                     <asp:Label ID="Label4" runat="server" Text="Informacion del viaje"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-<<<<<<< .mine
                         <asp:DropDownList ID="slt_info_viaje" runat="server"></asp:DropDownList>
                         <!--llenar la informacion del viaje-->
-=======
-                    <select id="slt_info_viaje">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--llenar la informacion del viaje-->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select>
->>>>>>> .r24
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -73,15 +66,8 @@
                     <asp:Label ID="Label8" runat="server" Text="Motivo anulacion"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-<<<<<<< .mine
                         <asp:DropDownList ID="slt_mot_anu" runat="server"></asp:DropDownList>
                         <!--llenar motivo anulacion-->
-=======
-                    <select id="slt_mot_anu">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <option></option>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--llenar motivo anulacion-->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </select>
->>>>>>> .r24
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -95,10 +81,10 @@
             <asp:TableRow runat="server"></asp:TableRow>
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
-                    <asp:Button ID="BtnAnularViaje" runat="server" Text="Guardar anulacion viaje" OnClick="BtnAnularViaje_Click" />
+                    <asp:Button ID="btn_anular_viaje" runat="server" Text="Guardar anulacion viaje" OnClick="BtnAnularViaje_Click" />
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:Button ID="Button2" runat="server" Text="Anular otro viaje" />
+                    <asp:Button ID="btn_anular_otro_viaje" runat="server" Text="Anular otro viaje" />
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
