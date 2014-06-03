@@ -122,12 +122,21 @@
                     <asp:DropDownList ID="slt_nombre" runat="server"></asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>
+            <asp:TableRow ID="TableRow34" runat="server">
+                <asp:TableCell ID="TableCell128" runat="server">
+                    <asp:Label ID="Label56" runat="server" Text="Codigo del Producto"></asp:Label>
+                </asp:TableCell>
+                <asp:TableCell ID="TableCell129" runat="server">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </asp:TableCell>
+
+                </asp:TableRow>
             <asp:TableRow ID="TableRow8" runat="server">
                 <asp:TableCell ID="TableCell30" runat="server">
-                    <asp:Label ID="Label13" runat="server" Text="Codigo del Producto"></asp:Label>
+                    <asp:Label ID="Label13" runat="server" Text="Cantidad esperada"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell ID="TableCell31" runat="server">
-                    <asp:TextBox ID="txt_codigo_producto" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_cantidad_esperada" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell ID="TableCell32" runat="server"></asp:TableCell>
                 <asp:TableCell ID="TableCell33" runat="server">
@@ -189,6 +198,7 @@
                     <asp:TextBox ID="txt_direccion_prop" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell ID="TableCell49" runat="server">
+                    <asp:Label ID="Label57" runat="server" Text="Municipio"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell ID="TableCell50" runat="server">
                     <asp:TextBox ID="txt_municipio_prop" runat="server"></asp:TextBox>
@@ -577,5 +587,5 @@
             </asp:TableRow>
         </asp:Table>
     </div>
-    <asp:Button ID="btn_ExpedirRemesa" runat="server" Text="Expedir Remesa" />
+    <asp:Button ID="btn_ExpedirRemesa" runat="server" Text="Guardar Remesa" />
 </asp:Content>
