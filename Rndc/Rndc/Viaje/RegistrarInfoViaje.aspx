@@ -40,10 +40,8 @@
                     <asp:Label ID="Label4" runat="server" Text="Tipo Identificación"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                       <select id="slt_tipo_identi_cond">
-                           <option></option>
+                           <asp:DropDownList ID="slt_tipo_identi_cond" runat="server"></asp:DropDownList>
                            <!--llenar los tipos de documento que hay-->
-                       </select>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label5" runat="server" Text="Número Identificación"></asp:Label>
@@ -128,10 +126,8 @@
                     <asp:Label ID="Label16" runat="server" Text="Configuracion:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                       <select id="slt_vehiculos1">
-                           <option></option>
+                           <asp:DropDownList ID="slt_vehiculos1" runat="server"></asp:DropDownList>
                            <!--llenar con la lista de los remolques-->
-                       </select>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -177,10 +173,8 @@
                     <asp:Label ID="Label23" runat="server" Text="Configuracion:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                       <select id="slt_remolques2">
-                           <option></option>
+                           <asp:DropDownList ID="slt_remolques2" runat="server"></asp:DropDownList>
                            <!--llenar con la lista de los remolques-->
-                       </select>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -219,10 +213,8 @@
         <asp:Table ID="Table5" class="tabla5" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
-                       <select id="slt_infor_carga">
-                           <option></option>
+                           <asp:DropDownList ID="slt_infor_carga" runat="server"></asp:DropDownList>
                            <!--se llena dinamicamente-->
-                       </select>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Button ID="btn_Adicionar" runat="server" Text="Adicionar" OnClick="Adicionar_Click" />

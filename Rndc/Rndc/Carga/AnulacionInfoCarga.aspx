@@ -72,7 +72,12 @@
                     <asp:Label ID="Label2" runat="server" Text="Motivo Anulacion"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
+<<<<<<< .mine
+                               <asp:DropDownList ID="slt_motivo_anulacion" runat="server"></asp:DropDownList>
+                               <!-- faltan las opciones-->
+=======
                     <asp:DropDownList ID="slt_motivo" runat="server"></asp:DropDownList>
+>>>>>>> .r24
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">

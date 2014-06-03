@@ -13,15 +13,6 @@ namespace Rndc.Remesa {
     public partial class AnulacionRemTerCarga {
         
         /// <summary>
-        /// Control Table1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
-        
-        /// <summary>
         /// Control Label10.
         /// </summary>
         /// <remarks>
@@ -76,30 +67,30 @@ namespace Rndc.Remesa {
         protected global::System.Web.UI.WebControls.TextBox txt_usuario;
         
         /// <summary>
-        /// Control Table1.
+        /// Control slt_tipo_reversa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.DropDownList slt_tipo_reversa;
         
         /// <summary>
-        /// Control Table1.
+        /// Control slt_motivo_anulacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.DropDownList slt_motivo_anulacion;
         
         /// <summary>
-        /// Control Table1.
+        /// Control slt_remesa_de_carga.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.DropDownList slt_remesa_de_carga;
     }
 }
