@@ -116,10 +116,10 @@
                <asp:Table  runat="server">
                    <asp:TableRow runat="server">
                        <asp:TableCell runat="server">
-                           <asp:Button ID="btn_guardar_reversa" runat="server" Text="Guardar Reversa/Ajuste Remesa" />
+                           <asp:Button ID="btn_guardar_remesa" runat="server" Text="Guardar Reversa/Ajuste Remesa" OnClick="btn_guardar_remesa_Click" />
                        </asp:TableCell>
                        <asp:TableCell runat="server">
-                           <asp:Button ID="btn_reversar_otra_remesa" runat="server" Text="Reversar Otra Remesa" />
+                           <asp:Button ID="btn_reversar_otra_remesa" runat="server" Text="Reversar Otra Remesa" OnClick="btn_reversar_otra_remesa_Click" />
                        </asp:TableCell>
                    </asp:TableRow>
                </asp:Table>

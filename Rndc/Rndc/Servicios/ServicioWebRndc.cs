@@ -489,6 +489,190 @@ namespace Rndc.Servicios
 
         }
 
+        public static string AnularInformacionViaje(
+            string usuario,
+            string password,
+            string nit,
+            string consecutivoInfoViaje,
+            string MotivoReversaRemesa,
+            string motivoAnulacionInfoViaje
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>8</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<CONSECUTIVOINFORMACIONVIAJE>" + consecutivoInfoViaje + "</CONSECUTIVOREMESA> " +
+                              "<MOTIVOANULACIONINFOVIAJE>" + motivoAnulacionInfoViaje + "</MOTIVOREVERSAREMESA> " +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
+            return peticion;
+
+        }
+
+        //Informacion de las remesas
+        public static string ExpedirRemesa(
+            string usuario,
+            string password,
+            string nit,
+            string consecutivoRemesa,
+            string consecutivoCarga,
+            string cantidad,
+            string duenoPoliza,
+            string numPoliza,
+            string fecVencPoliza,
+            string companiaSeguro,
+            string fecllegadaCargue,
+            string horaLlegadaCargueRemesa,
+            string fecEntradaCargue,
+            string horaEntradaCargue,
+            string fecSalidaCargue,
+            string horaSalidaCargue
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +                    
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>3</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<CONSECUTIVOREMESA>" + consecutivoRemesa + "</CONSECUTIVOREMESA> " +
+                              "<CONSECUTIVOINFORMACIONCARGA>" + consecutivoCarga + "</CONSECUTIVOINFORMACIONCARGA> " +
+                              "<CANTIDADCARGADA>" + cantidad + "</CANTIDADCARGADA> " +
+                              "<DUENOPOLIZA>" + duenoPoliza + "</DUENOPOLIZA> " +
+                              "<NUMPOLIZATRANSPORTE>" + numPoliza + "</NUMPOLIZATRANSPORTE> " +
+                              "<FECHAVENCIMIENTOPOLIZACARGA>" + fecVencPoliza + "</FECHAVENCIMIENTOPOLIZACARGA> " +
+
+                              "<COMPANIASEGURO>" + companiaSeguro + "</COMPANIASEGURO> " +
+                              "<FECHALLEGADACARGUE>" + fecllegadaCargue + "</FECHALLEGADACARGUE> " +
+                              "<HORALLEGADACARGUEREMESA>" + horaLlegadaCargueRemesa + "</HORALLEGADACARGUEREMESA> " +
+                              "<FECHAENTRADACARGUE>" + fecEntradaCargue + "</FECHAENTRADACARGUE> " +
+                              "<HORAENTRADACARGUEREMESA>" + horaEntradaCargue + "</HORAENTRADACARGUEREMESA> " +
+                              "<FECHASALIDACARGUE>" + fecSalidaCargue + "</FECHASALIDACARGUE> " +
+                              "<HORASALIDACARGUEREMESA>" + horaSalidaCargue + "</HORASALIDACARGUEREMESA> " +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
+            return peticion;
+
+        }
+
+        public static string CrearCumplirRemesa(
+            string usuario,
+            string password,
+            string nit,
+            string consecutivoRemesa,
+            string numManifiesto,
+            string TipoCumplidoRemesa,
+            string fecLlegadaDescargue,
+            string horaLlegadaDescargueCumplido,
+            string fecEntregaDescargue,
+            string horaEntradaDescargueCumplido,
+            string fecSalidaDescargue,
+            string horaSalidaDescargueCumplido,
+            string cantidadEntregada
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>5</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<CONSECUTIVOREMESA>" + consecutivoRemesa + "</CONSECUTIVOREMESA> " +
+                              "<NUMMANIFIESTOCARGA>" + numManifiesto + "</NUMMANIFIESTOCARGA> " +
+                              "<TIPOCUMPLIDOREMESA>" + TipoCumplidoRemesa + "</TIPOCUMPLIDOREMESA> " +
+                              "<FECHALLEGADADESCARGUE>" + fecLlegadaDescargue + "</FECHALLEGADADESCARGUE> " +
+                              "<HORALLEGADADESCARGUECUMPLIDO>" + horaLlegadaDescargueCumplido + "</HORALLEGADADESCARGUECUMPLIDO> " +
+                              "<FECHAENTRADADESCARGUE>" + fecEntregaDescargue + "</FECHAENTRADADESCARGUE> " +
+
+                              "<HORAENTRADADESCARGUECUMPLIDO>" + horaEntradaDescargueCumplido + "</HORAENTRADADESCARGUECUMPLIDO> " +
+                              "<FECHASALIDADESCARGUE>" + fecSalidaDescargue + "</FECHASALIDADESCARGUE> " +
+                              "<HORASALIDADESCARGUECUMPLIDO>" + horaSalidaDescargueCumplido + "</HORASALIDADESCARGUECUMPLIDO> " +
+                              "<CANTIDADENTREGADA>" + cantidadEntregada + "</CANTIDADENTREGADA> " +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
+            return peticion;
+
+        }
+
+        public static string AnularRemesa(
+            string usuario,
+            string password,
+            string nit,
+            string consecutivoRemesa,
+            string MotivoReversaRemesa,
+            string motivoAnulacionInfoViaje
+
+            )
+        {
+            ServiceReferenceRNDC.BPMServicesClient servicio = new BPMServicesClient();
+
+            string peticion = "<?xml version='1.0' encoding='ISO-8859-1' ?> " +
+                              "<root>" +
+                              "<acceso> " +
+                              "<username>" + usuario + "</username> " +
+                              "<password>" + password + "</password> " +
+                              "</acceso>" +
+                              "<solicitud> " +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>9</procesoid> " +
+                              "</solicitud> " +
+                              "<variables> " +
+                              "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
+                              "<CONSECUTIVOREMESA>" + consecutivoRemesa + "</CONSECUTIVOREMESA> " +
+                              "<MOTIVOREVERSAREMESA>" + MotivoReversaRemesa + "</MOTIVOREVERSAREMESA> " +
+                              "<MOTIVOANULACIONINFOVIAJE>" + motivoAnulacionInfoViaje + "</MOTIVOANULACIONINFOVIAJE> " +
+                              "</variables> " +
+                              "</root>";
+
+            /*string respuesta=servicio.AtenderMensajeRNDC(peticion);
+            * return respuesta;
+            */
+            return peticion;
+
+        }
+
 
         //Informacion de los Manifiestos
         public static string CreacionManifiestoCarga(       
