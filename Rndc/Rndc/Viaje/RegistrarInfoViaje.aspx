@@ -24,7 +24,7 @@
                     <asp:TextBox ID="txt_usuario" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:Label ID="Label3" runat="server" Text="CONSECUTIVO:<"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="CONSECUTIVO:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:TextBox ID="txt_consecutivo" runat="server"></asp:TextBox>
@@ -50,7 +50,7 @@
                     <asp:TextBox ID="txt_num_identi_cond" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:Label ID="Nombre" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="Nombre" runat="server" Text="Nombre"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:TextBox ID="txt_nombre_cond" runat="server"></asp:TextBox>
@@ -124,9 +124,10 @@
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label16" runat="server" Text="Configuracion:"></asp:Label>
                 </asp:TableCell>
+
                 <asp:TableCell runat="server">
-                           <asp:DropDownList ID="slt_vehiculos1" runat="server"></asp:DropDownList>
-                           <!--llenar con la lista de los remolques-->
+                    <asp:TextBox ID="txt_configuracion" runat="server"></asp:TextBox>                          
+                           
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -172,8 +173,8 @@
                     <asp:Label ID="Label23" runat="server" Text="Configuracion:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                           <asp:DropDownList ID="slt_remolques2" runat="server"></asp:DropDownList>
-                           <!--llenar con la lista de los remolques-->
+                          <asp:TextBox ID="txt_configuracion1" runat="server"></asp:TextBox>
+                           
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -253,7 +254,7 @@
                         <asp:TextBox ID="txt_num_envios" runat="server"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:Label ID="Label29" runat="server" Text="Tiempo total cargue pactado"></asp:Label>
+                        <asp:Label ID="Label29" runat="server" Text="Tiempo total cargue pactado(Incluye Espera + Cargue)"></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
                         <asp:TextBox ID="txt_horas_cargue" runat="server"></asp:TextBox>
@@ -273,7 +274,7 @@
                     <asp:TableCell runat="server"></asp:TableCell>
                     <asp:TableCell runat="server"></asp:TableCell>
                     <asp:TableCell runat="server">
-                        <asp:Label ID="Label31" runat="server" Text="Tiempo total cargue pactado"></asp:Label>
+                        <asp:Label ID="Label31" runat="server" Text="Tiempo total descargue pactado(Incluye Espera + Descargue)"></asp:Label>
                     </asp:TableCell>
                     <asp:TableCell runat="server">
                         <asp:TextBox ID="txt_horas_descargue" runat="server"></asp:TextBox>

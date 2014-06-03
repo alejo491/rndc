@@ -337,13 +337,13 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label16;
         
         /// <summary>
-        /// Control slt_vehiculos1.
+        /// Control txt_configuracion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList slt_vehiculos1;
+        protected global::System.Web.UI.WebControls.TextBox txt_configuracion;
         
         /// <summary>
         /// Control Label17.
@@ -463,13 +463,13 @@ namespace Rndc.Viaje {
         protected global::System.Web.UI.WebControls.Label Label23;
         
         /// <summary>
-        /// Control slt_remolques2.
+        /// Control txt_configuracion1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList slt_remolques2;
+        protected global::System.Web.UI.WebControls.TextBox txt_configuracion1;
         
         /// <summary>
         /// Control Label24.
