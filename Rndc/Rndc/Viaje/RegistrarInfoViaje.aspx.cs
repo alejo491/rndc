@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Rndc.Servicios;
 
 namespace Rndc.Viaje
 {
@@ -13,5 +14,12 @@ namespace Rndc.Viaje
         {
 
         }
+
+        protected void btn_registrar_info_viaje_Click(object sender, EventArgs e)
+        {
+             ServicioWebRndc.CreacionInformacionViaje((this.txt_usuario.Text).ToString(), "password", (this.txt_empresa.Text).ToString(), (this.txt_consecutivo.Text).ToString(),"codIDConductor",(this.txt_num_identi_cond.Text).ToString(), (this.txt_placa1.Text).ToString(),(this.txt_placa2.Text).ToString(),(this.txt_origen.Text).ToString(),(this.txt_destino.Text).ToString());
+            //revisar cual es el id del conductor
+        }
+
     }
 }
