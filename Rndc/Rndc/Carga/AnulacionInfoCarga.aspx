@@ -73,8 +73,8 @@
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:DropDownList ID="slt_motivo_anulacion" runat="server">
-                        <asp:ListItem ></asp:ListItem>
-                        <!--Motivos de la anulacion no esta en anexos-->
+                        <asp:ListItem Value="D" Text="Error en la Digitacion"></asp:ListItem>
+                        <asp:ListItem Value="S" Text="Cancelacion del Servicio"></asp:ListItem>
                     </asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>

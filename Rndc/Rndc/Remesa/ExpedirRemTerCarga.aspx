@@ -81,8 +81,19 @@
                     <asp:Label ID="Label8" runat="server" Text="Tipo Empaque"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell ID="TableCell20" runat="server">
-                    <asp:DropDownList ID="slt_tipo_empaque" runat="server"></asp:DropDownList>
-                    <!-- llenar con Los tipos de empaque-->
+                    <asp:DropDownList ID="slt_tipo_empaque" runat="server">
+                        <asp:ListItem Value="1" Text="Paquetes"></asp:ListItem>
+                        <asp:ListItem Value="2" Text="Bulto"></asp:ListItem>
+                        <asp:ListItem Value="3" Text="Granel Liquido"></asp:ListItem>
+                        <asp:ListItem Value="4" Text="1 C 20 pies (Contenedor)"></asp:ListItem>
+                        <asp:ListItem Value="5" Text="2 C 20 pies (Contenedor)"></asp:ListItem>
+                        <asp:ListItem Value="6" Text="1 C 40 pies (Contenedor)"></asp:ListItem>
+                        <asp:ListItem Value="7" Text="Cilindros"></asp:ListItem>
+                        <asp:ListItem Value="8" Text="Granel Solido"></asp:ListItem>
+                        <asp:ListItem Value="9" Text="Varios"></asp:ListItem>
+                        <asp:ListItem Value="10" Text="No Aplica N..A."></asp:ListItem>
+                        <asp:ListItem Value="11" Text="Carga Estibada"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>

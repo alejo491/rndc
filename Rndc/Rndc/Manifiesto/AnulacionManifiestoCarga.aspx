@@ -36,7 +36,7 @@
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:DropDownList ID="slt_manifiesto_de_carga" runat="server"></asp:DropDownList>
-                       <!-- faltan las opciones-->
+                    <!--se llena con los manifiestos no cumplidos-->
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -65,8 +65,10 @@
                     <asp:Label ID="Label5" runat="server" Text="Motivo Anulacion"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                       <asp:DropDownList ID="slt_motivo_anulacion" runat="server"></asp:DropDownList>
-                       <!-- faltan las opciones-->
+                    <asp:DropDownList ID="slt_motivo_anulacion" runat="server">
+                        <asp:ListItem Value="D" Text="Error en la Digitacion"></asp:ListItem>
+                        <asp:ListItem Value="S" Text="Cancelacion del Servicio"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
 
             </asp:TableRow>

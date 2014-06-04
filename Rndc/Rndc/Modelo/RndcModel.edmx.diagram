@@ -4,23 +4,23 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="58abd1ca95e640be82f413250808238f" Name="Diagrama1">
+      <Diagram DiagramId="58abd1ca95e640be82f413250808238f" Name="Diagrama1" ZoomLevel="74">
         <EntityTypeShape EntityType="RndcModel.BaseDeCliente" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.BaseDeRemolque" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.BaseDeVehiculo" Width="1.5" PointX="3" PointY="19.75" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.DetalleDeRuta" Width="1.5" PointX="5.75" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.DetalleDeRutasSeguimiento" Width="1.5" PointX="5.25" PointY="35.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.DetalleOrdenDeCargueTemporal" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.DetalleOrdenDeCargueTemporal" Width="2" PointX="3" PointY="2.5" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ElDestino" Width="1.5" PointX="5.75" PointY="6.375" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ElEmpaque" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ElFactorDeCarga" Width="1.5" PointX="3" PointY="32" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ElManifiestoDeCarga" Width="1.5" PointX="8.25" PointY="21.25" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ElOrigen" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.ElTipoDeEmpresa" Width="1.5" PointX="7.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.ElTipoDeEmpresa" Width="2.375" PointX="9.875" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ElTipoDeVehiculo" Width="1.5" PointX="0.75" PointY="27.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.LaCategoriaPorPeso" Width="1.5" PointX="8.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.LaCategoriaPorPeso" Width="2.25" PointX="6.75" PointY="9.25" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LaMarca" Width="1.5" PointX="0.75" PointY="31.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.LaNaturalezaDeLaMercancia" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.LaNaturalezaDeLaMercancia" Width="2" PointX="0.5" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LaRemesaTerrestreDeCarga" Width="1.5" PointX="13.5" PointY="29.25" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LaRotacionRemolque" Width="1.5" PointX="11.25" PointY="23.5" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LasAseguradora" Width="1.5" PointX="3.75" PointY="9.375" IsExpanded="true" />
@@ -28,20 +28,20 @@
         <EntityTypeShape EntityType="RndcModel.LasRutasNueva" Width="1.5" PointX="8" PointY="2.375" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LasRutasParaSeguimiento" Width="1.5" PointX="3" PointY="35.25" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LasZonasDeRuta" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.LaUbicacionDelCliente" Width="1.5" PointX="1.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.LaUbicacionDelCliente" Width="2.25" PointX="0.5" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LaUnidadDeMedidaCarga" Width="1.5" PointX="0.75" PointY="39.625" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosConductore" Width="1.5" PointX="6" PointY="39.375" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosConductoresTercerizado" Width="1.5" PointX="6" PointY="30.5" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosEstadosDeSolicitudSeguimiento" Width="1.5" PointX="6" PointY="45.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.LosMotivosParaSeguimiento" Width="1.5" PointX="9.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.LosMotivosParaSeguimiento" Width="2.625" PointX="10.375" PointY="6.25" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosMotore" Width="1.5" PointX="0.75" PointY="33.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.LosTiposDeActividade" Width="1.5" PointX="10.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.LosTiposDeDiferenciale" Width="1.5" PointX="10.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.LosTiposDeActividade" Width="2" PointX="10.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.LosTiposDeDiferenciale" Width="2.125" PointX="10.75" PointY="10.125" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosTiposDeEje" Width="1.5" PointX="3.75" PointY="13.125" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosTiposDeSuspension" Width="1.5" PointX="3.75" PointY="15.5" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosTiposDeTransmision" Width="1.5" PointX="0.75" PointY="36.75" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.LosVehiculosTercerizado" Width="1.5" PointX="6" PointY="20.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="RndcModel.ProductoCliente" Width="1.5" PointX="0.75" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RndcModel.ProductoCliente" Width="2" PointX="0.75" PointY="42.375" IsExpanded="true" />
         <EntityTypeShape EntityType="RndcModel.ProgramacionParaSeguimiento" Width="1.5" PointX="10.5" PointY="27.875" IsExpanded="true" />
         <AssociationConnector Association="RndcModel.FK_BaseDeRemolques_BaseDeClientes" ManuallyRouted="false" />
         <AssociationConnector Association="RndcModel.FK_BaseDeVehiculos_BaseDeClientes" ManuallyRouted="false" />

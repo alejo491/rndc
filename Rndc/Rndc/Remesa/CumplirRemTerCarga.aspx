@@ -115,8 +115,10 @@
                     <asp:Label ID="Label14" runat="server" Text="Tipo Cumplido"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:DropDownList ID="slt_tipo_cumplido" runat="server"></asp:DropDownList>
-                    <!--se llena con los tipos cumplidos-->
+                    <asp:DropDownList ID="slt_tipo_cumplido" runat="server">
+                        <asp:ListItem Value="C" Text="Cumplido Normal"></asp:ListItem>
+                        <asp:ListItem Value="S" Text="Suspension"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -133,8 +135,10 @@
                     <asp:TextBox ID="txt_cantidad_cargada" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:DropDownList ID="slt_medida" runat="server"></asp:DropDownList>
-                    <!--se llena con los tipos de medidas de las cargas-->
+                    <asp:DropDownList ID="slt_medida" runat="server">
+                        <asp:ListItem Value="1" Text="Kilogramos"></asp:ListItem>
+                        <asp:ListItem Value="2" Text="Galones"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label17" runat="server" Text="Cantidad Entregada"></asp:Label>
