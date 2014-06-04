@@ -17,14 +17,17 @@ namespace Rndc.Carga
 
         protected void btn_guardar_anulacion_Click(object sender, EventArgs e)
         {
-            ServicioWebRndc.AnulacionInformacionCarga((this.txt_usuario.Text).ToString(), "", (this.txt_nit.Text).ToString(), (this.txt_informacion_carga.Text).ToString(), (this.slt_motivo_anulacion.SelectedValue).ToString());
+            bool validar = true;
+            
+            
+            if (validar)
+            {
+                ServicioWebRndc.AnulacionInformacionCarga((this.txt_usuario.Text).ToString(), "", (this.txt_nit.Text).ToString(), (this.txt_informacion_carga.Text).ToString(), (this.slt_motivo_anulacion.SelectedValue).ToString());
+            }
         }
 
 
-        protected void btn_guardar_anulacion_Click(object sender, EventArgs e)
-        {
-            ServicioWebRndc.AnulacionInformacionCarga(this.txt_usuario.Text,"",this.txt_nit.Text,this.txt_informacion_carga.Text,this.slt_motivo_anulacion.SelectedValue);
-        }
+        
 
     }
 }
