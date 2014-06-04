@@ -17,7 +17,7 @@ namespace Rndc.Viaje
 
         protected void btn_registrar_info_viaje_Click(object sender, EventArgs e)
         {
-             ServicioWebRndc.CreacionInformacionViaje((this.txt_usuario.Text).ToString(), "password", (this.txt_empresa.Text).ToString(), (this.txt_consecutivo.Text).ToString(),"codIDConductor",(this.txt_num_identi_cond.Text).ToString(), (this.txt_placa1.Text).ToString(),(this.txt_placa2.Text).ToString(),(this.txt_origen.Text).ToString(),(this.txt_destino.Text).ToString());
+             ServicioWebRndc.CreacionInformacionViaje((this.txt_usuario.Text).ToString(), "", (this.txt_empresa.Text).ToString(), (this.txt_consecutivo.Text).ToString(),"codIDConductor",(this.txt_num_identi_cond.Text).ToString(), (this.txt_placa1.Text).ToString(),(this.txt_placa2.Text).ToString(),(this.txt_origen.Text).ToString(),(this.txt_destino.Text).ToString());
             //revisar cual es el codid del conductor
         }
 
