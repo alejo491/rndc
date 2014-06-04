@@ -14,8 +14,6 @@ namespace Rndc.Servicios
         public static string CreacionVehiculoRigido(
             string usuario,
             string password,
-            string tipoSolicitud,
-            string idProceso,
             string nit,
             string placa,
             string codConfUndCarga,
@@ -43,8 +41,8 @@ namespace Rndc.Servicios
                               "<password> " + password + "</password> " +
                               "</acceso> " +
                               "<solicitud> " +
-                              "<tipo>" + tipoSolicitud + "</tipo> " +
-                              "<procesoid>" + idProceso + "</procesoid>" +
+                              "<tipo>1</tipo> " +
+                              "<procesoid>12</procesoid>" +
                               "</solicitud> " +
                               "<variables> " +
                               "<NUMNITEMPRESATRANSPORTE>" + nit + "</NUMNITEMPRESATRANSPORTE> " +
