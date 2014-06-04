@@ -35,8 +35,8 @@
                     <asp:Label ID="Label4" runat="server" Text="Informacion del viaje"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                        <asp:DropDownList ID="slt_info_viaje" runat="server"></asp:DropDownList>
-                        <!--llenar la informacion del viaje-->
+                    <asp:DropDownList ID="slt_info_viaje" runat="server"></asp:DropDownList>
+                    <!--llenar las informaciones de los viajes-->
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -66,8 +66,10 @@
                     <asp:Label ID="Label8" runat="server" Text="Motivo anulacion"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                        <asp:DropDownList ID="slt_mot_anu" runat="server"></asp:DropDownList>
-                        <!--llenar motivo anulacion-->
+                    <asp:DropDownList ID="slt_mot_anu" runat="server">
+                        <asp:ListItem Value="D" Text="Error en la Digitacion"></asp:ListItem>
+                        <asp:ListItem Value="S" Text="Cancelacion del Servicio"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">

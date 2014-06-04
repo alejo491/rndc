@@ -257,8 +257,14 @@
                     <asp:Label ID="Label34" runat="server" Text="Tipo identificación"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:DropDownList ID="slt_tipo_identy_cond" runat="server"></asp:DropDownList>
-                    <!--se llena-->
+                    <asp:DropDownList ID="slt_tipo_identy_cond" runat="server">
+                        <asp:ListItem Value="C" Text="Cedula de Ciudadania"></asp:ListItem>
+                                <asp:ListItem Value="N" Text="Nit"></asp:ListItem>
+                                <asp:ListItem Value="P" Text="Pasaporte"></asp:ListItem>
+                                <asp:ListItem Value="E" Text="Cedula Extranjera"></asp:ListItem>
+                                <asp:ListItem Value="T" Text="Tarjeta de Identidad"></asp:ListItem>
+                                <asp:ListItem Value="U" Text="NUIP"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label35" runat="server" Text="Número identificación"></asp:Label>

@@ -40,8 +40,14 @@
                     <asp:Label ID="Label4" runat="server" Text="Tipo Identificación"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                           <asp:DropDownList ID="slt_tipo_identi_cond" runat="server"></asp:DropDownList>
-                           <!--llenar los tipos de documento que hay-->
+                    <asp:DropDownList ID="slt_tipo_identi_cond" runat="server">
+                        <asp:ListItem Value="C" Text="Cedula de Ciudadania"></asp:ListItem>
+                        <asp:ListItem Value="N" Text="Nit"></asp:ListItem>
+                        <asp:ListItem Value="P" Text="Pasaporte"></asp:ListItem>
+                        <asp:ListItem Value="E" Text="Cedula Extranjera"></asp:ListItem>
+                        <asp:ListItem Value="T" Text="Tarjeta de Identidad"></asp:ListItem>
+                        <asp:ListItem Value="U" Text="NUIP"></asp:ListItem>
+                    </asp:DropDownList>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label5" runat="server" Text="Número Identificación"></asp:Label>
@@ -126,8 +132,8 @@
                 </asp:TableCell>
 
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="txt_configuracion" runat="server"></asp:TextBox>                          
-                           
+                    <asp:TextBox ID="txt_configuracion" runat="server"></asp:TextBox>
+
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -173,8 +179,8 @@
                     <asp:Label ID="Label23" runat="server" Text="Configuracion:"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                          <asp:TextBox ID="txt_configuracion1" runat="server"></asp:TextBox>
-                           
+                    <asp:TextBox ID="txt_configuracion1" runat="server"></asp:TextBox>
+
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow runat="server">
@@ -213,8 +219,8 @@
         <asp:Table ID="Table5" class="tabla5" runat="server">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
-                           <asp:DropDownList ID="slt_infor_carga" runat="server"></asp:DropDownList>
-                           <!--se llena dinamicamente-->
+                    <asp:DropDownList ID="slt_infor_carga" runat="server"></asp:DropDownList>
+                    <!--se llena con las informaciones de las cargas-->
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Button ID="btn_Adicionar" runat="server" Text="Adicionar" OnClick="Adicionar_Click" />
