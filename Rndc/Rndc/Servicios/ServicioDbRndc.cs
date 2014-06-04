@@ -181,5 +181,17 @@ namespace Rndc.Servicios
         }
 
 
+        //informacion de los dropdownlist
+        /*
+        public static List<Colore> ListarSedes()
+        {
+            var db = new RndcEntities();
+            List<Colore> lista = (from e in db.Colores
+                                  orderby e.Color ascending
+                                  select e).ToList();
+            return lista;
+
+        }
+        */
     }
 }
