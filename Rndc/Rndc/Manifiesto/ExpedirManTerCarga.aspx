@@ -80,7 +80,7 @@
                        <asp:Label ID="Label5" runat="server" Text="Origen"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                       <asp:TextBox ID="txt_origen" runat="server"></asp:TextBox>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
                        <asp:Label ID="Label6" runat="server" Text="Destino"></asp:Label>
@@ -400,7 +400,8 @@
                        <asp:Label ID="Label55" runat="server" Text="Recomendaciones"></asp:Label>
                    </asp:TableCell>
                    <asp:TableCell runat="server">
-                       <textarea id="textarea_recomendaciones" cols="20" rows="2"></textarea>
+                       <asp:TextBox ID="txt_recomendaciones" runat="server"></asp:TextBox>
+                       
                    </asp:TableCell>
                </asp:TableRow>
            </asp:Table>
@@ -494,5 +495,5 @@
                </asp:TableRow>
            </asp:Table>
        </div>
-    <asp:Button ID="btn_guardar_manifiesto" runat="server" Text="Guardar Manifiesto" />
+    <asp:Button ID="btn_guardar_manifiesto" runat="server" Text="Guardar Manifiesto" OnClick="btn_guardar_manifiesto_Click" />
 </asp:Content>
