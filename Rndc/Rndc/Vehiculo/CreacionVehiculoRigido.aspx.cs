@@ -39,19 +39,26 @@ namespace Rndc.Vehiculo
 
         protected void Guardar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string respuesta = ServicioWebRndc.CreacionVehiculoRigido(this.txt_usuario.Text, "", this.txt_nit.Text, this.txt_placa.Text, this.sltConfiguracion.SelectedValue, this.marca.SelectedValue, this.txt_linea_vehic.Text, this.txt_modelo.Text, this.combustible.SelectedValue, this.txt_peso.Text, this.color.SelectedValue, this.carroceria.SelectedValue, this.slt_tipo_documento.SelectedValue, this.txt_num_ident.Text, this.slt_tipo_doc_tenedor.SelectedValue, this.txt_num_ident_tenedor.Text, this.txt_num_poliza.Text, this.txt_fec_vec.Text, this.aseguradora.SelectedValue);
-                ServicioDbRndc.CreacionVehiculoRigido(this.txt_placa.Text, this.carroceria.SelectedValue, this.color.SelectedValue, this.marca.SelectedValue, this.sltConfiguracion.SelectedValue, this.txt_modelo.Text, this.txt_linea_vehic.Text, this.txt_peso.Text);
-                ClientScript.RegisterStartupScript(this.GetType(), "myScript",
-                                "<script>alert('" + ManejadorErrores.Solucion(respuesta, "Crear Vehiculo Rigido") + "')</script>");
-            }
-            catch (Exception )
-            {
+            bool validar = true;
+            string mensaje = "";
 
-                ClientScript.RegisterStartupScript(this.GetType(), "myScript",
-                            "<script>alert('Error en la persistencia de la aplicacion,')</script>"); 
+            if (validar)
+            {
+                    try
+                    {
+                        string respuesta = ServicioWebRndc.CreacionVehiculoRigido(this.txt_usuario.Text, "", this.txt_nit.Text, this.txt_placa.Text, this.sltConfiguracion.SelectedValue, this.marca.SelectedValue, this.txt_linea_vehic.Text, this.txt_modelo.Text, this.combustible.SelectedValue, this.txt_peso.Text, this.color.SelectedValue, this.carroceria.SelectedValue, this.slt_tipo_documento.SelectedValue, this.txt_num_ident.Text, this.slt_tipo_doc_tenedor.SelectedValue, this.txt_num_ident_tenedor.Text, this.txt_num_poliza.Text, this.txt_fec_vec.Text, this.aseguradora.SelectedValue);
+                        ServicioDbRndc.CreacionVehiculoRigido(this.txt_placa.Text, this.carroceria.SelectedValue, this.color.SelectedValue, this.marca.SelectedValue, this.sltConfiguracion.SelectedValue, this.txt_modelo.Text, this.txt_linea_vehic.Text, this.txt_peso.Text);
+                        ClientScript.RegisterStartupScript(this.GetType(), "myScript",
+                                        "<script>alert('" + ManejadorErrores.Solucion(respuesta, "Crear Vehiculo Rigido") + "')</script>");
+                    }
+                    catch (Exception)
+                    {
+
+                        ClientScript.RegisterStartupScript(this.GetType(), "myScript",
+                                    "<script>alert('Error en la persistencia de la aplicacion,')</script>");
+                    }
             }
+          
             
         }
 
