@@ -17,12 +17,19 @@ namespace Rndc.Viaje
 
         protected void BtnAnularInformacionViaje_Click(object sender, EventArgs e)
         {
-            ServicioWebRndc.AnularInformacionViaje((this.txt_usuario.Text).ToString(),"",(this.txt_nit.Text).ToString(),"","",(this.slt_mot_anu).ToString());//El cuarto campo esta vacio, es el de consecutivo, me aparece en la funcion pero no estan en los pdfs; el quinto campo tambien tiene el mismo poblema que el cuarto
+            
         }
 
         protected void BtnAnularViaje_Click(object sender, EventArgs e)
         {
+            bool validar = true;
+            string mensaje = "";
             
-        }
+
+            if (validar)
+            {
+                ServicioWebRndc.AnularInformacionViaje((this.txt_usuario.Text).ToString(), "", (this.txt_nit.Text).ToString(), "", "", (this.slt_mot_anu).ToString());//El cuarto campo esta vacio, es el de consecutivo, me aparece en la funcion pero no estan en los pdfs; el quinto campo tambien tiene el mismo poblema que el cuarto
+            }        
+            }
     }
 }
