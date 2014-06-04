@@ -295,6 +295,6 @@
         </div>
     </div>
 
-    
+    <asp:Button ID="btn_registrar_info_viaje" runat="server" Text="Guardar Viaje" OnClick="btn_registrar_info_viaje_Click" />
 
 </asp:Content>
