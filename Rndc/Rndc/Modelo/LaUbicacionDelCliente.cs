@@ -20,6 +20,7 @@ namespace Rndc.Modelo
             this.BaseDeRemolques = new HashSet<BaseDeRemolque>();
             this.BaseDeVehiculos = new HashSet<BaseDeVehiculo>();
             this.LasAseguradoras = new HashSet<LasAseguradora>();
+            this.Sedes = new HashSet<Sede>();
         }
     
         public string CodigoDeUbicacion { get; set; }
@@ -31,5 +32,6 @@ namespace Rndc.Modelo
         public virtual ICollection<BaseDeRemolque> BaseDeRemolques { get; set; }
         public virtual ICollection<BaseDeVehiculo> BaseDeVehiculos { get; set; }
         public virtual ICollection<LasAseguradora> LasAseguradoras { get; set; }
+        public virtual ICollection<Sede> Sedes { get; set; }
     }
 }

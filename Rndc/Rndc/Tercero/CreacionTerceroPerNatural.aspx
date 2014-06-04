@@ -4,21 +4,21 @@
    
    
 
-       <div>
+       <div >
            <table>
                <tr>
                    <td>
                        <label>EMPRESA:</label>
                    </td>
                    <td>
-                       
+                       <asp:TextBox ID="Empresa" runat="server" ReadOnly="true"></asp:TextBox>
                    </td>
                    <td>
                        <label>NIT:</label>
                    </td>
                    <td>
 
-                       <asp:TextBox ID="IdNit" runat="server"></asp:TextBox>
+                       <asp:TextBox ID="IdNit" runat="server" ReadOnly="true"></asp:TextBox>
 
                    </td>
                    <td>
@@ -27,7 +27,7 @@
                    <td>
                        
 
-                       <asp:TextBox ID="IdUsuario" runat="server"></asp:TextBox>
+                       <asp:TextBox ID="IdUsuario" runat="server" ReadOnly="true"></asp:TextBox>
 
                    </td>
                </tr>
@@ -36,7 +36,8 @@
        </div>
 
 
-<h3>DATOS GENERALES</h3>
+<h3>*Campos Obigatorios</h3>
+       <h3>DATOS GENERALES</h3>
        <div>
            <table>
                <tr>
@@ -44,26 +45,29 @@
                        <label>Tipo de Identificación</label>
                    </td>
                    <td>
-                       <asp:DropDownList ID="TipoId" runat="server"></asp:DropDownList>
+                       <asp:DropDownList ID="tipoId" runat="server">
+                           <asp:ListItem Value="C">Cedula Ciudadania</asp:ListItem>
+                           <asp:ListItem Value="N">Nit</asp:ListItem>
+                           <asp:ListItem Value="P">Pasaporte</asp:ListItem>
+                           <asp:ListItem Value="E">Cedula Extrangeria</asp:ListItem>
+                           <asp:ListItem Value="T">Tarjeta Identidad</asp:ListItem>
+                           <asp:ListItem Value="U">NUIP</asp:ListItem>
+                       </asp:DropDownList>
                    </td>
                    <td>
                        <label>Número de Identificación</label>
                    </td>
                    <td>
-<<<<<<< .mine
-                       <asp:TextBox ID="NumIde" runat="server"></asp:TextBox>
-=======
 
 
                        <asp:TextBox ID="IdNumIde" runat="server"></asp:TextBox>
->>>>>>> .r22
 
                    </td>
 </tr>
 </table>
 <table>
 <tr>
-                   <td>
+                   <td style="width: 96px">
                        <label>Nombre</label>
                    </td>
                    <td>
@@ -128,7 +132,8 @@
                        <label>Municipio</label>
                    </td>
                    <td>
-                       <asp:TextBox ID="IdMpio" runat="server"></asp:TextBox>
+                       <asp:DropDownList ID="IdMpio" runat="server"></asp:DropDownList>
+                       
                    </td>
                </tr>
            </table>
@@ -140,24 +145,35 @@
                    <td>
                        <label>Categoria</label>
                    </td>
-                   <td>
-                       <select id="categoria">
-                           <option></option>
-                           <!--llenar los datos del tipo de los documentos-->
-                       </select>
+                   <td class="input-medium" style="width: 73px">
+                       <asp:DropDownList ID="categoria" runat="server" Width="44px">
+                           <asp:ListItem Value="4"></asp:ListItem>
+                           <asp:ListItem Value="5"></asp:ListItem>
+                           <asp:ListItem Value="6"></asp:ListItem>
+                           <asp:ListItem Value="C1"></asp:ListItem>
+                           <asp:ListItem Value="C2"></asp:ListItem>
+                           <asp:ListItem Value="C3"></asp:ListItem>
+                       </asp:DropDownList>
                    </td>
-                   <td>
+                   <td class="input-mini" style="width: 61px">
                        <label>Licencia</label>
                    </td>
-                   <td>
+                   <td class="input-medium" style="width: 156px">
                        <asp:TextBox ID="IdLice" runat="server"></asp:TextBox>
                    </td>
 
-                   <td>
+                   <td style="width: 136px">
                        <label>Fecha Vencimiento</label>
                    </td>
                    <td>
-                       <asp:TextBox ID="IdFecVen" runat="server"></asp:TextBox>
+                       <asp:Calendar ID="IdFecVen" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="283px">
+                           <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                           <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                           <OtherMonthDayStyle ForeColor="#999999" />
+                           <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                           <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                           <TodayDayStyle BackColor="#CCCCCC" />
+                       </asp:Calendar>
                    </td>
                </tr>
            </table>

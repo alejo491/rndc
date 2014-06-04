@@ -28,6 +28,7 @@ namespace Rndc.Modelo
         public DbSet<BaseDeCliente> BaseDeClientes { get; set; }
         public DbSet<BaseDeRemolque> BaseDeRemolques { get; set; }
         public DbSet<BaseDeVehiculo> BaseDeVehiculos { get; set; }
+        public DbSet<Colore> Colores { get; set; }
         public DbSet<DetalleDeRuta> DetalleDeRutas { get; set; }
         public DbSet<DetalleDeRutasSeguimiento> DetalleDeRutasSeguimientoes { get; set; }
         public DbSet<DetalleOrdenDeCargueTemporal> DetalleOrdenDeCargueTemporals { get; set; }
@@ -63,5 +64,6 @@ namespace Rndc.Modelo
         public DbSet<LosVehiculosTercerizado> LosVehiculosTercerizados { get; set; }
         public DbSet<ProductoCliente> ProductoClientes { get; set; }
         public DbSet<ProgramacionParaSeguimiento> ProgramacionParaSeguimientoes { get; set; }
+        public DbSet<Sede> Sedes { get; set; }
     }
 }

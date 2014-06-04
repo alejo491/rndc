@@ -18,6 +18,7 @@ namespace Rndc.Modelo
         {
             this.BaseDeRemolques = new HashSet<BaseDeRemolque>();
             this.BaseDeVehiculos = new HashSet<BaseDeVehiculo>();
+            this.Sedes = new HashSet<Sede>();
             this.LaSolicitudParaSeguimientoes = new HashSet<LaSolicitudParaSeguimiento>();
         }
     
@@ -71,6 +72,7 @@ namespace Rndc.Modelo
         public virtual ICollection<BaseDeRemolque> BaseDeRemolques { get; set; }
         public virtual ICollection<BaseDeVehiculo> BaseDeVehiculos { get; set; }
         public virtual LaUbicacionDelCliente LaUbicacionDelCliente { get; set; }
+        public virtual ICollection<Sede> Sedes { get; set; }
         public virtual ICollection<LaSolicitudParaSeguimiento> LaSolicitudParaSeguimientoes { get; set; }
     }
 }

@@ -13,6 +13,15 @@ namespace Rndc.Tercero {
     public partial class CreacionTerceroPerNatural {
         
         /// <summary>
+        /// Control Empresa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Empresa;
+        
+        /// <summary>
         /// Control IdNit.
         /// </summary>
         /// <remarks>
@@ -31,22 +40,22 @@ namespace Rndc.Tercero {
         protected global::System.Web.UI.WebControls.TextBox IdUsuario;
         
         /// <summary>
-        /// Control TipoId.
+        /// Control tipoId.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TipoId;
+        protected global::System.Web.UI.WebControls.DropDownList tipoId;
         
         /// <summary>
-        /// Control NumIde.
+        /// Control IdNumIde.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NumIde;
+        protected global::System.Web.UI.WebControls.TextBox IdNumIde;
         
         /// <summary>
         /// Control IdNombre.
@@ -109,7 +118,16 @@ namespace Rndc.Tercero {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdMpio;
+        protected global::System.Web.UI.WebControls.DropDownList IdMpio;
+        
+        /// <summary>
+        /// Control categoria.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList categoria;
         
         /// <summary>
         /// Control IdLice.
@@ -127,7 +145,7 @@ namespace Rndc.Tercero {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox IdFecVen;
+        protected global::System.Web.UI.WebControls.Calendar IdFecVen;
         
         /// <summary>
         /// Control BtnGuardar.

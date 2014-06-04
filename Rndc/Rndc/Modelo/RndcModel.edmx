@@ -9,6 +9,7 @@
           <EntitySet Name="BaseDeClientes" EntityType="RndcModel.Store.BaseDeClientes" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="BaseDeRemolques" EntityType="RndcModel.Store.BaseDeRemolques" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="BaseDeVehiculos" EntityType="RndcModel.Store.BaseDeVehiculos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Colores" EntityType="RndcModel.Store.Colores" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DetalleDeRuta" EntityType="RndcModel.Store.DetalleDeRuta" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DetalleDeRutasSeguimiento" EntityType="RndcModel.Store.DetalleDeRutasSeguimiento" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="DetalleOrdenDeCargueTemporal" EntityType="RndcModel.Store.DetalleOrdenDeCargueTemporal" store:Type="Tables" store:Schema="dbo" store:Name="DetalleOrdenDeCargueTemporal">
@@ -77,6 +78,7 @@
           <EntitySet Name="LosVehiculosTercerizados" EntityType="RndcModel.Store.LosVehiculosTercerizados" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ProductoCliente" EntityType="RndcModel.Store.ProductoCliente" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="ProgramacionParaSeguimiento" EntityType="RndcModel.Store.ProgramacionParaSeguimiento" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sede" EntityType="RndcModel.Store.Sede" store:Type="Tables" Schema="dbo" />
           <AssociationSet Name="FK_BaseDeRemolques_BaseDeClientes" Association="RndcModel.Store.FK_BaseDeRemolques_BaseDeClientes">
             <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
             <End Role="BaseDeRemolques" EntitySet="BaseDeRemolques" />
@@ -236,6 +238,14 @@
           <AssociationSet Name="FK_RUTASNUEVAS_ORIGEN" Association="RndcModel.Store.FK_RUTASNUEVAS_ORIGEN">
             <End Role="ElOrigen" EntitySet="ElOrigen" />
             <End Role="LasRutasNuevas" EntitySet="LasRutasNuevas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sede_BaseDeClientes" Association="RndcModel.Store.FK_Sede_BaseDeClientes">
+            <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
+            <End Role="Sede" EntitySet="Sede" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sede_LaUbicacionDelCliente" Association="RndcModel.Store.FK_Sede_LaUbicacionDelCliente">
+            <End Role="LaUbicacionDelCliente" EntitySet="LaUbicacionDelCliente" />
+            <End Role="Sede" EntitySet="Sede" />
           </AssociationSet>
           <AssociationSet Name="FK_SOLICITUDTRAFICO_CLIENTES" Association="RndcModel.Store.FK_SOLICITUDTRAFICO_CLIENTES">
             <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
@@ -407,6 +417,13 @@
           <Property Name="NumeroDeSerieSatelital" Type="varchar" MaxLength="80" />
           <Property Name="Novedad" Type="varchar" MaxLength="80" />
           <Property Name="OrigenNovedad" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="Colores">
+          <Key>
+            <PropertyRef Name="CodigoColor" />
+          </Key>
+          <Property Name="CodigoColor" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="Color" Type="nchar" Nullable="false" MaxLength="10" />
         </EntityType>
         <EntityType Name="DetalleDeRuta">
           <Key>
@@ -875,6 +892,17 @@
           <Property Name="RemolqueTercero" Type="varchar" MaxLength="11" />
           <Property Name="ManifiestoDeCarga" Type="varchar" MaxLength="50" />
           <Property Name="CodigoDeManifiesto" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Sede">
+          <Key>
+            <PropertyRef Name="CodigoSede" />
+          </Key>
+          <Property Name="CodigoSede" Type="varchar" Nullable="false" MaxLength="150" />
+          <Property Name="NombreSede" Type="varchar" MaxLength="150" />
+          <Property Name="Direccion" Type="varchar" MaxLength="150" />
+          <Property Name="CodigoCliente" Type="varchar" MaxLength="150" />
+          <Property Name="nit" Type="varchar" MaxLength="50" />
+          <Property Name="ubicacion" Type="varchar" MaxLength="11" />
         </EntityType>
         <Association Name="FK_BaseDeRemolques_BaseDeClientes">
           <End Role="BaseDeClientes" Type="RndcModel.Store.BaseDeClientes" Multiplicity="0..1" />
@@ -1360,6 +1388,32 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Sede_BaseDeClientes">
+          <End Role="BaseDeClientes" Type="RndcModel.Store.BaseDeClientes" Multiplicity="0..1" />
+          <End Role="Sede" Type="RndcModel.Store.Sede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaseDeClientes">
+              <PropertyRef Name="CodigoCliente" />
+              <PropertyRef Name="NitEmpresa" />
+            </Principal>
+            <Dependent Role="Sede">
+              <PropertyRef Name="CodigoCliente" />
+              <PropertyRef Name="nit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sede_LaUbicacionDelCliente">
+          <End Role="LaUbicacionDelCliente" Type="RndcModel.Store.LaUbicacionDelCliente" Multiplicity="0..1" />
+          <End Role="Sede" Type="RndcModel.Store.Sede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LaUbicacionDelCliente">
+              <PropertyRef Name="CodigoDeUbicacion" />
+            </Principal>
+            <Dependent Role="Sede">
+              <PropertyRef Name="ubicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_SOLICITUDTRAFICO_CLIENTES">
           <End Role="BaseDeClientes" Type="RndcModel.Store.BaseDeClientes" Multiplicity="1" />
           <End Role="LaSolicitudParaSeguimiento" Type="RndcModel.Store.LaSolicitudParaSeguimiento" Multiplicity="*" />
@@ -1638,6 +1692,7 @@
           <EntitySet Name="BaseDeClientes" EntityType="RndcModel.BaseDeCliente" />
           <EntitySet Name="BaseDeRemolques" EntityType="RndcModel.BaseDeRemolque" />
           <EntitySet Name="BaseDeVehiculos" EntityType="RndcModel.BaseDeVehiculo" />
+          <EntitySet Name="Colores" EntityType="RndcModel.Colore" />
           <EntitySet Name="DetalleDeRutas" EntityType="RndcModel.DetalleDeRuta" />
           <EntitySet Name="DetalleDeRutasSeguimientoes" EntityType="RndcModel.DetalleDeRutasSeguimiento" />
           <EntitySet Name="DetalleOrdenDeCargueTemporals" EntityType="RndcModel.DetalleOrdenDeCargueTemporal" />
@@ -1673,6 +1728,7 @@
           <EntitySet Name="LosVehiculosTercerizados" EntityType="RndcModel.LosVehiculosTercerizado" />
           <EntitySet Name="ProductoClientes" EntityType="RndcModel.ProductoCliente" />
           <EntitySet Name="ProgramacionParaSeguimientoes" EntityType="RndcModel.ProgramacionParaSeguimiento" />
+          <EntitySet Name="Sedes" EntityType="RndcModel.Sede" />
           <AssociationSet Name="FK_BaseDeRemolques_BaseDeClientes" Association="RndcModel.FK_BaseDeRemolques_BaseDeClientes">
             <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
             <End Role="BaseDeRemolques" EntitySet="BaseDeRemolques" />
@@ -1684,6 +1740,10 @@
           <AssociationSet Name="FK_CLIENTES_UBICACIONCLIENTE" Association="RndcModel.FK_CLIENTES_UBICACIONCLIENTE">
             <End Role="LaUbicacionDelCliente" EntitySet="LaUbicacionDelClientes" />
             <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sede_BaseDeClientes" Association="RndcModel.FK_Sede_BaseDeClientes">
+            <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
+            <End Role="Sede" EntitySet="Sedes" />
           </AssociationSet>
           <AssociationSet Name="FK_SOLICITUDTRAFICO_CLIENTES" Association="RndcModel.FK_SOLICITUDTRAFICO_CLIENTES">
             <End Role="BaseDeClientes" EntitySet="BaseDeClientes" />
@@ -1861,6 +1921,10 @@
             <End Role="LasZonasDeRutas" EntitySet="LasZonasDeRutas" />
             <End Role="LosVehiculosTercerizados" EntitySet="LosVehiculosTercerizados" />
           </AssociationSet>
+          <AssociationSet Name="FK_Sede_LaUbicacionDelCliente" Association="RndcModel.FK_Sede_LaUbicacionDelCliente">
+            <End Role="LaUbicacionDelCliente" EntitySet="LaUbicacionDelClientes" />
+            <End Role="Sede" EntitySet="Sedes" />
+          </AssociationSet>
           <AssociationSet Name="FK_PROGRAMACIONTRAFICO_CONDUCTORES" Association="RndcModel.FK_PROGRAMACIONTRAFICO_CONDUCTORES">
             <End Role="LosConductores" EntitySet="LosConductores" />
             <End Role="ProgramacionParaSeguimiento" EntitySet="ProgramacionParaSeguimientoes" />
@@ -1932,6 +1996,7 @@
           <NavigationProperty Name="BaseDeRemolques" Relationship="RndcModel.FK_BaseDeRemolques_BaseDeClientes" FromRole="BaseDeClientes" ToRole="BaseDeRemolques" />
           <NavigationProperty Name="BaseDeVehiculos" Relationship="RndcModel.FK_BaseDeVehiculos_BaseDeClientes" FromRole="BaseDeClientes" ToRole="BaseDeVehiculos" />
           <NavigationProperty Name="LaUbicacionDelCliente" Relationship="RndcModel.FK_CLIENTES_UBICACIONCLIENTE" FromRole="BaseDeClientes" ToRole="LaUbicacionDelCliente" />
+          <NavigationProperty Name="Sedes" Relationship="RndcModel.FK_Sede_BaseDeClientes" FromRole="BaseDeClientes" ToRole="Sede" />
           <NavigationProperty Name="LaSolicitudParaSeguimientoes" Relationship="RndcModel.FK_SOLICITUDTRAFICO_CLIENTES" FromRole="BaseDeClientes" ToRole="LaSolicitudParaSeguimiento" />
         </EntityType>
         <EntityType Name="BaseDeRemolque">
@@ -2026,6 +2091,13 @@
           <NavigationProperty Name="LosMotore" Relationship="RndcModel.FK_VEHICULOS_MOTORES" FromRole="BaseDeVehiculos" ToRole="LosMotores" />
           <NavigationProperty Name="ElTipoDeVehiculo" Relationship="RndcModel.FK_VEHICULOS_TIPOVEHICULO" FromRole="BaseDeVehiculos" ToRole="ElTipoDeVehiculo" />
           <NavigationProperty Name="LasZonasDeRuta" Relationship="RndcModel.FK_VEHICULOS_ZONARUTAS" FromRole="BaseDeVehiculos" ToRole="LasZonasDeRutas" />
+        </EntityType>
+        <EntityType Name="Colore">
+          <Key>
+            <PropertyRef Name="CodigoColor" />
+          </Key>
+          <Property Name="CodigoColor" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="Color" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
         </EntityType>
         <EntityType Name="DetalleDeRuta">
           <Key>
@@ -2343,6 +2415,7 @@
           <NavigationProperty Name="BaseDeRemolques" Relationship="RndcModel.FK_BaseDeRemolques_LaUbicacionDelCliente" FromRole="LaUbicacionDelCliente" ToRole="BaseDeRemolques" />
           <NavigationProperty Name="BaseDeVehiculos" Relationship="RndcModel.FK_LosVehiculosPropios_LaUbicacionDelCliente" FromRole="LaUbicacionDelCliente" ToRole="BaseDeVehiculos" />
           <NavigationProperty Name="LasAseguradoras" Relationship="RndcModel.FK_LasAseguradoras_LaUbicacionDelCliente" FromRole="LaUbicacionDelCliente" ToRole="LasAseguradoras" />
+          <NavigationProperty Name="Sedes" Relationship="RndcModel.FK_Sede_LaUbicacionDelCliente" FromRole="LaUbicacionDelCliente" ToRole="Sede" />
         </EntityType>
         <EntityType Name="LaUnidadDeMedidaCarga">
           <Key>
@@ -2565,6 +2638,19 @@
           <NavigationProperty Name="LosConductoresTercerizado" Relationship="RndcModel.FK_PROGRAMACIONTRAFICO_CONDUCTORESTERCEROS" FromRole="ProgramacionParaSeguimiento" ToRole="LosConductoresTercerizados" />
           <NavigationProperty Name="LosVehiculosTercerizado" Relationship="RndcModel.FK_PROGRAMACIONTRAFICO_VEHICULOSTERCEROS" FromRole="ProgramacionParaSeguimiento" ToRole="LosVehiculosTercerizados" />
         </EntityType>
+        <EntityType Name="Sede">
+          <Key>
+            <PropertyRef Name="CodigoSede" />
+          </Key>
+          <Property Name="CodigoSede" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="NombreSede" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="Direccion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="CodigoCliente" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="nit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ubicacion" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="BaseDeCliente" Relationship="RndcModel.FK_Sede_BaseDeClientes" FromRole="Sede" ToRole="BaseDeClientes" />
+          <NavigationProperty Name="LaUbicacionDelCliente" Relationship="RndcModel.FK_Sede_LaUbicacionDelCliente" FromRole="Sede" ToRole="LaUbicacionDelCliente" />
+        </EntityType>
         <Association Name="FK_BaseDeRemolques_BaseDeClientes">
           <End Role="BaseDeClientes" Type="RndcModel.BaseDeCliente" Multiplicity="0..1" />
           <End Role="BaseDeRemolques" Type="RndcModel.BaseDeRemolque" Multiplicity="*" />
@@ -2602,6 +2688,20 @@
             </Principal>
             <Dependent Role="BaseDeClientes">
               <PropertyRef Name="CodigoUbicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sede_BaseDeClientes">
+          <End Role="BaseDeClientes" Type="RndcModel.BaseDeCliente" Multiplicity="0..1" />
+          <End Role="Sede" Type="RndcModel.Sede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BaseDeClientes">
+              <PropertyRef Name="CodigoCliente" />
+              <PropertyRef Name="NitEmpresa" />
+            </Principal>
+            <Dependent Role="Sede">
+              <PropertyRef Name="CodigoCliente" />
+              <PropertyRef Name="nit" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -3135,6 +3235,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Sede_LaUbicacionDelCliente">
+          <End Role="LaUbicacionDelCliente" Type="RndcModel.LaUbicacionDelCliente" Multiplicity="0..1" />
+          <End Role="Sede" Type="RndcModel.Sede" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LaUbicacionDelCliente">
+              <PropertyRef Name="CodigoDeUbicacion" />
+            </Principal>
+            <Dependent Role="Sede">
+              <PropertyRef Name="ubicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_PROGRAMACIONTRAFICO_CONDUCTORES">
           <End Role="LosConductores" Type="RndcModel.LosConductore" Multiplicity="0..1" />
           <End Role="ProgramacionParaSeguimiento" Type="RndcModel.ProgramacionParaSeguimiento" Multiplicity="*" />
@@ -3314,6 +3426,14 @@
                 <ScalarProperty Name="NumeroDeSerieSatelital" ColumnName="NumeroDeSerieSatelital" />
                 <ScalarProperty Name="Novedad" ColumnName="Novedad" />
                 <ScalarProperty Name="OrigenNovedad" ColumnName="OrigenNovedad" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Colores">
+            <EntityTypeMapping TypeName="RndcModel.Colore">
+              <MappingFragment StoreEntitySet="Colores">
+                <ScalarProperty Name="CodigoColor" ColumnName="CodigoColor" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -3800,6 +3920,18 @@
                 <ScalarProperty Name="RemolqueTercero" ColumnName="RemolqueTercero" />
                 <ScalarProperty Name="ManifiestoDeCarga" ColumnName="ManifiestoDeCarga" />
                 <ScalarProperty Name="CodigoDeManifiesto" ColumnName="CodigoDeManifiesto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sedes">
+            <EntityTypeMapping TypeName="RndcModel.Sede">
+              <MappingFragment StoreEntitySet="Sede">
+                <ScalarProperty Name="CodigoSede" ColumnName="CodigoSede" />
+                <ScalarProperty Name="NombreSede" ColumnName="NombreSede" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="CodigoCliente" ColumnName="CodigoCliente" />
+                <ScalarProperty Name="nit" ColumnName="nit" />
+                <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
