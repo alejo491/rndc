@@ -102,6 +102,13 @@
                         <asp:ListItem Value="S" Text="Suspension"></asp:ListItem>
                     </asp:DropDownList>
                 </asp:TableCell>
+                <asp:TableCell ID="TableCell2" runat="server">
+                    <asp:DropDownList ID="slt_motivo_suspencion" runat="server">
+                        <asp:ListItem Value="A" Text="Accidente"></asp:ListItem>
+                        <asp:ListItem Value="V" Text="Varada"></asp:ListItem>
+                        <asp:ListItem Value="S" Text="Siniestro"></asp:ListItem>
+                    </asp:DropDownList>
+                </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
     </div>
@@ -328,6 +335,6 @@
             </asp:TableRow>
         </asp:Table>
     </div>
-    <asp:Button ID="btn_Guardar" runat="server" Text="Guardar Cumplido Manifiesto" OnClick="btn_Guardar_Click" />
+    <asp:Button ID="btn_Guardar" runat="server" Text="Guardar Cumplido Manifiesto" OnClick="Btn_Guardar_Click" />
 
 </asp:Content>

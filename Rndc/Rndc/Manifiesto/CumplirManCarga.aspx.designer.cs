@@ -229,6 +229,24 @@ namespace Rndc.Manifiesto {
         protected global::System.Web.UI.WebControls.DropDownList slt_tipo_cumplido;
         
         /// <summary>
+        /// Control TableCell2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableCell TableCell2;
+        
+        /// <summary>
+        /// Control slt_motivo_suspencion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList slt_motivo_suspencion;
+        
+        /// <summary>
         /// Control Label13.
         /// </summary>
         /// <remarks>
