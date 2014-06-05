@@ -26,6 +26,7 @@ namespace Rndc.Viaje
                 validar = false;
             
             }
+            
 
             if (validar)
             {
