@@ -270,7 +270,7 @@
                     <asp:Label ID="Label35" runat="server" Text="Número identificación"></asp:Label>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
-                    <asp:TextBox ID="TextBtxt_num_identi_condox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_num_identi_cond" runat="server"></asp:TextBox>
                 </asp:TableCell>
                 <asp:TableCell runat="server">
                     <asp:Label ID="Label36" runat="server" Text="Nombre"></asp:Label>
