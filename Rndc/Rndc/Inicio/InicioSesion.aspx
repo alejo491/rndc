@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioSesion.aspx.cs" Inherits="Rndc.Inicio.InicioSesion" %>
 
-<link href="login-box.css" rel="stylesheet" type="text/css" />
+<link href="login-box.css" rel="stylesheet" type="text/css" runat="server"/>
 <body>
     <h2>
         <asp:Label ID="lbl_titulo" runat="server" Text="Inicio de Sesion"></asp:Label></h2>
@@ -35,7 +35,7 @@
             <asp:TableRow>
                 <asp:TableCell></asp:TableCell>
                 <asp:TableCell>
-                    <asp:Button ID="Button1" runat="server" Text="LOGIN"  />
+                    <asp:Button ID="Button1" runat="server" Text="LOGIN"  CssClass="BottonLogin"/>
                 </asp:TableCell>
             </asp:TableRow>
         </asp:Table>
