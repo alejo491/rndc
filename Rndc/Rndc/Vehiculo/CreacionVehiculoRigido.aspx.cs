@@ -41,6 +41,32 @@ namespace Rndc.Vehiculo
         {
             bool validar = true;
             string mensaje = "";
+            double peso;
+
+            if (int.Parse(this.txt_modelo.Text) < 1900 || int.Parse(this.txt_modelo.Text) < new DateTime().Year + 1)
+            {
+                validar = false;
+                mensaje = mensaje + Environment.NewLine + "El modelo del vehiculo no puede ser menor a 1900 o mayor a " + (new DateTime().Year + 1).ToString();
+            }
+
+            /*if()
+            {
+             * El año al que fue repotenciado no puede ser mayor al año actual. No puede ser menor o igual al modelo reportado. Para Semirremolque, Remolque o Remolque Balanceado no debe ser reportado.
+
+            }*/
+
+            if (double.TryParse(this.txt_peso.Text, out peso) || this.txt_peso.Text.Length < 3 || this.txt_peso.Text.Length > 5 || peso < 200 || peso > 53000)
+            {
+                validar = false;
+                mensaje = mensaje + Environment.NewLine + "El peso debe registrarse en kilogramos,debe ser de 3 a 5 dígitos, y debe ser mayor a 200 kilogramos y menor a 53000 kilogramos ";
+            }
+
+            if (this.txt_num_ident.Text.Length < 10)
+            {
+                validar = false;
+                mensaje = mensaje + Environment.NewLine + "el numero de identificacion debe ser máximo de 10 caracteres";
+            }
+
 
             if (validar)
             {

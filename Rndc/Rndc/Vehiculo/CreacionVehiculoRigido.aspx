@@ -105,7 +105,6 @@
             <asp:TableRow ID="TableRow5" runat="server">
                 <asp:TableCell ID="TableCell24" runat="server">
                     <asp:Label ID="Label10" runat="server" Text="Peso Vacio:"></asp:Label>
-                    <label>Peso Vacio:</label>
                     <!--validacion peso maximo-->
                 </asp:TableCell>
                 <asp:TableCell ID="TableCell25" runat="server">
