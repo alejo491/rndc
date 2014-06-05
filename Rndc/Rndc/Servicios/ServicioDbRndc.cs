@@ -404,5 +404,35 @@ namespace Rndc.Servicios
                                                  select e).ToList();
             return lista;
         }
+
+        
+        internal static bool ManifiestoExiste(string ConsecutivoMan)
+        {
+            var ctx = new RndcEntities();
+
+            List<ElManifiestoDeCarga> lst_Manifiestos = ((from e in ctx.ElManifiestoDeCargas select e).ToList()).Size();
+            foreach (var manifiesto in lst_Manifiestos)
+            {
+                if (manifiesto.CodigoDeManifiesto.Equals(ConsecutivoMan))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        internal static bool BuscarConductor(string cedula)
+        {
+            var ctx = new RndcEntities();
+
+            List<LosConductoresTercerizado> lst_Conductores = (from e in ctx.LosConductoresTercerizados select e).ToList();
+            foreach(var conductor in lst_Conductores){
+                if (conductor.Cedula == cedula)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
